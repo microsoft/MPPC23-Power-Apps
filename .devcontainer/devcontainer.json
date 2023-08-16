@@ -6,5 +6,6 @@
         "openFiles": [
           "README.md"
         ]
-      }
+      },
+      "postCreateCommand": "pac auth create"
 }
