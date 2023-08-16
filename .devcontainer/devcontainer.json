@@ -1,0 +1,7 @@
+{
+    "customizations": {
+        "vscode": {
+          "extensions": ["IsvExpTools.powerplatform-vscode"]
+        }
+      }
+}
