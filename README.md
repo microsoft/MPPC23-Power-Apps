@@ -10,10 +10,10 @@ Learn how to build and deploy Power Apps for enterprise scale across your organi
 
 The labs are as follows:
 
-- Lab 01: Setup and configure
-- Lab 02: Develop
-- Lab 03: Deploy
-- Lab 04: Enterprise Scale
+- [Lab 01: Setup and configure](./lab1/README.md)
+- [Lab 02: Develop](./lab2/README.md)
+- [Lab 03: Deploy](./lab3/README.md)
+- [Lab 04: Enterprise Scale](./lab4/README.md)
 
 ## Trademarks
 
