@@ -1,16 +1,18 @@
 # 🚀 Lab 1: Setup and configure 
 
-## In this lab, you will learn how to...
+## Lab 1 - Tasks
 
-- Create a GitHub account (optional)
-- Fork a GitHub repository 
-- Create a GitHub Codespace
-- Set up a codespace
-- Log into the Power Platform using the Power Platform Command-Line Interface (CLI)
-- Log into Power Platform using a browser
-- Set up environments (Dev - QA - Prod)
-- Enable Dataverse settings
-- Install applications
+In this lab, you will go though the following tasks:
+
+- Creating a new browser profile
+- Logging into the account you are going to use during the workshop
+- Creating a GitHub account (optional)
+- Fork a GitHub repository
+- Creating a GitHub codespace
+- Connecting to the Power Platform using the Power Platform Command-Line Interface (CLI)
+- Creating developer environments
+- Enabling Dataverse settings
+- Installing the Creator Kit
 
 ## Task 1: Create a new browser profile (Microsoft Edge)
 

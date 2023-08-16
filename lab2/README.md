@@ -2,16 +2,21 @@
 
 This lab consists of two parts: 
 
-## Lab 02A: Develop
+## Lab 2A: Develop
 
-### In this lab, you will learn to: 
+### Lab 2A - Tasks
 
-- Create an application with copilot
-- Add the created application to a solution
+In this lab, you will go though the following tasks:
 
-## Lab 02B: Develop (APIM)
+- Creating an application with copilot
+- Creating a solution
+- Adding the created application to the solution
 
-### In this lab, you will learn to: 
+## Lab 2B: Develop (APIM)
+
+### Lab 2B - Tasks
+
+In this lab, you will go though the following tasks:
 
 - Open a local Web API in Visual Studio
 - Add Connected Service for Power Platform

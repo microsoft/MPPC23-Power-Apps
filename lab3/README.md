@@ -1,6 +1,8 @@
 # 🚀 Lab 3: Deploy
 
-## In this lab, you will learn how to...
+## Lab 3 - Tasks
+
+In this lab, you will go though the following tasks:
 
 - Setup Pipelines in the Prod environment
 - Create the first pipeline (Dev - QA - Prod)
