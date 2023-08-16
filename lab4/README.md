@@ -1,4 +1,4 @@
-# Lab 4: Enterprise Scale
+# 🚀 Lab 4: Enterprise Scale
 
 ## In this lab, you will learn how to...
 
