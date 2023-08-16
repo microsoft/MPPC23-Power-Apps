@@ -1,12 +1,12 @@
-# Build, Deploy, and Scale Power Apps!
+# 🔌 Build, Deploy, and Scale Power Apps!
 
 > This repository is for the "Build, Deploy, and Scale Power Apps!" workshop at the Microsoft Power Platform Conference on Monday the 2nd of October 2023 in Las Vegas. 
 
-## Workshop description
+## 📝 Workshop description
 
 Learn how to build and deploy Power Apps for enterprise scale across your organization. For more advanced makers and developers, you'll get hands-on experience with the full application lifecycle: from setting up your tenant with the right guardrails, development best practices to ensure your apps run performantly, deploying your work using the newest AI-powered pipelines ALM capabilities, and ensuring all this is easily governable.
 
-## Labs
+## 🚀 Labs
 
 The labs are as follows:
 
@@ -15,7 +15,7 @@ The labs are as follows:
 - [Lab 03: Deploy](./lab3/README.md)
 - [Lab 04: Enterprise Scale](./lab4/README.md)
 
-## Trademarks
+## ™️ Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
 trademarks or logos is subject to and must follow 
