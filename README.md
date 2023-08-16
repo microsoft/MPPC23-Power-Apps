@@ -2,6 +2,8 @@
 
 > This repository is for the "Build, Deploy, and Scale Power Apps!" workshop at the Microsoft Power Platform Conference on Monday the 2nd of October 2023 in Las Vegas. 
 
+![Microsoft Power Platform Conference Logo](./assets/ppc-logo.svg)
+
 ## 📝 Workshop description
 
 Learn how to build and deploy Power Apps for enterprise scale across your organization. For more advanced makers and developers, you'll get hands-on experience with the full application lifecycle: from setting up your tenant with the right guardrails, development best practices to ensure your apps run performantly, deploying your work using the newest AI-powered pipelines ALM capabilities, and ensuring all this is easily governable.
