@@ -29,15 +29,18 @@ Before you begin, watch this video for a brief overview of what to expect when c
 > [!NOTE]
 > Within this lab, notice that your results for data may vary from those within the screenshots and images throughout the lab. This is because Power Apps is using OpenAI to generate data for the lab that changes daily.
 
-1. In the center of the **Home** page within Power Apps, there's a text field in which you can enter a prompt to search for an AI generated table.
+1. In the center of the **Home** page within Power Apps, there's a text field in which you can enter a prompt to search for an AI generated table.  
+  
 1. Within the **text field** type the following prompt:
   
-  ```text
-  build an app to manage real estate showings
-  ```
+    ```text
+    build an app to manage real estate showings
+    ```
 
-1. Then, select the **Send** button.  
-  ![Image of the Power Apps homepage](./assets/power-apps-copilot-home.png)  
+1. Then, select the **Send** button.
+
+    ![Image of the Power Apps homepage](./assets/power-apps-copilot-home.png)  
+
 1. After the AI Copilot generates a table based on your prompt, look through the table to see what columns have been created for the start of your table.
 
 ## Lab 2B: Develop (APIM)
