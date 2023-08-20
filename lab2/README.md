@@ -1,6 +1,9 @@
 # 🚀 Lab 2: Develop
 
-This lab consists of two parts: 
+> [!IMPORTANT]
+> This workshop is still work in progress for the time being.
+
+This lab consists of two parts:
 
 ## Lab 2A: Develop
 

@@ -1,5 +1,8 @@
 # 🚀 Lab 3: Deploy
 
+> [!IMPORTANT]
+> This workshop is still work in progress for the time being.
+
 ## Lab 3 - Tasks
 
 In this lab, you will go though the following tasks:
@@ -11,17 +14,17 @@ In this lab, you will go though the following tasks:
 
 ## Task 1: Deploy the pipelines solution to your Prod environment
 
-In this task, you will learn how to install the pipelines for Power Platform solution in your `Prod` environment. This solution is needed to configure pipelines. 
+In this task, you will learn how to install the pipelines for Power Platform solution in your `Prod` environment. This solution is needed to configure pipelines.
 
 > **NOTE:**  
-> Normally, it's a best practice to install the pipelines solution on a separate "Pipelines Host" environment. In this lab, you will install it in the `Prod` environment because a you can have three **free** developer environments, so you don't have space for another `Pipelines Host` environment next to `Dev`, `Test`, and `Prod` environments. 
+> Normally, it's a best practice to install the pipelines solution on a separate "Pipelines Host" environment. In this lab, you will install it in the `Prod` environment because a you can have three **free** developer environments, so you don't have space for another `Pipelines Host` environment next to `Dev`, `Test`, and `Prod` environments.
 >
-> This is a best practice because you will avoid people accidentally using dependencies on the pipelines tables, or having issues with sharing pipelines and giving people the right security roles. Take a look at the [FAQ on Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/alm/pipelines#frequently-asked-questions) to learn more best practices.
+> This is a best practice because you will avoid people accidentally using dependencies on the pipelines tables, or having issues with sharing pipelines and giving people the right security roles. Take a look at the [FAQ on Microsoft Learn](https://learn.microsoft.com/power-platform/alm/pipelines#frequently-asked-questions) to learn more best practices.
 
 1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
 ![](./assets/admin-center.png)
 1. Select the `Prod` environment you created before
-1. In the command bar at the top, select `Resources` and `Dynamics 365 apps` 
+1. In the command bar at the top, select `Resources` and `Dynamics 365 apps`
 ![](./assets/prod-env-dynamics-365-apps.png)
 1. Here you can find the apps that are installed on your `Prod` environment by default. Select the `Install App` button in the command bar at the top
 ![](./assets/prod-env-install-app.png)
@@ -36,7 +39,7 @@ When finished, you can go to the [maker portal](https://make.powerapps.com) and 
 
 ## Task 02: Setup your first pipeline
 
-In this task, you will create your first pipeline. The `Deployment Pipeline Configuration` app will be used for that. 
+In this task, you will create your first pipeline. The `Deployment Pipeline Configuration` app will be used for that.
 
 ![](./assets/prod-env-pipelines-installed.png)
 
@@ -46,11 +49,11 @@ This will open the app in a new tab:
 
 ![](./assets/create-pipeline-app.png)
 
-Make yourself familiar with the app, by looking around which menu items there are: 
+Make yourself familiar with the app, by looking around which menu items there are:
 
-First, there is an `Overview` section, where you land when you open the app. This is the `Pipelines Dashboard`, which will show you the latest info about runs and pipelines that are active. When you open this for the first time, it's supposed to be empty, so don't worry! 
+First, there is an `Overview` section, where you land when you open the app. This is the `Pipelines Dashboard`, which will show you the latest info about runs and pipelines that are active. When you open this for the first time, it's supposed to be empty, so don't worry!
 
-There is also a `Pipeline Setup` section where you can view your environments and pipelines. 
+There is also a `Pipeline Setup` section where you can view your environments and pipelines.
 
 Last but not least, there is a `Deployments` section which enables you to view the run history and find solution artifacts.
 
@@ -90,7 +93,7 @@ Let's continue our lab and start by adding a new development environment by sele
 
 ![](./assets/create-pipeline-new-development-env-create.png)
 
-A sidebar will be opened, where you can enter the details of the `Dev` environment you created in lab 01. 
+A sidebar will be opened, where you can enter the details of the `Dev` environment you created in lab 01.
 
 ![](./assets/create-pipeline-new-development-env-details.png)
 
@@ -98,13 +101,13 @@ A sidebar will be opened, where you can enter the details of the `Dev` environme
 1. Set the Environment Type to `Development Environment`
 1. For the next step, make sure to grab the `Environment Id` from the Power Platform Admin Center
 
-    * Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
-    * Select Environments in the menu on the left
-    * Select the environment named `Dev`
+    - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
+    - Select Environments in the menu on the left
+    - Select the environment named `Dev`
 
       ![](./assets/create-pipeline-new-development-env-ppac-dev.png)
     
-    * Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
+    - Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
 
 1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
 1. Select the `Save and Close` button on the bottom of your sidebar
@@ -138,13 +141,13 @@ In the sidebar, make sure to add the following details:
 1. Add `Target Environment` as the `Environment Type`
 1. Add the environment ID of the test environment
 
-    * Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
-    * Select Environments in the menu on the left
-    * Select the environment named `Test`
+    - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
+    - Select Environments in the menu on the left
+    - Select the environment named `Test`
 
       ![](./assets/create-pipeline-new-development-env-ppac-test.png)
     
-    * Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
+    - Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
 
 1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
 1. Select the `Save and Close` button on the bottom of your sidebar
@@ -171,13 +174,13 @@ Make sure to select the `New Deployment Stage` button again to add a second depl
 1. Set the Environment Type to `Target Environment`
 1. For the next step, make sure to grab the `Environment Id` from the Power Platform Admin Center
 
-    * Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
-    * Select Environments in the menu on the left
-    * Select the environment named `Prod`
+    - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
+    - Select Environments in the menu on the left
+    - Select the environment named `Prod`
 
       ![](./assets/create-pipeline-new-development-env-ppac-prod.png)
     
-    * Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
+    - Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
 
 1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
 1. Select the `Save and Close` button on the bottom of your sidebar

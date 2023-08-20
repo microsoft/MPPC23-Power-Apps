@@ -1,5 +1,8 @@
 # 🚀 Lab 1: Setup and configure
 
+> [!IMPORTANT]
+> This workshop is still work in progress for the time being.
+
 ## Lab 1 - Tasks
 
 In this lab, you will go though the following tasks:

@@ -1,7 +1,10 @@
-# 🔌 Build, Deploy, and Scale Power Apps!
+# 🔌 Build, Deploy, and Scale Power Apps
 
-> [!TIP]
-> This repository is for the "Build, Deploy, and Scale Power Apps!" workshop at the Microsoft Power Platform Conference on Monday the 2nd of October 2023 in Las Vegas. 
+> [!IMPORTANT]
+> This workshop is still work in progress for the time being.
+
+> [!NOTE]
+> This repository is for the "Build, Deploy, and Scale Power Apps!" workshop at the Microsoft Power Platform Conference on Monday the 2nd of October 2023 in Las Vegas.
 
 ![Microsoft Power Platform Conference Logo](./assets/ppc-logo.svg)
 
@@ -20,8 +23,8 @@ The labs are as follows:
 
 ## ™️ Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
+trademarks or logos is subject to and must follow
+[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
