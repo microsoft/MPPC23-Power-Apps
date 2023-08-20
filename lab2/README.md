@@ -11,9 +11,30 @@ This lab consists of two parts:
 
 In this lab, you will go though the following tasks:
 
-- Creating an application with copilot
+- Creating a Canvas App with Power Apps Copilot
 - Creating a solution
 - Adding the created application to the solution
+
+### Task 1: Create a Canvas App with Power Apps Copilot
+
+In this task, you’ll create a mobile application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
+
+Before you begin, watch this video for a brief overview of what to expect when creating your first Power App with Copilot.
+
+> [!NOTE]
+> Power Apps requires either a Microsoft 365 license or a free trial. Learn more about your licensing options. [Microsoft products include Microsoft Power Apps and Power Automate](https://learn.microsoft.com/power-apps/administrator/pricing-billing-skus/).
+
+#### EXPLORE AI COPILOT WITHIN POWER APPS
+
+> [!NOTE]
+> Within this lab, notice that your results for data may vary from those within the screenshots and images throughout the lab. This is because Power Apps is using OpenAI to generate data for the lab that changes daily.
+
+1. In the center of the **Home** page within Power Apps, there's a text field in which you can enter a prompt to search for an AI generated table.
+1. Within the **text field** type the following prompt:  
+```build an app to manage real estate showings```
+1. Then, select the **Send** button.  
+  ![Image of the Power Apps homepage](./assets/power-apps-copilot-home.png)  
+1. After the AI Copilot generates a table based on your prompt, look through the table to see what columns have been created for the start of your table.
 
 ## Lab 2B: Develop (APIM)
 
