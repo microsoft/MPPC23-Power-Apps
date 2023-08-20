@@ -1,5 +1,6 @@
 # 🔌 Build, Deploy, and Scale Power Apps!
 
+> [!TIP]
 > This repository is for the "Build, Deploy, and Scale Power Apps!" workshop at the Microsoft Power Platform Conference on Monday the 2nd of October 2023 in Las Vegas. 
 
 ![Microsoft Power Platform Conference Logo](./assets/ppc-logo.svg)

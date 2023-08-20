@@ -1,4 +1,4 @@
-# 🚀 Lab 1: Setup and configure 
+# 🚀 Lab 1: Setup and configure
 
 ## Lab 1 - Tasks
 
@@ -8,7 +8,7 @@ In this lab, you will go though the following tasks:
 - Logging into the account you are going to use during the workshop
 - Creating a GitHub account (optional)
 - Fork a GitHub repository
-- Creating a GitHub codespace
+- Creating a GitHub Codespace
 - Connecting to the Power Platform using the Power Platform Command-Line Interface (CLI)
 - Creating developer environments
 - Enabling Dataverse settings
@@ -19,23 +19,23 @@ In this lab, you will go though the following tasks:
 It's always good to have a separate browser profile for your work and for workshops like this. This way you can keep all of your credentials separate and not have to worry about logging out of your personal / work accounts.
 
 1. Open Microsoft Edge
-2. Click on the profile icon on the top left corner
-3. Hover over "Other Microsoft Edge Browsers" / "Other profiles" and then select **Add Browser** / **Add profile**
+1. Click on the profile icon on the top left corner
+1. Hover over "Other Microsoft Edge Browsers" / "Other profiles" and then select **Add Browser** / **Add profile**
 
     ![Add new browser profile](assets/add-new-browser-profile.png)
 
-4. Click **Add**
+1. Click **Add**
 
     ![Add a profile dialog](assets/add-profile.png)
 
     This will then open up a new browser window on your taskbar.
 
-5. Pin that browser window to your taskbar
-6. In the new browser window, select **Start without your data**
+1. Pin that browser window to your taskbar
+1. In the new browser window, select **Start without your data**
 
     ![Start without your data](assets/start-without-your-data.png)
 
-7. Then select **Confirm and start browsing**.
+1. Then select **Confirm and start browsing**.
 
     ![Confirm and start browsing](assets/confirm-and-start-browsing.png)
 
@@ -46,15 +46,14 @@ It's always good to have a separate browser profile for your work and for worksh
 With the credentials that were provided to you, let's log into the account you are going to use during the workshop.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com)
-2. On the sign-in screen, enter the email address that was provided to you and then click **Next**
+1. On the sign-in screen, enter the email address that was provided to you and then click **Next**
 
     ![Sign in screen](assets/pa-sign-in-email.png)
 
-3. Then enter the password and click **Sign in**
-    
+1. Then enter the password and click **Sign in**
     ![Sign in screen](assets/pa-sign-in-password.png)
 
-4. If you're prompted to stay signed in, click **Yes**
+1. If you're prompted to stay signed in, click **Yes**
 
     You should now be logged in and on the Power Apps Home Page.
 
@@ -66,61 +65,72 @@ Developer environments are very helpful when you want to try out features, they 
 
 For this workshop, we are going to create three different developer environments:
 
-* ```Dev```: The environment where we are going to import our solution later on.
-* ```Test```: The environment where we are going to deploy our solution to in lab four.
-* ```Prod```: The environment where we are going to deploy our solution to in lab four.
+- ```Dev```: The environment where we are going to create our app and solution later on.
+- ```QA```: The environment where we are going to deploy our solution to in a later lab.
+- ```Prod```: The environment where we are going to deploy our solution to in a later lab.
 
-To create developer environments, you can create them in two ways:
+To create developer environments, you can create them in multiple ways:
 
-1. Via the Power Platform Admin Center
+1. By subscribing to the developer plan
+1. Via the Power Platform Admin Center (PPAC)
 1. Via the Power Platform CLI
 
-In this workshop, we will create the environments through the Power Platform Admin Center.
+> [!IMPORTANT]
+> When subscribing to the developer plan, you will automatically assign a developer license to yourself. When creating a developer environment through PPAC or the CLI, you will not do that. That's why we do this step first, so that you won't have to start a trial.
+
+In this workshop, we will create one environment through the UI, one via PPAC, and the last one via the CLI, so that you know all about how to create developer environments.
+
+### Create the `QA` environment via the Power Platform Admin Center (PPAC)
 
 1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
-2. Exit the Welcome / Tour pop up. You can do this by clicking on the **X** in the top right corner of the pop up screen
+1. Exit the Welcome / Tour pop up. You can do this by clicking on the **X** in the top right corner of the pop up screen
 
     ![Exit the Welcome / Tour pop up](assets/exit-welcome-tour.png)
 
-3. Click on **Environments** in the left navigation
-4. Click on **New** in the top navigation
+1. Click on **Environments** in the left navigation
+1. Click on **New** in the top navigation
 
     ![Environment + New for adding environments](assets/new-environment-button.png)
 
-5. When the right-hand side dialog pops up - enter the following information:
+1. When the right-hand side dialog pops up - enter the following information:
 
     | Field | Value |
     | --- | --- |
-    | Name | Dev |
-    | Region | Europe - Default |
+    | Name | QA |
+    | Region | US - Default |
     | Type | Developer |
-    | Purpose | Developer environment for EPPC23 |
+    | Purpose | Developer environment for MPPC23 |
 
     ![Create new Developer Environment](assets/create-dev-env.png)
 
-6. Click **Next**
-7. The next section is asking you to add Dataverse. Finally Click on **Save**
-8. Now do the same for the Test and Prod environments with the following information:
+1. Click **Next**
+1. The next section is asking you to add Dataverse. Finally Click on **Save**
+1. Now do the same for the Test and Prod environments with the following information:
 
-   ```Test Environment:```
+### Create the `Prod` environment via the Power Platform Command-Line Interface (CLI)
 
-    | Field | Value |
-    | --- | --- |
-    | Name | Test |
-    | Region | Europe - Default |
-    | Type | Developer |
-    | Purpose | Developer environment for EPPC23 |
+We will create the last environment we are going to create via the Power Platform CLI. Because we don't have to go through the UI, and we don't have to load anything, this will go way faster than the other options.
+
+We will create the last environment with the following values:
 
     ```Prod Environment:```
         
     | Field | Value |
     | --- | --- |
     | Name | Prod |
-    | Region | Europe - Default |
+    | Region | US - Default |
     | Type | Developer |
-    | Purpose | Developer environment for EPPC23 |
 
-9. Once you have created all three environments, you should see them in the list of environments. Click the **Refresh** button on the top navigation if you don't see them yet.
+The command we need to use for creating an environment is `pac admin create`. The documentation of this command can be found [here](https://aka.ms/pac/admin/#pac-admin-create).
+
+Run the following command in the terminal in your codespace:
+
+  ```pac admin create --name "Prod" --type "Developer"```
+
+> [!NOTE]
+> We don't use `purpose` here, because the Power Platform CLI doesn't have a parameter for this. Also, we are using the defaults for `region` and `currency`, so we don't have to add those to the command.
+
+1. Once you have created all three environments, you should see them in the list of environments. Click the **Refresh** button on the top navigation if you don't see them yet.
 
     ![List of developer environments](assets/list-of-environments.png)
 
