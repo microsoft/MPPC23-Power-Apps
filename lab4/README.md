@@ -9,3 +9,9 @@ In this lab, you will go though the following tasks:
 
 - Extend the previous pipeline with Approvals
 - Setup SPN support for pipelines
+
+## End of labs
+
+This is the end of lab 4 and the workshop, select the link below to move back to the workshop readme.
+
+[⏭️ Move to the workshop readme](../README.md)
