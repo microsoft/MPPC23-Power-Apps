@@ -97,7 +97,8 @@ Let's try adding more data to our table and the existing columns.
 
 1. Notice that five more rows of data are added for each of the existing columns within the table.
 
-Let's create the app now.
+    Let's create the app now.
+
 1. In the bottom right corner of the screen, select the Create app button.
 
 1. When the app first loads, a dialog may appear saying: Welcome to Power Apps Studio. If so, select the Skip button.
@@ -121,7 +122,7 @@ Let's create the app now.
 
 1. From the drop-down, select the Edit column option.
 
-In this example, we don't want the Data Type of the column to be a Single line of text. Let's change that.
+    In this example, we don't want the Data Type of the column to be a Single line of text. Let's change that.
 
 1. Within the Edit column pane, from the Date type drop-down select # Autonumber
 
