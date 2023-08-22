@@ -57,7 +57,7 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. Then, select the **Send** button.
 
-    ![](./assets/power-apps-copilot-add-column.png)
+    ![View of the Power Apps Copilot pane where a chat conversation shows, and the latest message is 'add a column to track client email'.](./assets/power-apps-copilot-add-column.png)
 
 1. Notice how a new column has been added to the table displaying the client’s email
 
@@ -68,6 +68,102 @@ Before you begin, watch this video for a brief overview of what to expect when c
     > In the bottom left corner of the screen, notice that there is a section titled Suggestions. This section provides you with different suggestions on how you can add to and modify your table.
 
     ![Screenshots of the suggestions that are displayed in the Power Apps Copilot wizard. Examples of suggestions are 'Change ... to ...', 'Add a column for ...', 'Add a row for ...' &  'Remove the ... row.'.](./assets/power-apps-copilot-suggestions.png)
+
+1. Notice that to the right of the screen, it appears to look as if you're having a conversation with a Copilot AI bot while adding to and modifying your table. Here's where you can scroll through and view the changes or additions you have made to your table.
+
+1. Now, let’s edit the **Status** column within the table. In the text box within the **Copilot** pane, type and send:
+
+    ```text
+    Add an option for “Completed” to the Status column
+    ```
+
+1. It may take a minute to load. Once it does, notice that the column name has been changed.
+
+    ![](./assets/power-apps-copilot-add-column-completed.png)
+
+1. Select the **Status** column name **drop down**, and select **View column**. Here, you can view the columns’ properties and the current status details and data.
+
+    ![](./assets/power-apps-copilot-add-column-completed-properties.png)
+
+1. Select the **X** in the top right corner of the pane to close out.
+
+Let's try adding more data to our table and the existing columns.
+
+1. Within the **Copilot** pane text box, type and send:
+
+    ```text
+    Add 5 more rows of data
+    ```
+
+1. Notice that five more rows of data are added for each of the existing columns within the table.
+
+Let's create the app now.
+1. In the bottom right corner of the screen, select the Create app button.
+
+1. When the app first loads, a dialog may appear saying: Welcome to Power Apps Studio. If so, select the Skip button.
+
+1. You should now be viewing the app that has been built for you in Edit mode.
+
+1. To the left of the screen, select the Data icon from the navigation bar. Notice that a Dataverse table has been created by the Copilot and is now in the Environments section.
+
+    > [!NOTE]
+    > Copilot is currently only supported for Dataverse. You cannot use any other data access point at this time.
+
+1. Let's try editing the table now that the app has been made.
+
+1. Within the Data pane, hover over the table. To the right of the table, select the ellipsis (...).
+
+1. From the menu, select Edit data.
+
+1. The Edit Table dialog appears. Here's where you can come and add your own columns to the table, or modify existing columns.
+
+1. Select the ID column header from the table.
+
+1. From the drop-down, select the Edit column option.
+
+In this example, we don't want the Data Type of the column to be a Single line of text. Let's change that.
+
+1. Within the Edit column pane, from the Date type drop-down select # Autonumber
+
+1. Select Save.
+
+1. Select the Close button in the bottom right corner of the Edit table dialog.
+
+1. Notice that the table now says Refreshed within the Data pane.
+
+1. Now, let's make and add a new request to the table within the app.
+
+1. From the top of the screen, select the Play button.
+
+1. Within the pane to the left of the app, select the +New button.
+
+1. Although you could modify the form to autofill the fields for you, we're going to do so ourselves to show that the app works.
+
+1. Fill in the following fields with the information below:
+
+1. Agent: < Your name >
+
+1. Client: < Your name >
+
+1. Client Email: < Your name >
+
+1. Property: <Any address>
+
+1. Showing Time: <Any date>
+
+1. Status: <Pending>
+
+1. Then, select the checkmark.
+
+1. Now, select the X in the top right corner to close out of the app.
+
+1. If a dialog appears saying: Did you know?, select OK.
+
+1. Notice that the new request has been added to the list of requests to the left of the app.
+
+1. From the top of your screen, select the Save button to save the new app you have created.
+
+Congratulations! You can now use your skills to modify your galleries and modify the form.
 
 ## Lab 2B: Develop (APIM)
 
