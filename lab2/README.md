@@ -87,7 +87,7 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. Select the **X** in the top right corner of the pane to close out.
 
-Let's try adding more data to our table and the existing columns.
+    Let's try adding more data to our table and the existing columns.
 
 1. Within the **Copilot** pane text box, type and send:
 
