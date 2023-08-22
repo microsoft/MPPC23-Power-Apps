@@ -13,7 +13,7 @@ In this lab, you will go though the following tasks:
 
 - Creating a Canvas App with Power Apps Copilot
 - Creating a solution
-- Adding the created application to the solution
+- Add the resources created by Power Apps Copilot to a solution
 
 ### Task 1: Create a Canvas App with Power Apps Copilot
 
@@ -190,7 +190,16 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
     ![](./assets/image021.png)
 
-Congratulations! You can now use your skills to modify your galleries and modify the form.
+Congratulations! You have now created a Power Apps Canvas App with Copilot!
+
+### Task 2: Create a solution
+
+TODO: Create a solution called "MPPC23".
+TODO: Create another solution called "MPPC23 - Custom Connector"
+
+### Task 3: Add the resources created by Power Apps Copilot to a solution
+
+TODO: Add the resources to the "MPPC23" solution.
 
 ## Lab 2B: Develop (APIM)
 
@@ -200,8 +209,20 @@ In this lab, you will go though the following tasks:
 
 - Open a local Web API in Visual Studio
 - Add Connected Service for Power Platform
-- Deploy the connector to Power Platform through Visual Studio ("MPPC" solution)
+- Use the Connected Service for Power Platform to debug the connector
+- Deploy the connector to Power Platform through Visual Studio
 - Add connector to Copilot app created in Lab 02B
+- Edit the Copilot created Power App and add the connector to it
+- Test the app
+- Remove the connector when done with testing
+- Deploy the WebAPI to Azure
+- Deploy the API to API Management
+- Export the API to your Power Platform developer environment via API Management
+- Edit the Copilot-created Power App again and add the connector exported from API Management to it
+- Add the connector exported from API Management to the "MPPC23 - Custom Connector" solution
+- Publish all customizations
+
+###
 
 ## Next lab
 
