@@ -43,6 +43,32 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. After the AI Copilot generates a table based on your prompt, look through the table to see what columns have been created for the start of your table.
 
+    ![Image of the Power Apps Copilot wizard in which you can see the proposed table for the prompt you used.](./assets/power-apps-copilot-table-view.png)
+
+    > [!NOTE]
+    > If you'd like, you can add or modify the existing columns generated within the table by Copilot. But note that there is a pre-built Suggestions section to the left of the screen.
+
+1. Let's explore further within modifying and adding to the already generated table.
+1. In the text box, at the bottom of the **Copilot** pane to the right of the screen, type:
+
+    ```text
+    Add a column to track client email
+    ```
+
+1. Then, select the **Send** button.
+
+    ![](./assets/power-apps-copilot-add-column.png)
+
+1. Notice how a new column has been added to the table displaying the client’s email
+
+    > [!NOTE]
+    > Remember that the data that is generated in your table may vary from the data shown within the table in the screenshots and images for the lab.
+
+    > [!NOTE]
+    > In the bottom left corner of the screen, notice that there is a section titled Suggestions. This section provides you with different suggestions on how you can add to and modify your table.
+    >  
+    > ![Screenshots of the suggestions that are displayed in the Power Apps Copilot wizard. Examples of suggestions are 'Change ... to ...', 'Add a column for ...', 'Add a row for ...' &  'Remove the ... row.'.](./assets/power-apps-copilot-suggestions.png)
+
 ## Lab 2B: Develop (APIM)
 
 ### Lab 2B - Tasks
