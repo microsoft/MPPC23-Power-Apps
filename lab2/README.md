@@ -66,8 +66,8 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
     > [!NOTE]
     > In the bottom left corner of the screen, notice that there is a section titled Suggestions. This section provides you with different suggestions on how you can add to and modify your table.
-    >  
-    > ![Screenshots of the suggestions that are displayed in the Power Apps Copilot wizard. Examples of suggestions are 'Change ... to ...', 'Add a column for ...', 'Add a row for ...' &  'Remove the ... row.'.](./assets/power-apps-copilot-suggestions.png)
+
+    ![Screenshots of the suggestions that are displayed in the Power Apps Copilot wizard. Examples of suggestions are 'Change ... to ...', 'Add a column for ...', 'Add a row for ...' &  'Remove the ... row.'.](./assets/power-apps-copilot-suggestions.png)
 
 ## Lab 2B: Develop (APIM)
 
