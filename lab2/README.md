@@ -142,17 +142,17 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. Fill in the following fields with the information below:
 
-1. Agent: < Your name >
+1. Agent: `<Your name>`
 
-1. Client: < Your name >
+1. Client: `<Your name>`
 
-1. Client Email: < Your name >
+1. Client Email: `<Your name>`
 
-1. Property: <Any address>
+1. Property: `<Any address>`
 
-1. Showing Time: <Any date>
+1. Showing Time: `<Any date>`
 
-1. Status: <Pending>
+1. Status: `<Pending>`
 
 1. Then, select the checkmark.
 
