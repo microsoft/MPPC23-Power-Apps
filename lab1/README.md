@@ -177,13 +177,21 @@ Currently, if you want to get all that the Power Platform offers, it's required 
 1. Go to the [Power Apps Developer Plan](https://aka.ms/pp/devplan) website (use the Edge profile you created for this workshop)
 1. Select the **Existing user? Add a dev environment** button
 
-    ![](./assets/dev-plan-1.png)
+    ![Power Apps Developer Plan website with 'Get Started Free' and 'Existing user? Add a dev environment' buttons](./assets/dev-plan-1.png)
 
 1. Select the **Sign up for a Community Plan** link
 
-    ![Alt text](./assets/dev-plan-2.png)
+    ![Sign up page for Power Apps Developer Plan with options to request a license, buy a license or sign up for a community plan](./assets/dev-plan-2.png)
 
-1. 
+1. Leave the country on United States and select the **Accept** button.
+
+    ![Page where you can select a country and accept or cancel. There are also links to the terms of use and the Microsoft privacy statement](./assets/dev-plan-3.png)
+
+1. After selecting **Accept**, a Power Platform developer environment will be created for you with the name `{User}'s Environment` and you will be redirected to the maker portal. In here, you will see two things:
+    1. An alert in the top-center that says 'This is a developer environment and not meant for production use'
+    1. The environment picker at the top-right with your recently created environment `{User}'s Environment` selected
+
+    ![The maker portal, with at the top-center the alert that this is a developer environment and not meant for production use. At to top-right, you will see the name of your developer environment that just got created](./assets/dev-plan-4.png)
 
 ### Create the `QA` environment via the Power Platform Admin Center (PPAC)
 
