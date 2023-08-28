@@ -247,7 +247,7 @@ pac admin create --name "Prod" --type "Developer"
 
     ![List of developer environments](assets/list-of-environments.png)
 
-## Lab 08: Switch between environments with the Power Platform CLI
+## Task 8: Switch between environments with the Power Platform CLI
 
 1. With the correct Auth Profile, in the terminal type the following command and then press **Enter**:
 
@@ -283,7 +283,12 @@ pac admin create --name "Prod" --type "Developer"
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
 
-## Lab 09
+## Task 9: Enable Dataverse settings
+
+A recent addition to the Power Platform CLI is the ability to list and update Dataverse settings. This means that you can change the settings that are normally only available through the UI. In this task, you will learn how to change the settings.
+
+TODO: pac org list-settings
+TODO: pac org update-settings
 
 ## Next lab
 
