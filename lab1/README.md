@@ -16,7 +16,6 @@ In this lab, you will go though the following tasks:
 - Creating developer environments
 - Switch between environments with the Power Platform CLI
 - Enabling Dataverse settings
-- Installing the Creator Kit
 
 ## Task 1: Create a new browser profile (Microsoft Edge)
 
