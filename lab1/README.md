@@ -14,6 +14,7 @@ In this lab, you will go though the following tasks:
 - Creating a GitHub Codespace
 - Connecting to the Power Platform using the Power Platform Command-Line Interface (CLI)
 - Creating developer environments
+- Switch between environments with the Power Platform CLI
 - Enabling Dataverse settings
 - Installing the Creator Kit
 
@@ -62,7 +63,93 @@ With the credentials that were provided to you, let's log into the account you a
 
     ![Power apps home page](assets/power-apps-home-page.png)
 
-## Task 3: Create developer environments
+## Task 3: Create a GitHub account
+
+For this workshop, we are going to be using GitHub. If you already have a GitHub account, you can skip this task.
+
+1. Go to the [GitHub](https://github.com) website
+2. Click on **Sign up** on the top right corner
+3. Enter your email address (Use your personal email address) and then click **Continue**
+4. Create a password and then click **Continue**
+5. Enter a username and then click **Continue**
+6. Select whether you want to receive product updates or not and then click **Continue**
+7. Solve the puzzle to verify your account and then click **Create account**
+8. Enter the code that was sent to your email address and then when you've navigated to the welcome screen, click **Skip personalization**
+
+You now have a GitHub account. Welcome to the community!
+
+## Task 4: Create a fork of the repository for this workshop
+
+Now that you have a GitHub account, we are going to create a fork of the repository for this workshop. A fork is a copy of an existing repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+1. Go to the [EPPC23-ALM](https://aka.ms/EPPC23-ALM) GitHub repository
+2. Click on the **Fork** button on the top right corner
+
+    ![Screenshot of fork button in GitHub Repository](assets/fork-button.png)
+
+3. Once the "Create a new fork" page opens, review the information and then click **Create Fork**
+
+    ![Screenshot of "Create fork" button in GitHub](assets/create-fork-button.png)
+
+    Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **your-username/EPPC23-ALM forked from microsoft/EPPC23-ALM**.
+
+## Task 5: Create a codespace
+
+## Task 6: Connect to the Power Platform using the Power Platform Command-Line Interface (CLI)
+
+1. In your codespace, click on the **Power Platform** icon in the left navigation
+
+    ![Power Platform icon in the left navigation](assets/power-platform-icon.png)
+
+    You'll more than likely see that there is "No auth profiles found on this computer". Let's create one.
+
+    ![Screenshot of no auth profiles found](assets/no-auth-profiles-found.png)
+
+1. If you don't see it open already, let's open the Terminal. Click on the Burger menu icon in the top left corner and then hover over **Terminal** and then click **New Terminal**
+
+    ![Screenshot of new terminal menu](assets/new-terminal.png)
+
+    A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
+
+1. Type the following command in the terminal and then press **Enter**:
+
+    ```bash
+    pac auth create --deviceCode
+    ```
+
+1. You will be prompted to use a web browser to authenticate. Copy (**ctrl + c**) the ```code``` that is provided in the terminal and then **Ctrl + click** on the ```link``` that is provided in the terminal. 
+
+    ![Screenshot of the terminal with the code and link](assets/terminal-with-code-and-link.png)
+
+    Once you click on that link, it will open a new browser tab where you will have to paste that code into the browser and then click **Next**    
+
+    > **Note:** If you are using a Mac, you can **Ctrl + click** on the ```link``` that is provided in the terminal and then enter the ``code`` provided.
+
+    ![Enter code and click next](assets/enter-code.png)
+
+1. Pick the account that was provided to you. If you can't see it on screen then log in.
+
+    ![Screenshot of the account selection page](assets/account-selection.png)
+
+1. Then type in your password and click **Sign in**
+
+    You will then see a page asking if you're trying to sign in to Power Platform CLI - pac. 
+
+    ![Screenshot of the Are you trying to sign in to Power Platform CLI - pac? page](assets/sign-into-pac-cli.png)
+
+1. Click **Continue**
+
+    You'll then see a prompt confirming that you have successfully signed in to Power Platform CLI - pac. Close the browser tab and return to your codespace.
+
+1. Refresh the Auth Profiles section by clicking on the **Refresh** button next to "Auth Profiles"
+
+    ![Screenshot of the Auth Profiles section with the Refresh button](assets/refresh-auth-profiles.png)
+
+    You should now see at least one auth profile. If you have more than one, you can select the one you want to use by clicking on the **Select Auth Profile** button next to the auth profile.
+
+    ![Select Auth Profile](assets/select-auth-profile.png)
+
+## Task 7: Create developer environments
 
 Developer environments are very helpful when you want to try out features, they are meant to be short living environments.
 
@@ -74,7 +161,7 @@ For this workshop, we are going to create three different developer environments
 
 To create developer environments, you can create them in multiple ways:
 
-1. By subscribing to the developer plan
+1. By subscribing to the Power Apps Developer Plan
 1. Via the Power Platform Admin Center (PPAC)
 1. Via the Power Platform CLI
 
@@ -82,6 +169,21 @@ To create developer environments, you can create them in multiple ways:
 > When subscribing to the developer plan, you will automatically assign a developer license to yourself. When creating a developer environment through PPAC or the CLI, you will not do that. That's why we do this step first, so that you won't have to start a trial.
 
 In this workshop, we will create one environment through the UI, one via PPAC, and the last one via the CLI, so that you know all about how to create developer environments.
+
+### Create the 'Dev` environment by subscribing to the developer plan
+
+Currently, if you want to get all that the Power Platform offers, it's required to subscribe to the Power Apps Developer Plan. In this part, we will walk you through all the steps:
+
+1. Go to the [Power Apps Developer Plan](https://aka.ms/pp/devplan) website (use the Edge profile you created for this workshop)
+1. Select the **Existing user? Add a dev environment** button
+
+    ![](./assets/dev-plan-1.png)
+
+1. Select the **Sign up for a Community Plan** link
+
+    ![Alt text](./assets/dev-plan-2.png)
+
+1. 
 
 ### Create the `QA` environment via the Power Platform Admin Center (PPAC)
 
@@ -116,19 +218,19 @@ We will create the last environment we are going to create via the Power Platfor
 
 We will create the last environment with the following values:
 
-    ```Prod Environment:```
-        
-    | Field | Value |
-    | --- | --- |
-    | Name | Prod |
-    | Region | US - Default |
-    | Type | Developer |
+| Field | Value |
+| --- | --- |
+| Name | Prod |
+| Region | US - Default |
+| Type | Developer |
 
 The command we need to use for creating an environment is `pac admin create`. The documentation of this command can be found [here](https://aka.ms/pac/admin/#pac-admin-create).
 
 Run the following command in the terminal in your codespace:
 
-  ```pac admin create --name "Prod" --type "Developer"```
+```bash
+pac admin create --name "Prod" --type "Developer"
+```
 
 > [!NOTE]
 > We don't use `purpose` here, because the Power Platform CLI doesn't have a parameter for this. Also, we are using the defaults for `region` and `currency`, so we don't have to add those to the command.
@@ -137,167 +239,23 @@ Run the following command in the terminal in your codespace:
 
     ![List of developer environments](assets/list-of-environments.png)
 
-## Task 4: Install the Creator Kit
+## Lab 08: Switch between environments with the Power Platform CLI
 
-The solution that we will be working with in this workshop relies on the Creator Kit as a dependency. The Creator Kit is a set of components based on Fluent UI which you can use in Canvas Apps.
-
-The Creator Kit is not available out of the box, so we will need to install it in the ```Dev``` environment.
-
-1. With the Power Platform Admin Center still open, click on the **Dev** environment to open it
-
-    ![Click on Dev Environment to open](assets/click-on-dev-env.png)
-
-2. Select **Resources** from the top navigation bar and then select **Dynamics 365 apps**
-
-    ![Resources and D365](assets/resources-and-d365.png)
-
-3. Click on the **Install app** button on the top navigation bar
-
-    ![Install App button](assets/install-app-ppac.png)
-
-4. On the right-hand side popup screen, select the **Creator Kit** and then click **Next**
-
-    ![Select the Creator Kit and then Click Next Screenshot](assets/select-creator-kit-and-click-next.png)
-
-5. Select the **I agree to the terms of service** checkbox and then click **Install**
-
-    ![Install Creator Kit Confirmation](assets/install-creator-kit-confirmation.png)
-
-    This process may take a couple of minutes, you can refresh the page by selecting the **Refresh** button in the command bar at the top.
-
-    Once the installation is complete, you should see the Creator Kit in the list of apps with the Installed Status.
-
-    ![Installed Creator Kit screenshot](assets/installed-creator-kit.png)
-
-## Task 5: Create a GitHub account
-
-For this workshop, we are going to be using GitHub. If you already have a GitHub account, you can skip this task.
-
-1. Go to the [GitHub](https://github.com) website
-2. Click on **Sign up** on the top right corner
-3. Enter your email address (Use your personal email address) and then click **Continue**
-4. Create a password and then click **Continue**
-5. Enter a username and then click **Continue**
-6. Select whether you want to receive product updates or not and then click **Continue**
-7. Solve the puzzle to verify your account and then click **Create account**
-8. Enter the code that was sent to your email address and then when you've navigated to the welcome screen, click **Skip personalization**
-
-You now have a GitHub account. Welcome to the community!
-
-## Task 6: Create a fork of the repository for this workshop
-
-Now that you have a GitHub account, we are going to create a fork of the repository for this workshop. A fork is a copy of an existing repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
-
-1. Go to the [EPPC23-ALM](https://aka.ms/EPPC23-ALM) GitHub repository
-2. Click on the **Fork** button on the top right corner
-
-    ![Screenshot of fork button in GitHub Repository](assets/fork-button.png)
-
-3. Once the "Create a new fork" page opens, review the information and then click **Create Fork**
-
-    ![Screenshot of "Create fork" button in GitHub](assets/create-fork-button.png)
-
-    Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **your-username/EPPC23-ALM forked from microsoft/EPPC23-ALM**.
-
-## Task 7: Create a codespace
-
-A codespace is a cloud-hosted development environment you can access from anywhere. It has everything you need, including a text editor, terminal, and debugger. Codespaces are powered by Visual Studio Code and run in a containerized environment. For this workshop, we are going to use codespaces to do our development.
-
-1. Make sure that you are in your forked repository (_your-username/EPPC23-ALM_) and then find and click on the **<> Code** button
-
-    ![TODO: Add image of code button](assets/repo-code-button.png)
-
-
-2. On the **Code** pop up, select the **Codespaces** tab
-3. Click **Create codespace on main**
-
-    A codespace will now be created for you in a new tab. This will take a few seconds. But once it's done, you will have a fully functional Visual Studio Code environment in your browser. You can now start developing!
-
-## Task 8: Install the Power Platform Tools extension
-
-The Power Platform Tools extension is a Visual Studio Code extension that allows you to interact with the Power Platform from within Visual Studio Code. It is a very important component of the ALM story for the Power Platform and for this workshop.
-
-1. In your codespace, click on the **Extensions** icon in the left navigation
-
-    ![Screenshot showing where teh Extensions above](assets/extensions-icon-on-navigation-bar.png)
-
-2. Search for **Power Platform Tools** and then click **Install** on the **Power Platform Tools** extension
-
-    ![TODO: Screenshot of search for Power Platform Tools](assets/power-platform-tools-search-and-religion.png)
-
-    After installing the **Power Platform Tools** extension, you will be prompted to "Select File Icon Theme". Select any of the 2 options.
-
-    With the Power Platform Tools extension installed, you can now interact with the Power Platform from within Visual Studio Code. But before we can do that, we need to connect to a Power Platform environment.
-
-## Task 9: Connect to the Power Platform environment
-    
-1. In your codespace, click on the **Power Platform** icon in the left navigation
-
-    ![Power Platform icon in the left navigation](assets/power-platform-icon.png)
-
-    You'll more than likely see that there is "No auth profiles found on this computer". Let's create one.
-
-    ![Screenshot of no auth profiles found](assets/no-auth-profiles-found.png)
-
-2. If you don't see it open already, let's open the Terminal. Click on the Burger menu icon in the top left corner and then hover over **Terminal** and then click **New Terminal**
-
-    ![Screenshot of new terminal menu](assets/new-terminal.png)
-
-    A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
-
-3. Type the following command in the terminal and then press **Enter**:
-
-    ```bash
-    pac auth create --deviceCode
-    ```
-
-4. You will be prompted to use a web browser to authenticate. Copy (**ctrl + c**) the ```code``` that is provided in the terminal and then **Ctrl + click** on the ```link``` that is provided in the terminal. 
-
-    ![Screenshot of the terminal with the code and link](assets/terminal-with-code-and-link.png)
-
-    Once you click on that link, it will open a new browser tab where you will have to paste that code into the browser and then click **Next**    
-
-    > **Note:** If you are using a Mac, you can **Ctrl + click** on the ```link``` that is provided in the terminal and then enter the ``code`` provided.
-
-    ![Enter code and click next](assets/enter-code.png)
-
-5. Pick the account that was provided to you. If you can't see it on screen then log in.
-
-    ![Screenshot of the account selection page](assets/account-selection.png)
-
-6. Then type in your password and click **Sign in**
-
-    You will then see a page asking if you're trying to sign in to Power Platform CLI - pac. 
-
-    ![Screenshot of the Are you trying to sign in to Power Platform CLI - pac? page](assets/sign-into-pac-cli.png)
-
-7. Click **Continue**
-
-    You'll then see a prompt confirming that you have successfully signed in to Power Platform CLI - pac. Close the browser tab and return to your codespace.
-
-8. Refresh the Auth Profiles section by clicking on the **Refresh** button next to "Auth Profiles"
-
-    ![Screenshot of the Auth Profiles section with the Refresh button](assets/refresh-auth-profiles.png)
-
-    You should now see at least one auth profile. If you have more than one, you can select the one you want to use by clicking on the **Select Auth Profile** button next to the auth profile.
-
-    ![Select Auth Profile](assets/select-auth-profile.png)
-
-9. With the correct Auth Profile, in the terminal type the following command and then press **Enter**:
+1. With the correct Auth Profile, in the terminal type the following command and then press **Enter**:
 
     ```bash
     pac org list
     ```
 
-    This gets a list of all the environments that you have access to. You should see the **Dev** environment listed as one of them. This is the one we want to eventually connect to. 
+    This gets a list of all the environments that you have access to. You should see the **Dev** environment listed as one of them. This is the one we want to eventually connect to.
 
     ![Screenshot of pac org list](assets/org-list.png)
 
-10. Take note of the Environment ID of the **Dev** Environment and copy it. 
+1. Take note of the Environment ID of the **Dev** Environment and copy it.
 
     ![Copy of Dev environment ID](assets/org-list-with-env-id.png)
 
-11. Then in the terminal, type the following command and then press **Enter**. Make sure to replace ```00000000-0000-0000-0000-000000000000``` with the environment id that you copied above
+1. Then in the terminal, type the following command and then press **Enter**. Make sure to replace ```00000000-0000-0000-0000-000000000000``` with the environment id that you copied above
 
     ```bash
     pac org select --environment 00000000-0000-0000-0000-000000000000
@@ -307,14 +265,17 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
 
     ![Screenshot of pac org select confirmation](assets/org-select.png)
 
-12. To have further confirmation that you have successfully connected to the **Dev** environment, in the terminal type the following command and then press **Enter**:
+1. To have further confirmation that you have successfully connected to the **Dev** environment, in the terminal type the following command and then press **Enter**:
 
     ```bash
     pac org who
     ```
+
     This command will return information about the environment that you are connected to. You should see the **Dev** environment listed as well as other unique information about the environment including the User email you're connected as.
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
+
+## Lab 09
 
 ## Next lab
 
