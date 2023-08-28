@@ -192,6 +192,8 @@ Currently, if you want to get all that the Power Platform offers, it's required 
 
     ![The maker portal, with at the top-center the alert that this is a developer environment and not meant for production use. At to top-right, you will see the name of your developer environment that just got created](./assets/dev-plan-4.png)
 
+TODO: Rename `{User}'s Environment` to `Dev`
+
 ### Create the `QA` environment via the Power Platform Admin Center (PPAC)
 
 1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
