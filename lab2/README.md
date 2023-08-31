@@ -21,9 +21,9 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
 1. Go to [make.powerapps.com](https://make.powerapps.com) and select **Sign In** with your Power Apps account.
 1. Download the Excel file you are using later by selecting the link [here](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx).
-1. From the Power Apps home screen, select **Start with data**.
-  ![Screenshot of the other ways to create an app, which are start with data and start with a page design. The first option is highlighted.](./assets/image001.png)
-1. Then select **Upload an Excel file**.
+1. From the Power Apps home screen, select **Start with data**.    
+    ![Screenshot of the other ways to create an app, which are start with data and start with a page design. The first option is highlighted.](./assets/image001.png)
+1. Then select **Upload an Excel file**.   
   ![Screenshot of the options from start with data: Upload an Excel file, Start with a blank table and Select an existing table. The first option is highlighted.](./assets/image002.png)
 1. Click **Select from device** and navigate to the location where the **RealEstateProperties.xlsx** Excel file is saved and upload it. The maximum file size limit is 5 GB.
   ![](./assets/image003.png)
