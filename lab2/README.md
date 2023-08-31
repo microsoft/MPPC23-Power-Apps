@@ -117,6 +117,16 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
 1. Select the generated formula. Then select **Apply**.
 
+    Your gallery should now be looking like this:
+
+    ![](./assets/image021.png)
+
+1. **Save** the app.
+
+1. Exit the app to return to the Power Apps home page.
+
+    ![](./assets/image022.png)
+
 ## ☑️ Task 2: Create a Canvas App with Power Apps Copilot
 
 In this task, you’ll create a mobile application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
