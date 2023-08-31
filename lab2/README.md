@@ -9,6 +9,7 @@ In this lab, you will go though the following tasks:
 
 - Creating a Canvas App with data from an Excel-file
 - Creating a Canvas App with Power Apps Copilot
+- Creating a reminder workflow with Power Automate Copilot
 - Creating a solution
 - Add the resources created by Power Apps Copilot to a solution
 
@@ -76,7 +77,7 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
     The other components should reposition alongside the Address component. If not, then move them until it looks like the screenshot above.
 
-1. Select the RecordsGallery1 and then select the edit button to put the gallery in edit mode. Then click on Insert > search for Image > and then select the Image component.
+1. Select the **RecordsGallery1** and then select the edit button to put the gallery in edit mode. Then click on **Insert** > search for Image > and then select the Image component.
 
     ![](./assets/image014.png)
 
@@ -84,7 +85,7 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
     ![](./assets/image015.png)
 
-1. Make sure that the gallery is still in edit mode. Select the subtitle.
+1. Make sure that the gallery is still in edit mode. Select the **subtitle**.
 
     ![](./assets/image016.png)
 
@@ -100,11 +101,11 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
     ![](./assets/image018.png)
 
-1. Now to use Power Apps Ideas. Make sure the gallery is still in edit mode. And select the body containing the Price. Then click the lightbulb icon which appears above it.
+1. Now to use Power Apps Ideas. Make sure the gallery is still in edit mode. And select the body containing the **Price**. Then click the lightbulb icon which appears above it.
 
     ![](./assets/image019.png)
 
-1. Enter this output in the Desired format text box:
+1. Enter this output in the **Desired format** text box:
 
     ```powerappsfl
     $350,000
@@ -114,6 +115,7 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
     ![](./assets/image020.png)
 
+1. Select the generated formula. Then select **Apply**.
 
 ## ☑️ Task 2: Create a Canvas App with Power Apps Copilot
 
@@ -292,12 +294,14 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 Congratulations! You have now created a Power Apps Canvas App with Copilot!
 
-### ☑️ Task 2: Create a solution
+## ☑️ Task 3: Creating a reminder workflow with Power Automate Copilot
+
+## ☑️ Task 4: Create a solution
 
 TODO: Create a solution called "MPPC23".
 TODO: Create another solution called "MPPC23 - Custom Connector"
 
-### ☑️ Task 3: Add the resources created by Power Apps Copilot to a solution
+## ☑️ Task 5: Add the resources created by Power Apps Copilot to a solution
 
 TODO: Add the resources to the "MPPC23" solution.
 
