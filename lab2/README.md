@@ -90,9 +90,9 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
 1. Set the **Text** value of the subtitle to the following formula:
 
-```powerappsfl
-ThisItem.Size
-```
+    ```powerappsfl
+    ThisItem.Size
+    ```  
 
     ![](./assets/image017.png)
 
@@ -106,9 +106,9 @@ ThisItem.Size
 
 1. Enter this output in the Desired format text box:
 
-```powerappsfl
-$350,000
-```
+    ```powerappsfl
+    $350,000
+    ```
 
     Then press enter.
 
