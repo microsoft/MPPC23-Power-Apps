@@ -21,36 +21,36 @@ In this unit, you’ll create a mobile application with data from an Excel table
 1. Go to [make.powerapps.com](https://make.powerapps.com) and select **Sign In** with your Power Apps account.
 1. From the Power Apps home screen, select **Start with data**.
 
-![Screenshot of the other ways to create an app, which are start with data and start with a page design. The first option is highlighted.](./assets/image001.png)
+    ![Screenshot of the other ways to create an app, which are start with data and start with a page design. The first option is highlighted.](./assets/image001.png)
 
 1. Then select **Upload an Excel file**.
 
-![Screenshot of the options from start with data: Upload an Excel file, Start with a blank table and Select an existing table. The first option is highlighted.](./assets/image002.png)
+    ![Screenshot of the options from start with data: Upload an Excel file, Start with a blank table and Select an existing table. The first option is highlighted.](./assets/image002.png)
 
 1. Click **Select from device** and navigate to the location where the **RealEstateProperties.xlsx** Excel file is saved and upload it. The maximum file size limit is 5 GB.
 
-![](./assets/image003.png)
+    ![](./assets/image003.png)
 
 1. A table which is based on the data from the **RealEstateProperties.xlsx** Excel file will be generated. Click the pencil edit icon next to the table name to change it.
 
-![](./assets/image004.png)
+    ![](./assets/image004.png)
 
 1. On the **Edit Table** pop up, enter `Real Estate Property` as the Display name, `Real Estate Properties` as the Plural Name, and make sure that `Address` is selected as the **Primary column**. Select **Save**.
 
-![](./assets/image005.png)
+    ![](./assets/image005.png)
 
 1. Select the **Create app** button on the bottom right-hand corner of the screen.
 
-![](./assets/image006.png)
+    ![](./assets/image006.png)
 
 1. When the app first loads, a dialog may appear saying: **Welcome to Power Apps Studio**. If so, select the **Skip** button.
 1. You should now be viewing the app that has been generated for you in Edit mode.
 
-![](./assets/image007.png)
+    ![](./assets/image007.png)
 
 1. To the left of the screen, select the Data icon from the navigation bar. Notice that a Dataverse table, based on the RealEstateProperties.xlsx Excel file, has been created.
 
-![](./assets/image008.png)
+    ![](./assets/image008.png)
 
 1. Select the Tree view icon to return to the Tree view.
 
