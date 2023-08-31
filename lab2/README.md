@@ -25,6 +25,96 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
 1. Then select **Upload an Excel file**.
 
+![Screenshot of the options from start with data: Upload an Excel file, Start with a blank table and Select an existing table. The first option is highlighted.](./assets/image002.png)
+
+1. Click **Select from device** and navigate to the location where the **RealEstateProperties.xlsx** Excel file is saved and upload it. The maximum file size limit is 5 GB.
+
+![](./assets/image003.png)
+
+1. A table which is based on the data from the **RealEstateProperties.xlsx** Excel file will be generated. Click the pencil edit icon next to the table name to change it.
+
+![](./assets/image004.png)
+
+1. On the **Edit Table** pop up, enter `Real Estate Property` as the Display name, `Real Estate Properties` as the Plural Name, and make sure that `Address` is selected as the **Primary column**. Select **Save**.
+
+![](./assets/image005.png)
+
+1. Select the **Create app** button on the bottom right-hand corner of the screen.
+
+![](./assets/image006.png)
+
+1. When the app first loads, a dialog may appear saying: **Welcome to Power Apps Studio**. If so, select the **Skip** button.
+1. You should now be viewing the app that has been generated for you in Edit mode.
+
+![](./assets/image007.png)
+
+1. To the left of the screen, select the Data icon from the navigation bar. Notice that a Dataverse table, based on the RealEstateProperties.xlsx Excel file, has been created.
+
+![](./assets/image008.png)
+
+1. Select the Tree view icon to return to the Tree view.
+
+    ![](./assets/image009.png)
+
+1. On the app main screen, click on the gallery displaying the Real Estate Properties and then click on RecordsGallery1 in the Tree view to expand it.
+
+    ![](./assets/image010.png)
+
+1. Select the ellipsis (…) next to the NextArrow and delete it.
+
+    ![](./assets/image011.png)
+
+    This This deletes the NextArrow icon on the gallery, so we have space to move the other gallery components around.
+
+1. Select the RecordsGallery1 and then select the edit button to put the gallery in edit mode.
+
+    ![](./assets/image012.png)
+
+1. Reduce the width and move the position of the Address title component so that it is towards the right-hand side of the template cell.
+
+    ![](./assets/image013.png)
+
+    The other components should reposition alongside the Address component. If not, then move them until it looks like the screenshot above.
+
+1. Select the RecordsGallery1 and then select the edit button to put the gallery in edit mode. Then click on Insert > search for Image > and then select the Image component.
+
+    ![](./assets/image014.png)
+
+1. The image will then be added to your gallery. Reposition and resize the image so that it is in the center of each gallery cell.
+
+    ![](./assets/image015.png)
+
+1. Make sure that the gallery is still in edit mode. Select the subtitle.
+
+    ![](./assets/image016.png)
+
+1. Set the **Text** value of the subtitle to the following formula:
+
+```powerappsfl
+ThisItem.Size
+```
+
+    ![](./assets/image017.png)
+
+1. Using the tool bar at the top of the page, change the **Size** to **13**.
+
+    ![](./assets/image018.png)
+
+1. Now to use Power Apps Ideas. Make sure the gallery is still in edit mode. And select the body containing the Price. Then click the lightbulb icon which appears above it.
+
+    ![](./assets/image019.png)
+
+1. Enter this output in the Desired format text box:
+
+```powerappsfl
+$350,000
+```
+
+    Then press enter.
+
+    ![](./assets/image020.png)
+
+
 ## ☑️ Task 2: Create a Canvas App with Power Apps Copilot
 
 In this task, you’ll create a mobile application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
@@ -198,7 +288,7 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. From the top of your screen, select the Save button to save the new app you have created.
 
-    ![](./assets/image021.png)
+    ![](./assets/image055.png)
 
 Congratulations! You have now created a Power Apps Canvas App with Copilot!
 
