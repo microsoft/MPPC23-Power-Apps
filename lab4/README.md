@@ -15,3 +15,9 @@ In this lab, you will go though the following tasks:
 This is the end of lab 4 and the workshop, select the link below to move back to the workshop readme.
 
 [⏭️ Move to the workshop readme](../README.md)
+
+## Optional lab 5
+
+If you are done early, you can also do the optional lab 5.
+
+[⏭️ Move to the optional lab 5](../lab5/README.md)

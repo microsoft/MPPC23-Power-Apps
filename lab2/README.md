@@ -3,22 +3,29 @@
 > [!IMPORTANT]
 > This workshop is still work in progress for the time being.
 
-This lab consists of two parts:
-
-- Lab 2A: Develop a Power App
-- Lab 2B: Connect your own WebAPI to your Power App
-
-## 🚀 Lab 2A: Develop a Power App
-
-### 📝 Lab 2A - Tasks
+## 📝 Lab 2 - Tasks
 
 In this lab, you will go though the following tasks:
 
+- Creating a Canvas App with data from an Excel-file
 - Creating a Canvas App with Power Apps Copilot
 - Creating a solution
 - Add the resources created by Power Apps Copilot to a solution
 
-### ☑️ Task 1: Create a Canvas App with Power Apps Copilot
+## ☑️ Task 1: Create a Canvas App with data from an Excel-file
+
+In this unit, you’ll create a mobile application with data from an Excel table.
+
+### Explore the Excel to Power App functionality
+
+1. Go to [make.powerapps.com](https://make.powerapps.com) and select **Sign In** with your Power Apps account.
+1. From the Power Apps home screen, select **Start with data**.
+
+![Screenshot of the other ways to create an app, which are start with data and start with a page design. The first option is highlighted.](./assets/image001.png)
+
+1. Then select **Upload an Excel file**.
+
+## ☑️ Task 2: Create a Canvas App with Power Apps Copilot
 
 In this task, you’ll create a mobile application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
 
@@ -27,7 +34,7 @@ Before you begin, watch this video for a brief overview of what to expect when c
 > [!NOTE]
 > Power Apps requires either a Microsoft 365 license or a free trial. Learn more about your licensing options. [Microsoft products include Microsoft Power Apps and Power Automate](https://learn.microsoft.com/power-apps/administrator/pricing-billing-skus/).
 
-#### EXPLORE AI COPILOT WITHIN POWER APPS
+### Explore AI Copilot within Power Apps
 
 > [!NOTE]
 > Within this lab, notice that your results for data may vary from those within the screenshots and images throughout the lab. This is because Power Apps is using OpenAI to generate data for the lab that changes daily.
@@ -203,52 +210,6 @@ TODO: Create another solution called "MPPC23 - Custom Connector"
 ### ☑️ Task 3: Add the resources created by Power Apps Copilot to a solution
 
 TODO: Add the resources to the "MPPC23" solution.
-
-## 🚀 Lab 2B: Connect your own WebAPI to your Power App
-
-### 📝 Lab 2B - Tasks
-
-In this lab, you will go though the following tasks:
-
-- Open a local Web API in Visual Studio
-- Add Connected Service for Power Platform
-- Use the Connected Service for Power Platform to debug the connector
-- Deploy the connector to Power Platform through Visual Studio
-- Add connector to Copilot app created in Lab 02A
-- Edit the Copilot created Power App and add the connector to it
-- Test the app
-- Remove the connector when done with testing
-- Deploy the WebAPI to Azure
-- Deploy the API to API Management
-- Export the API to your Power Platform developer environment via API Management
-- Edit the Copilot-created Power App again and add the connector exported from API Management to it
-- Add the connector exported from API Management to the "MPPC23 - Custom Connector" solution
-
-### ☑️ Task 1: Open a local Web API in Visual Studio
-
-### ☑️ Task 2: Add Connected Service for Power Platform
-
-### ☑️ Task 3: Use the Connected Service for Power Platform to debug the connector
-
-### ☑️ Task 4: Deploy the connector to Power Platform through Visual Studio
-
-### ☑️ Task 5: Add connector to Copilot app created in Lab 2A
-
-### ☑️ Task 6: Edit the Copilot created Power App and add the connector to it
-
-### ☑️ Task 7: Test the app
-
-### ☑️ Task 8: Remove the connector when done with testing
-
-### ☑️ Task 9: Deploy the WebAPI to Azure
-
-### ☑️ Task 10: Deploy the API to API Management
-
-### ☑️ Task 11: Export the API to your Power Platform developer environment via API Management
-
-### ☑️ Task 12: Edit the Copilot-created Power App again and add the connector exported from API Management to it
-
-### ☑️ Task 13: Add the connector exported from API Management to the "MPPC23 - Custom Connector" solution
 
 ## Next lab
 
