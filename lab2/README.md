@@ -19,127 +19,127 @@ In this unit, you’ll create a mobile application with data from an Excel table
 
 ### Explore the Excel to Power App functionality
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) and select **Sign In** with your Power Apps account.
-1. Download the Excel file you are using later by selecting the link [here](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx).
-1. From the Power Apps home screen, select **Start with data**.
-   
-     ![](./assets/image001.png)
-   
-1. Then select **Upload an Excel file**.
-      ![](./assets/image002.png)
-1. Click **Select from device** and navigate to the location where the **RealEstateProperties.xlsx** Excel file is saved and upload it. The maximum file size limit is 5 GB.
-      ![](./assets/image003.png)
-1. A table which is based on the data from the **RealEstateProperties.xlsx** Excel file will be generated. Click the pencil edit icon next to the table name to change it.
-      ![](./assets/image004.png)
-1. On the **Edit Table** pop up, enter `Real Estate Property` as the Display name, `Real Estate Properties` as the Plural Name, and make sure that `Address` is selected as the **Primary column**. Select **Save**.
-      ![](./assets/image005.png)
-1. Select the **Create app** button on the bottom right-hand corner of the screen.
-      ![](./assets/image006.png)
-1. When the app first loads, a dialog may appear saying: **Welcome to Power Apps Studio**. If so, select the **Skip** button.
-1. You should now be viewing the app that has been generated for you in Edit mode.
-      ![](./assets/image007.png)
-1. To the left of the screen, select the **Data** icon from the navigation bar. Notice that a **Dataverse** table, based on the **RealEstateProperties.xlsx** Excel file, has been created.
-      ![](./assets/image008.png)
-1. Select the **Tree view** icon to return to the Tree view.
-      ![](./assets/image009.png)
-1. On the app main screen, click on the **gallery** displaying the **Real Estate Properties** and then click on **RecordsGallery1** in the **Tree view** to expand it.
-      ![](./assets/image010.png)
+    1. Go to [make.powerapps.com](https://make.powerapps.com) and select **Sign In** with your Power Apps account.
+    1. Download the Excel file you are using later by selecting the link [here](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx).
+    1. From the Power Apps home screen, select **Start with data**.
+    
+        ![](./assets/image001.png)
+    
+    1. Then select **Upload an Excel file**.
+        ![](./assets/image002.png)
+    1. Click **Select from device** and navigate to the location where the **RealEstateProperties.xlsx** Excel file is saved and upload it. The maximum file size limit is 5 GB.
+        ![](./assets/image003.png)
+    1. A table which is based on the data from the **RealEstateProperties.xlsx** Excel file will be generated. Click the pencil edit icon next to the table name to change it.
+        ![](./assets/image004.png)
+    1. On the **Edit Table** pop up, enter `Real Estate Property` as the Display name, `Real Estate Properties` as the Plural Name, and make sure that `Address` is selected as the **Primary column**. Select **Save**.
+        ![](./assets/image005.png)
+    1. Select the **Create app** button on the bottom right-hand corner of the screen.
+        ![](./assets/image006.png)
+    1. When the app first loads, a dialog may appear saying: **Welcome to Power Apps Studio**. If so, select the **Skip** button.
+    1. You should now be viewing the app that has been generated for you in Edit mode.
+        ![](./assets/image007.png)
+    1. To the left of the screen, select the **Data** icon from the navigation bar. Notice that a **Dataverse** table, based on the **RealEstateProperties.xlsx** Excel file, has been created.
+        ![](./assets/image008.png)
+    1. Select the **Tree view** icon to return to the Tree view.
+        ![](./assets/image009.png)
+    1. On the app main screen, click on the **gallery** displaying the **Real Estate Properties** and then click on **RecordsGallery1** in the **Tree view** to expand it.
+        ![](./assets/image010.png)
 
-1. Select the **ellipsis (…)** next to the **NextArrow** and delete it.
+    1. Select the **ellipsis (…)** next to the **NextArrow** and delete it.
 
-    ![](./assets/image011.png)
+        ![](./assets/image011.png)
 
-    This deletes the **NextArrow** icon on the gallery, so we have space to move the other gallery components around.
+        This deletes the **NextArrow** icon on the gallery, so we have space to move the other gallery components around.
 
-1. Select the **RecordsGallery1** and then select the edit button to put the gallery in edit mode.
+    1. Select the **RecordsGallery1** and then select the edit button to put the gallery in edit mode.
 
-    ![](./assets/image012.png)
+        ![](./assets/image012.png)
 
-1. Reduce the width and move the position of the **Address** title component so that it is towards the right-hand side of the template cell.
+    1. Reduce the width and move the position of the **Address** title component so that it is towards the right-hand side of the template cell.
 
-    ![](./assets/image013.png)
+        ![](./assets/image013.png)
 
-    The other components should reposition alongside the **Address** component. If not, then move them until it looks like the screenshot above.
+        The other components should reposition alongside the **Address** component. If not, then move them until it looks like the screenshot above.
 
-1. Select the **RecordsGallery1** and then select the edit button to put the gallery in edit mode. Then click on **Insert** > search for *Image* > and then select the **Image** component.
+    1. Select the **RecordsGallery1** and then select the edit button to put the gallery in edit mode. Then click on **Insert** > search for *Image* > and then select the **Image** component.
 
-    ![](./assets/image014.png)
+        ![](./assets/image014.png)
 
-1. The image will then be added to your gallery. Reposition and resize the image so that it is in the center of each gallery cell.
+    1. The image will then be added to your gallery. Reposition and resize the image so that it is in the center of each gallery cell.
 
-    ![](./assets/image015.png)
+        ![](./assets/image015.png)
 
-1. Make sure that the gallery is still in edit mode. Select the **subtitle**.
+    1. Make sure that the gallery is still in edit mode. Select the **subtitle**.
 
-    ![](./assets/image016.png)
+        ![](./assets/image016.png)
 
-1. Set the **Text** value of the subtitle to the following formula:
+    1. Set the **Text** value of the subtitle to the following formula:
 
-    ```powerappsfl
-    ThisItem.Size
-    ```  
+        ```powerappsfl
+        ThisItem.Size
+        ```  
 
-    ![](./assets/image017.png)
+        ![](./assets/image017.png)
 
-1. Using the tool bar at the top of the page, change the **Size** to **13**.
+    1. Using the tool bar at the top of the page, change the **Size** to **13**.
 
-    ![](./assets/image018.png)
+        ![](./assets/image018.png)
 
-1. Now to use Power Apps Ideas, make sure the gallery is still in edit mode. And select the body containing the **Price**. Then click the lightbulb icon which appears above it.
+    1. Now to use Power Apps Ideas, make sure the gallery is still in edit mode. And select the body containing the **Price**. Then click the lightbulb icon which appears above it.
 
-    ![](./assets/image019.png)
+        ![](./assets/image019.png)
 
-1. Enter this output in the **Desired format** text box:
+    1. Enter this output in the **Desired format** text box:
 
-    ```powerappsfl
-    $350,000
-    ```
+        ```powerappsfl
+        $350,000
+        ```
 
-    Then press enter.
+        Then press enter.
 
-    ![](./assets/image020.png)
+        ![](./assets/image020.png)
 
-1. Select the generated formula. Then select **Apply**.
+    1. Select the generated formula. Then select **Apply**.
 
-    ![](./assets/image021.png)
+        ![](./assets/image021.png)
 
-    With Power Apps Ideas,, the example ($350,000) which you gave generated a formula (Text(ThisItem.'Price (Base)', "$#,##0", "en-US")) which is now updated in the formula bar for the Price gallery control.
+        With Power Apps Ideas,, the example ($350,000) which you gave generated a formula (Text(ThisItem.'Price (Base)', "$#,##0", "en-US")) which is now updated in the formula bar for the Price gallery control.
 
-    You’ll also notice that the rest of the items in your gallery now apply the same formula.
+        You’ll also notice that the rest of the items in your gallery now apply the same formula.
 
-1. Now let’s do the same for the **Size** control in the subtitle of the gallery. Make sure the gallery is in edit mode. And select the subtitle containing the **Size**. Then click the lightbulb icon which appears above it.
-1. Enter this output in the **Desired format** text box:
-    **Size: 1,800 sq ft**
+    1. Now let’s do the same for the **Size** control in the subtitle of the gallery. Make sure the gallery is in edit mode. And select the subtitle containing the **Size**. Then click the lightbulb icon which appears above it.
+    1. Enter this output in the **Desired format** text box:
+        **Size: 1,800 sq ft**
 
-    Then press Enter.
+        Then press Enter.
 
-    You may notice that the ideas section is empty. This may be caused by the lack of information or context required to generate a formula.
+        You may notice that the ideas section is empty. This may be caused by the lack of information or context required to generate a formula.
 
-    ![](./assets/image022.png)
+        ![](./assets/image022.png)
 
-1. So, let’s add more examples. Click **+ Add examples** at least 2 more times.
+    1. So, let’s add more examples. Click **+ Add examples** at least 2 more times.
 
-    ![](./assets/image023.png)
+        ![](./assets/image023.png)
 
-1. Select 2 **Current formats** and then provide 2 corresponding **Desired formats**.
+    1. Select 2 **Current formats** and then provide 2 corresponding **Desired formats**.
 
-    ![](./assets/image024.png)
+        ![](./assets/image024.png)
 
-1. With the added context, Power Apps Ideas now generates a suitable formula for you:
+    1. With the added context, Power Apps Ideas now generates a suitable formula for you:
 
-    ![](./assets/image025.png)
+        ![](./assets/image025.png)
 
-1. Select the generated formula. Then select **Apply**.
+    1. Select the generated formula. Then select **Apply**.
 
-    Your gallery should now be looking like this:
+        Your gallery should now be looking like this:
 
-    ![](./assets/image026.png)
+        ![](./assets/image026.png)
 
-1. **Save** the app.
+    1. **Save** the app.
 
-1. Exit the app to return to the Power Apps home page.
+    1. Exit the app to return to the Power Apps home page.
 
-    ![](./assets/image027.png)
+        ![](./assets/image027.png)
 
 ## ☑️ Task 2: Create a Canvas App with Power Apps Copilot
 
