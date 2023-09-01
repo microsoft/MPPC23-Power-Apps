@@ -20,26 +20,26 @@ In this unit, you’ll create a mobile application with data from an Excel table
 ### Explore the Excel to Power App functionality
 
 1. Go to [make.powerapps.com](https://make.powerapps.com) and select **Sign In** with your Power Apps account.
-1. Download the Excel file you are using later by selecting the link [here](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx).
-1. From the Power Apps home screen, select **Start with data**.
+2. Download the Excel file you are using later by selecting the link [here](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx).
+3. From the Power Apps home screen, select **Start with data**.
    
 ![](./assets/image001.png)
    
-1. Then select **Upload an Excel file**.
+4. Then select **Upload an Excel file**.
 
-    ![](./assets/image002.png)
+![](./assets/image002.png)
 
-1. Click **Select from device** and navigate to the location where the **RealEstateProperties.xlsx** Excel file is saved and upload it. The maximum file size limit is 5 GB.
+5. Click **Select from device** and navigate to the location where the **RealEstateProperties.xlsx** Excel file is saved and upload it. The maximum file size limit is 5 GB.
 
-    ![](./assets/image003.png)
+![](./assets/image003.png)
 
-1. A table which is based on the data from the **RealEstateProperties.xlsx** Excel file will be generated. Click the pencil edit icon next to the table name to change it.
+6. A table which is based on the data from the **RealEstateProperties.xlsx** Excel file will be generated. Click the pencil edit icon next to the table name to change it.
 
-    ![](./assets/image004.png)
+![](./assets/image004.png)
 
-1. On the **Edit Table** pop up, enter `Real Estate Property` as the Display name, `Real Estate Properties` as the Plural Name, and make sure that `Address` is selected as the **Primary column**. Select **Save**.
+7. On the **Edit Table** pop up, enter `Real Estate Property` as the Display name, `Real Estate Properties` as the Plural Name, and make sure that `Address` is selected as the **Primary column**. Select **Save**.
 
-    ![](./assets/image005.png)
+![](./assets/image005.png)
 
 1. Select the **Create app** button on the bottom right-hand corner of the screen.
       ![](./assets/image006.png)
