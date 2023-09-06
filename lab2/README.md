@@ -15,16 +15,16 @@ In this lab, you will go though the following tasks:
 
 ## ☑️ Task 1: Create a Canvas App with data from an Excel-file
 
-In this unit, you’ll create a mobile application with data from an Excel table.
+In this task, you’ll create a mobile application with data from an Excel table.
 
 ### Explore the Excel to Power App functionality
 
 1. Go to [make.powerapps.com](https://make.powerapps.com) and select **Sign In** with your Power Apps account.
 2. Download the Excel file you are using later by selecting the link [here](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx).
 3. From the Power Apps home screen, select **Start with data**.
-   
+
 ![](./assets/image001.png)
-   
+
 4. Then select **Upload an Excel file**.
 
 ![](./assets/image002.png)
@@ -338,6 +338,44 @@ Before you begin, watch this video for a brief overview of what to expect when c
 Congratulations! You have now created a Power Apps Canvas App with Copilot!
 
 ## ☑️ Task 3: Creating a reminder workflow with Power Automate Copilot
+
+In this task, you’ll create an automation with Power Automate Copilot to send appointment reminders.
+
+Before you begin, watch this video for a brief overview of what to expect when creating your first automation with Power Automate Copilot.
+
+Follow these steps to create a flow using Copilot.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+
+1. Start describing your automation scenario.
+
+As you're typing, Copilot shows you a list of AI generated suggested flow descriptions.
+
+Alternatively, you can select **Create > Describe it to design it (preview)**.
+
+  ![](./assets/image057.png)
+
+To learn how to write a good prompt, go to [How to write a good prompt](https://learn.microsoft.com/power-automate/get-started-with-copilot#how-to-write-a-good-prompt) in this article.
+
+1. Select a suggestion or use the scenario you created in step 1.
+
+1. To accept the flow that Copilot created for you, select **Next**.
+
+If you want to see different suggestions, you can update your prompt in this step. Alternatively, if you want to see other options, select **This isn't what I'm looking for**.
+
+1. Review your connected apps and services, and then select **Next**.
+
+1. To finalize your flow, configure the required settings, and then select **Create flow**.
+
+The AI-powered Copilot in Power Automate designer opens with your flow.
+
+  ![](./assets/image058.png)
+
+1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
+
+1. When your flow is complete, select **Save this flow**.
+
+1. Once your flow is saved, we recommend that you test it. Do this by selecting **Test** in the upper-right corner.
 
 ## ☑️ Task 4: Create a solution
 
