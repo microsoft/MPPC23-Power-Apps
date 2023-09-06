@@ -371,11 +371,11 @@ The AI-powered Copilot in Power Automate designer opens with your flow.
 
   ![](./assets/image058.png)
 
-1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
+7. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
 
-1. When your flow is complete, select **Save this flow**.
+8. When your flow is complete, select **Save this flow**.
 
-1. Once your flow is saved, we recommend that you test it. Do this by selecting **Test** in the upper-right corner.
+9. Once your flow is saved, we recommend that you test it. Do this by selecting **Test** in the upper-right corner.
 
 ## ☑️ Task 4: Create a solution
 
