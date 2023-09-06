@@ -349,27 +349,27 @@ Follow these steps to create a flow using Copilot.
 
 1. Start describing your automation scenario.
 
-  As you're typing, Copilot shows you a list of AI generated suggested flow descriptions.
+    As you're typing, Copilot shows you a list of AI generated suggested flow descriptions.
 
-  Alternatively, you can select **Create > Describe it to design it (preview)**.
+    Alternatively, you can select **Create > Describe it to design it (preview)**.
 
-  ![](./assets/image057.png)
+    ![](./assets/image057.png)
 
-  To learn how to write a good prompt, go to [How to write a good prompt](https://learn.microsoft.com/power-automate/get-started-with-copilot#how-to-write-a-good-prompt) in this article.
+    To learn how to write a good prompt, go to [How to write a good prompt](https://learn.microsoft.com/power-automate/get-started-with-copilot#how-to-write-a-good-prompt) in this article.
 
 1. Select a suggestion or use the scenario you created in step 1.
 
 1. To accept the flow that Copilot created for you, select **Next**.
 
-  If you want to see different suggestions, you can update your prompt in this step. Alternatively, if you want to see other options, select **This isn't what I'm looking for**.
+    If you want to see different suggestions, you can update your prompt in this step. Alternatively, if you want to see other options, select **This isn't what I'm looking for**.
 
 1. Review your connected apps and services, and then select **Next**.
 
 1. To finalize your flow, configure the required settings, and then select **Create flow**.
 
-  The AI-powered Copilot in Power Automate designer opens with your flow.
+    The AI-powered Copilot in Power Automate designer opens with your flow.
 
-  ![](./assets/image058.png)
+    ![](./assets/image058.png)
 
 1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
 
