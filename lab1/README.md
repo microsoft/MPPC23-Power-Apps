@@ -210,7 +210,7 @@ Now, let's rename the environment to something that makes sense to us.
 
     ![Exit the Welcome / Tour pop up](assets/exit-welcome-tour.png)
 
-1. Click on **Environments** in the left navigation
+1. Select **Environments** in the left navigation
 1. Select `{User}'s Environment` by clicking on the name
 1. In the details card, select **edit**
 
@@ -224,13 +224,13 @@ Now, let's rename the environment to something that makes sense to us.
 
     ![](./assets/environment-edit-save-operation.png)
 
-1. Click on **Environments** to make get back to the overview of the environments.
+1. Select **Environments** to make get back to the overview of the environments.
 
 ### Create the `QA` environment via the Power Platform Admin Center (PPAC)
 
 We are going to create a QA environment through the Power Platform Admin Center.
 
-1. Click on **New** in the top navigation
+1. Select **New** in the top navigation
 
     ![Environment + New for adding environments](assets/new-environment-button.png)
 
@@ -243,11 +243,10 @@ We are going to create a QA environment through the Power Platform Admin Center.
     | Type | Developer |
     | Purpose | Developer environment for MPPC23 |
 
-    ![Create new Developer Environment](assets/create-dev-env.png)
+    ![Create new Developer Environment](assets/create-qa-env.png)
 
-1. Click **Next**
-1. The next section is asking you to add Dataverse. Finally Click on **Save**
-1. Now do the same for the Test and Prod environments with the following information:
+1. Select **Next**
+1. The next section is asking you to add Dataverse. Finally select on **Save**
 
 ### Create the `Prod` environment via the Power Platform Command-Line Interface (CLI)
 
