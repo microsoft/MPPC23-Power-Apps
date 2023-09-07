@@ -81,7 +81,7 @@ You now have a GitHub account. Welcome to the community!
 
 Now that you have a GitHub account, we are going to create a fork of the repository for this workshop. A fork is a copy of an existing repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
-1. Go to the [EPPC23-ALM](https://aka.ms/EPPC23-ALM) GitHub repository
+1. Go to the [MPPC23-Power-Apps](https://aka.ms/MPPC23-Power-Apps) GitHub repository
 2. Click on the **Fork** button on the top right corner
 
     ![Screenshot of fork button in GitHub Repository](assets/fork-button.png)
@@ -116,11 +116,11 @@ Now that you have a GitHub account, we are going to create a fork of the reposit
     pac auth create --deviceCode
     ```
 
-1. You will be prompted to use a web browser to authenticate. Copy (**ctrl + c**) the ```code``` that is provided in the terminal and then **Ctrl + click** on the ```link``` that is provided in the terminal. 
+1. You will be prompted to use a web browser to authenticate. Copy (**ctrl + c**) the ```code``` that is provided in the terminal and then **Ctrl + click** on the ```link``` that is provided in the terminal.
 
     ![Screenshot of the terminal with the code and link](assets/terminal-with-code-and-link.png)
 
-    Once you click on that link, it will open a new browser tab where you will have to paste that code into the browser and then click **Next**    
+    Once you click on that link, it will open a new browser tab where you will have to paste that code into the browser and then click **Next**
 
     > **Note:** If you are using a Mac, you can **Ctrl + click** on the ```link``` that is provided in the terminal and then enter the ``code`` provided.
 
@@ -132,7 +132,7 @@ Now that you have a GitHub account, we are going to create a fork of the reposit
 
 1. Then type in your password and click **Sign in**
 
-    You will then see a page asking if you're trying to sign in to Power Platform CLI - pac. 
+    You will then see a page asking if you're trying to sign in to Power Platform CLI - pac.
 
     ![Screenshot of the Are you trying to sign in to Power Platform CLI - pac? page](assets/sign-into-pac-cli.png)
 
