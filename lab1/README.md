@@ -220,14 +220,16 @@ Now, let's rename the environment to something that makes sense to us.
 
     ![](./assets/environment-edit-save.png)
 
+    This will trigger a name change, and will lead you to the following screen.
+
+    ![](./assets/environment-edit-save-operation.png)
+
+1. Click on **Environments** to make get back to the overview of the environments.
+
 ### Create the `QA` environment via the Power Platform Admin Center (PPAC)
 
-1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
-1. Exit the Welcome / Tour pop up. You can do this by clicking on the **X** in the top right corner of the pop up screen
+We are going to create a QA environment through the Power Platform Admin Center.
 
-    ![Exit the Welcome / Tour pop up](assets/exit-welcome-tour.png)
-
-1. Click on **Environments** in the left navigation
 1. Click on **New** in the top navigation
 
     ![Environment + New for adding environments](assets/new-environment-button.png)
