@@ -90,13 +90,13 @@ Now that you have a GitHub account, we are going to create a fork of the reposit
 
     ![Screenshot of "Create fork" button in GitHub](assets/create-fork-button.png)
 
-    Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **your-username/EPPC23-ALM forked from microsoft/EPPC23-ALM**.
+    Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **your-username/MPPC23-Power-Apps forked from microsoft/MPPC23-Power-Apps**.
 
 ## Task 5: Create a codespace
 
 A codespace is a cloud-hosted development environment you can access from anywhere. It has everything you need, including a text editor, terminal, and debugger. Codespaces are powered by Visual Studio Code and run in a containerized environment. For this workshop, we are going to use codespaces to do our development.
 
-1. Make sure that you are in your forked repository (_your-username/EPPC23-ALM_) and then find and click on the **<> Code** button
+1. Make sure that you are in your forked repository (_your-username/MPPC23-Power-Apps_) and then find and click on the **<> Code** button
 
     ![TODO: Add image of code button](assets/repo-code-button.png)
 
