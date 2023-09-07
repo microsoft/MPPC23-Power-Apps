@@ -94,6 +94,17 @@ Now that you have a GitHub account, we are going to create a fork of the reposit
 
 ## Task 5: Create a codespace
 
+A codespace is a cloud-hosted development environment you can access from anywhere. It has everything you need, including a text editor, terminal, and debugger. Codespaces are powered by Visual Studio Code and run in a containerized environment. For this workshop, we are going to use codespaces to do our development.
+
+1. Make sure that you are in your forked repository (_your-username/EPPC23-ALM_) and then find and click on the **<> Code** button
+
+    ![TODO: Add image of code button](assets/repo-code-button.png)
+
+2. On the **Code** pop up, select the **Codespaces** tab
+3. Click **Create codespace on main**
+
+    A codespace will now be created for you in a new tab. This will take a few seconds. But once it's done, you will have a fully functional Visual Studio Code environment in your browser. You can now start developing!
+
 ## Task 6: Connect to the Power Platform using the Power Platform Command-Line Interface (CLI)
 
 1. In your codespace, click on the **Power Platform** icon in the left navigation
