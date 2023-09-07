@@ -271,9 +271,9 @@ pac admin create --name "Prod" --type "Developer"
 > [!NOTE]
 > We don't use `purpose` here, because the Power Platform CLI doesn't have a parameter for this. Also, we are using the defaults for `region` and `currency`, so we don't have to add those to the command.
 
-1. Once you have created all three environments, you should see them in the list of environments. Click the **Refresh** button on the top navigation if you don't see them yet.
+Once you have created all three environments, you should see them in the list of environments. Click the **Refresh** button on the top navigation if you don't see them yet.
 
-    ![List of developer environments](assets/list-of-environments.png)
+![List of developer environments](assets/list-of-environments.png)
 
 ## Task 8: Switch between environments with the Power Platform CLI
 
