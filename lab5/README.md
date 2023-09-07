@@ -3,6 +3,9 @@
 > [!IMPORTANT]
 > This workshop is still work in progress for the time being.
 
+> [!IMPORTANT]
+> This lab is optional. Only do this one when you are finished with lab 1 - lab 4.
+
 ## 📝 Lab 5 - Tasks
 
 In this lab, you will go though the following tasks:
