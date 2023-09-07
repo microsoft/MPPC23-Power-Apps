@@ -315,8 +315,49 @@ Once you have created all three environments, you should see them in the list of
 
 A recent addition to the Power Platform CLI is the ability to list and update Dataverse settings. This means that you can change the settings that are normally only available through the UI. In this task, you will learn how to change the settings.
 
-TODO: pac org list-settings
-TODO: pac org update-settings
+### List Dataverse settings
+
+1. Run the following command and then press **Enter**:
+
+    ```bash
+    pac org list-settings
+    ```
+
+    This command will return all the settings in the org we are connected to now (the `Dev`` environment). As you can see, this is a very large list. You can filter them though.
+
+1. Add the `--filter` parameter and filter for all settings that contain `audit` with the following command:
+
+    ```bash
+    pac org list-settings --filter audit
+    ```
+
+    This command will return all the settings that contain `audit` in the org we are connected to now (the `Dev` environment). As you can see, this is a way smaller list than what we saw before.
+
+    ![Screenshot of pac org list-settings --filter audit which shows 6 results](./assets/list-settings-filter-audit.png)
+
+### Update Dataverse settings
+
+Let's try out how updating a setting works. In the list of audit settings we just saw, there is a `isauditenabled` setting which is set to **No**.
+
+![Screenshot of pac org list-settings --filter audit which shows 6 results - a red rectangle is placed on the is audit enabled setting. The value is set to no.](./assets/list-settings-filter-audit-enabled.png)
+
+1. Run the following command and then select **Enter**:
+
+    ```bash
+    pac org update-settings --name isauditenabled --value true
+    ```
+
+    This command will set the `isauditenabled` setting to true. Note that the list command showed `No` as the output, but for updating you need to use true or false.
+
+1. Run the following command again to verify if the setting is applied and select **Enter**:
+
+    ```bash
+    pac org list-settings --filter audit
+    ```
+
+    This command will return all the settings that contain `audit` in the org we are connected to now (the `Dev` environment). As you can see, the `isauditenabled` setting is now set to `No`.
+
+    ![Screenshot of pac org list-settings --filter audit which shows 6 results - a red rectangle is placed on the is audit enabled setting. The value is set to yes.](./assets/list-settings-filter-audit-enabled-yes.png)
 
 ## Next lab
 
