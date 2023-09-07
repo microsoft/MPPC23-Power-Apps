@@ -203,7 +203,22 @@ Currently, if you want to get all that the Power Platform offers, it's required 
 
     ![The maker portal, with at the top-center the alert that this is a developer environment and not meant for production use. At to top-right, you will see the name of your developer environment that just got created](./assets/dev-plan-4.png)
 
-TODO: Rename `{User}'s Environment` to `Dev`
+Now, let's rename the environment to something that makes sense to us.
+
+1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
+1. Exit the Welcome / Tour pop up. You can do this by clicking on the **X** in the top right corner of the pop up screen
+
+    ![Exit the Welcome / Tour pop up](assets/exit-welcome-tour.png)
+
+1. Click on **Environments** in the left navigation
+1. Select `{User}'s Environment` by clicking on the name
+1. In the details card, select **edit**
+
+    ![](./assets/environment-edit.png)
+
+1. In the side panel, make sure to change the **Name** to `Dev` and select the **Save** button.
+
+    ![](./assets/environment-edit-save.png)
 
 ### Create the `QA` environment via the Power Platform Admin Center (PPAC)
 
