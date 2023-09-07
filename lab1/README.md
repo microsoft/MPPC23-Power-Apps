@@ -347,7 +347,10 @@ Let's try out how updating a setting works. In the list of audit settings we jus
     pac org update-settings --name isauditenabled --value true
     ```
 
-    This command will set the `isauditenabled` setting to true. Note that the list command showed `No` as the output, but for updating you need to use true or false.
+    This command will set the `isauditenabled` setting to true.
+
+    > !NOTE
+    > Note that the list command showed `No` as the output, but for updating you need to use true or false.
 
 1. Run the following command again to verify if the setting is applied and select **Enter**:
 
