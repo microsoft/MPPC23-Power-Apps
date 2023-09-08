@@ -54,17 +54,18 @@ If you don't see the app like the above screenshot, there could be multiple issu
 
 > [!IMPORTANT]
 >
-> - The data import could still be pending
+> **The data import could still be pending**
 >
 >     This should be fixed easily, you can refresh the data by selecting the **bin icon** in the left navigation bar, select the **ellipsis** (...) and select **Refresh**. This will refresh the data. It might take a couple minutes, so make sure to try it every 30 seconds.
 >
->    ![Screenshot of refreshing a Dataverse table.](./assets/fix-data-import.png)
+
+![Screenshot of refreshing a Dataverse table.](./assets/fix-data-import.png)
 
 > [!IMPORTANT]
 >
-> - The left gallery (RecordsGallery1) could be showing the wrong fields
+> **The left gallery (RecordsGallery1) could be showing the wrong fields**
 >
->      This can be easily fixed. Select the left gallery on the screen and then select `RecordsGallery1` in the tree view on the left.
+> This can be easily fixed. Select the left gallery on the screen and then select `RecordsGallery1` in the tree view on the left.
 
 11. To the left of the screen, select the **Data** icon from the navigation bar. Notice that a **Dataverse** table, based on the **RealEstateProperties.xlsx** Excel file, has been created.
 
