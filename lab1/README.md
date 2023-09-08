@@ -323,7 +323,7 @@ A recent addition to the Power Platform CLI is the ability to list and update Da
     pac org list-settings
     ```
 
-    This command will return all the settings in the org we are connected to now (the `Dev`` environment). As you can see, this is a very large list. You can filter them though.
+    This command will return all the settings in the org we are connected to now (the `Dev` environment). As you can see, this is a very large list. You can filter them though.
 
 1. Add the `--filter` parameter and filter for all settings that contain `audit` with the following command:
 
