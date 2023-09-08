@@ -58,7 +58,7 @@ In this task, you’ll create a mobile application with data from an Excel table
   >
   >     This should be fixed easily, you can refresh the data by selecting the **bin icon** in the left navigation bar, select the **ellipsis** (...) and select **Refresh**. This will refresh the data. It might take a couple minutes, so make sure to try it every 30 seconds.
   >
-  >       ![](./assets/fix-data-import.png)
+  > ![Screenshot of refreshing a Dataverse table.](./assets/fix-data-import.png)
   >
   > - The left gallery (RecordsGallery1) could be showing the wrong fields
   >
