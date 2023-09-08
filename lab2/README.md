@@ -269,7 +269,9 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. If you have a property/address column, which has data relating to the physical address of the property, then delete it using the Copilot chat window with this command:
 
+    ```text
     remove the property column
+    ```
 
     ![Screenshot of part of the Copilot chat, where a command "Remove the property column" has been given.](./assets/copilot-remove-property-column.png)
 
