@@ -401,7 +401,7 @@ Follow these steps to create a flow using Copilot.
 
     Alternatively, you can select **Create > Describe it to design it (preview)**.
 
-    ![](./assets/image057.png)
+    ![](./assets/power-automate-copilot.png)
 
     To learn how to write a good prompt, go to [How to write a good prompt](https://learn.microsoft.com/power-automate/get-started-with-copilot#how-to-write-a-good-prompt) in this article.
 
@@ -417,7 +417,7 @@ Follow these steps to create a flow using Copilot.
 
     The AI-powered Copilot in Power Automate designer opens with your flow.
 
-    ![](./assets/image058.png)
+    ![](./assets/power-automate-copilot-conversation.png)
 
 1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
 
