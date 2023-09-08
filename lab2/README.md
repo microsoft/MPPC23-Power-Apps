@@ -56,7 +56,7 @@ If you don't see the app like the above screenshot, there could be multiple issu
 >
 > **The data import could still be pending**
 >
->     This should be fixed easily, you can refresh the data by selecting the **bin icon** in the left navigation bar, select the **ellipsis** (...) and select **Refresh**. This will refresh the data. It might take a couple minutes, so make sure to try it every 30 seconds.
+> This should be fixed easily, you can refresh the data by selecting the **bin icon** in the left navigation bar, select the **ellipsis** (...) and select **Refresh**. This will refresh the data. It might take a couple minutes, so make sure to try it every 30 seconds.
 >
 
 ![Screenshot of refreshing a Dataverse table.](./assets/fix-data-import.png)
