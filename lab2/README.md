@@ -237,7 +237,7 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. Notice that to the right of the screen, it appears to look as if you're having a conversation with a Copilot AI bot while adding to and modifying your table. Here's where you can scroll through and view the changes or additions you have made to your table.
 
-    ![](./assets/copilot-conversation.png)
+    ![Screenshot of the conversation with Copilot](./assets/copilot-conversation.png)
 
 1. Now, let’s edit the **Status** column within the table. In the text box within the **Copilot** pane, type and send:
 
@@ -247,11 +247,11 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. It may take a minute to load. Once it does, you should see something like this:
 
-    ![](./assets/copilot-status-add-option.png)
+    ![Screenshot of the wizard with Copilot where you can see some data that has been created with Copilot, as well as the Copilot chat on the side.](./assets/copilot-status-add-option.png)
 
 1. Select the **Status** column name **drop down**, and select **View column**. Here, you can view the columns’ properties and the current status details and data.
 
-    ![](./assets/copilot-status-options.png)
+    ![Screenshot of the view of column properties & choices of the status column.](./assets/copilot-status-options.png)
 
 1. Select the **X** in the top right corner of the pane to close out.
 
@@ -265,13 +265,13 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. Notice that five more rows of data are added for each of the existing columns within the table.
 
-    ![](./assets/copilot-add-5-rows.png)
+    ![Screenshot with all the data + the Copilot at the side. 5 extra rows have been added because of the previous command.](./assets/copilot-add-5-rows.png)
 
 1. If you have a property/address column, which has data relating to the physical address of the property, then delete it using the Copilot chat window with this command:
 
     remove the property column
 
-    ![](./assets/copilot-remove-property-column.png)
+    ![Screenshot of part of the Copilot chat, where a command "Remove the property column" has been given.](./assets/copilot-remove-property-column.png)
 
 1. Then click **Send**.
 
@@ -282,17 +282,17 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. In the bottom right corner of the screen, select the **Create app** button.
 
-    ![](./assets/copilot-create-app.png)
+    ![Screenshot where part of the data is visible and part of the Copilot chat. Also, a purple button Create App is visible.](./assets/copilot-create-app.png)
 
 1. When the app first loads, a dialog may appear saying: Welcome to Power Apps Studio. If so, select the Skip button.
 
 1. You should now be viewing the app that has been built for you in Edit mode.
 
-    ![](./assets/copilot-app-created.png)
+    ![Screenshot of Power Apps studio with the app that has been created in edit mode.](./assets/copilot-app-created.png)
 
 1. To the left of the screen, select the Data icon from the navigation bar. Notice that a Dataverse table has been created by the Copilot and is now in the Environments section.
 
-    ![](./assets/data-real-estate-showings.png)
+    ![Screenshot of Power Apps studio where the data tab is open and the Dataverse Real Estate Showings (which we created in previous steps) is listed in there.](./assets/data-real-estate-showings.png)
 
     > **Note:**
     > Copilot is currently only supported for Dataverse. You cannot use any other data access point at this time.
@@ -303,17 +303,17 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. From the menu, select **Edit data**.
 
-    ![](./assets/data-edit-data.png)
+    ![Screenshot of Power Apps studio where the data tab is open, and a pop up is visible where the maker can select edit data, refresh or remove.](./assets/data-edit-data.png)
 
 1. The Edit Table dialog appears. Here's where you can come and add your own columns to the table, or modify existing columns.
 
-    ![](./assets/data-edit-table.png)
+    ![Screenshot of the edit table view where you can work with the data.](./assets/data-edit-table.png)
 
 1. Select the **ID** column header from the table.
 
 1. From the drop-down, select the **Edit column** option.
 
-    ![](./assets/data-edit-id-column.png)
+    ![Screenshot of the data in the table, the ID column is selected and the edit column action is highlighted in the pop up that shows up when you open the header of the ID column.](./assets/data-edit-id-column.png)
 
     In this example, we don't want the *Data Type* of the column to be a *Single line of text*. Let's change that.
 
@@ -321,11 +321,11 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. Select **Save**.
 
-    ![](./assets/data-edit-id-autonumber.png)
+    ![Screenshot of the edit column pane where data type is highlighted with the value # Autonumber.](./assets/data-edit-id-autonumber.png)
 
 1. Let’s go ahead and add a new column. Click **New column**
 
-    ![](./assets/data-edit-new-column.png)
+    ![Screenshot of the edit table experience where + New Column is highlighted.](./assets/data-edit-new-column.png)
 
 1. On the **New column** pop up, enter **Property** as the *Display name*, **Lookup > Lookup** for *Data type*, and **Business required** for *Required*. For *Related* table; select the **Real Estate Property** table that we created in the previous module. Then click **Save**.
 
