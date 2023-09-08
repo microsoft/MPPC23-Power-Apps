@@ -329,31 +329,39 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. On the **New column** pop up, enter **Property** as the *Display name*, **Lookup > Lookup** for *Data type*, and **Business required** for *Required*. For *Related* table; select the **Real Estate Property** table that we created in the previous module. Then click **Save**.
 
-    ![](./assets/data-edit-new-column-property.png)
+    ![Screenshot of a new column panel, where display name, data type, required and related table are highlighted.](./assets/data-edit-new-column-property.png)
 
     You’ll now see a **Property** column in the **Real Estate Showings** table, albeit empty:
 
-    ![](./assets/data-property-lookup.png)
+    ![Screenshot where all properties are empty.](./assets/data-property-lookup.png)
 
 1. Let’s add the appropriate data. In the first record’s empty **Property** cell, double-click the empty space. A list of property addresses from the **Real Estate Property** table will appear.
 
-    ![](./assets/data-property-dropdown.png)
+    ![Screenshot where a dropdown of all properties is visible.](./assets/data-property-dropdown.png)
+
+1. Select one of the addresses to associate it with the selected **Real Estate Showing**.
+
+    ![Screenshot where only the first property is filled in.](./assets/data-property-first-filled.png)
+
+1. Do the same for all the other records. It doesn’t matter if one property address shows up in multiple records. This is the nature of a many-to-one relationship. In this case, one property can have many showings attached to it.
+
+    ![Screenshot where all the properties are filled in.](./assets/data-property-all-filled.png)
 
 1. Select the **Close** button in the bottom right corner of the **Edit table** dialog.
 
 1. Notice that the table now says **Refreshed** within the Data pane.
 
-    ![](./assets/data-refresh-data.png)
+    ![Screenshot of Power Apps studio where the data tab is open, and it says refreshed behind the Real Estate Showings Dataverse table.](./assets/data-refresh-data.png)
 
 1. Now, let's make and add a new request to the table within the app.
 
 1. From the top of the screen, select the **Play** button.
 
-    ![](./assets/play-app.png)
+    ![Screenshot of Power Apps Studio where the play icon is highlighted.](./assets/play-app.png)
 
 1. Within the pane to the left of the app, select the **+New** button.
 
-    ![](./assets/real-estate-showings.png)
+    ![Screenshot of the created app in play mode.](./assets/real-estate-showings.png)
 
 1. Although you could modify the form to autofill the fields for you, we're going to do so ourselves to show that the app works.
 
@@ -381,7 +389,7 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 1. From the top of your screen, select the Save button to save the new app you have created.
 
-    ![](./assets/save-app.png)
+    ![Screenshot of Power Apps Studio where the save icon is highlighted.](./assets/save-app.png)
 
 Congratulations! You have now created a Power Apps Canvas App with Copilot!
 
@@ -401,7 +409,7 @@ Follow these steps to create a flow using Copilot.
 
     Alternatively, you can select **Create > Describe it to design it (preview)**.
 
-    ![](./assets/power-automate-copilot.png)
+    ![Screenshot of the entry screen of Power Automate Copilot with a prompt already filled in. "When someone sends me an email mentioning me, send me a Teams message." is highlighted.](./assets/power-automate-copilot.png)
 
     To learn how to write a good prompt, go to [How to write a good prompt](https://learn.microsoft.com/power-automate/get-started-with-copilot#how-to-write-a-good-prompt) in this article.
 
@@ -417,7 +425,7 @@ Follow these steps to create a flow using Copilot.
 
     The AI-powered Copilot in Power Automate designer opens with your flow.
 
-    ![](./assets/power-automate-copilot-conversation.png)
+    ![Screenshot of a Power Automate Copilot conversation.](./assets/power-automate-copilot-conversation.png)
 
 1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
 
