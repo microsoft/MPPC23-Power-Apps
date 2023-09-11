@@ -397,7 +397,27 @@ Congratulations! You have now created a Power Apps Canvas App with Copilot!
 ## ☑️ Task 3: Create a solution
 
 TODO: Create a solution called "MPPC23".
-TODO: Create another solution called "MPPC23 - Custom Connector"
+
+1. Go to [make.powerapps.com](https://make.powerapps.com/) and Sign In with your Power Apps credentials.
+
+1. From the Power Apps home screen, select Solutions in the left navigation.
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions.png)
+
+1. Select **+ New solution** at the top of the screen.
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-New-Solution.png)
+
+1. Add the solution name `MPPC 23` and select **+ New publisher**
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-New-Publisher.png)
+
+1. Add the `Display name`, `Name` and `Prefix`. Select **Save** when you're done.
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-New-Publisher-Details.png)
+
+1. 
+
 
 ## ☑️ Task 4: Add the resources created by Power Apps Copilot to a solution
 
