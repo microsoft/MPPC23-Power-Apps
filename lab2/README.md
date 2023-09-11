@@ -426,9 +426,33 @@ In this task, you will create a solution for the components we just created via 
 
 This concludes task 3, you have created the `MPPC 23` solution.
 
+![Screenshot of the Solutions section on the homepage](./assets/Solutions-New-Solution-Finished.png)
+
 ## ☑️ Task 4: Add the resources created by Power Apps Copilot to a solution
 
-TODO: Add the resources to the "MPPC23" solution.
+In this task, you will add the components we just created via Copilot to the `MPPC 23` solution!
+
+1. Select **Add existing > App > Canvas app**
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-Add-Existing-Canvas-Apps.png)
+
+1. In the next screen select **All apps** by selecting the checkbox at arrow 1 and select the **Add** button at the bottom.
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-Add-Existing-Canvas-Apps-Selection.png)
+
+    This will add the canvas apps to the solution we just created. Next, we will add the Dataverse tables to the same solution.
+
+1. Select **Add existing > Table**
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-Add-Existing-Tables.png)
+
+1. Search for `real` at the top right, this will filter the tables to only those that contain `Real` and will show only our tables, select the checkbox so that all tables are selected and select the **Next** button at the bottom.
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-Add-Tables-Selection.png)
+
+1. Select **Include all objects** at both tables and select the add button at the bottom.
+
+    ![Screenshot of the Solutions section on the homepage](./assets/Solutions-Add-Tables-Selection-Objects.png)
 
 ## Next lab
 
