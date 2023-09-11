@@ -9,7 +9,6 @@ In this lab, you will go though the following tasks:
 
 - Creating A Canvas App With Data From An Excel-File
 - Creating A Canvas App With Power Apps Copilot
-- Creating A Reminder Workflow With Power Automate Copilot
 - Creating A Solution
 - Add The Resources Created By Power Apps Copilot To A Solution
 
@@ -395,52 +394,12 @@ Before you begin, watch this video for a brief overview of what to expect when c
 
 Congratulations! You have now created a Power Apps Canvas App with Copilot!
 
-## ☑️ Task 3: Creating a reminder workflow with Power Automate Copilot
-
-In this task, you’ll create an automation with Power Automate Copilot to send appointment reminders.
-
-Before you begin, watch this video for a brief overview of what to expect when creating your first automation with Power Automate Copilot.
-
-Follow these steps to create a flow using Copilot.
-
-1. Sign in to [Power Automate](https://make.powerautomate.com/).
-
-1. Start describing your automation scenario.
-
-    As you're typing, Copilot shows you a list of AI generated suggested flow descriptions.
-
-    Alternatively, you can select **Create > Describe it to design it (preview)**.
-
-    ![Screenshot of the entry screen of Power Automate Copilot with a prompt already filled in. "When someone sends me an email mentioning me, send me a Teams message." is highlighted.](./assets/power-automate-copilot.png)
-
-    To learn how to write a good prompt, go to [How to write a good prompt](https://learn.microsoft.com/power-automate/get-started-with-copilot#how-to-write-a-good-prompt) in this article.
-
-1. Select a suggestion or use the scenario you created in step 1.
-
-1. To accept the flow that Copilot created for you, select **Next**.
-
-    If you want to see different suggestions, you can update your prompt in this step. Alternatively, if you want to see other options, select **This isn't what I'm looking for**.
-
-1. Review your connected apps and services, and then select **Next**.
-
-1. To finalize your flow, configure the required settings, and then select **Create flow**.
-
-    The AI-powered Copilot in Power Automate designer opens with your flow.
-
-    ![Screenshot of a Power Automate Copilot conversation.](./assets/power-automate-copilot-conversation.png)
-
-1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
-
-1. When your flow is complete, select **Save this flow**.
-
-1. Once your flow is saved, we recommend that you test it. Do this by selecting **Test** in the upper-right corner.
-
-## ☑️ Task 4: Create a solution
+## ☑️ Task 3: Create a solution
 
 TODO: Create a solution called "MPPC23".
 TODO: Create another solution called "MPPC23 - Custom Connector"
 
-## ☑️ Task 5: Add the resources created by Power Apps Copilot to a solution
+## ☑️ Task 4: Add the resources created by Power Apps Copilot to a solution
 
 TODO: Add the resources to the "MPPC23" solution.
 
