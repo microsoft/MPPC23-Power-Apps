@@ -21,6 +21,11 @@ In this task, you will learn how to install the pipelines for Power Platform sol
 >
 > This is a best practice because you will avoid people accidentally using dependencies on the pipelines tables, or having issues with sharing pipelines and giving people the right security roles. Take a look at the [FAQ on Microsoft Learn](https://learn.microsoft.com/power-platform/alm/pipelines#frequently-asked-questions) to learn more best practices.
 
+
+There are two ways to install the pipelines solution:
+
+### Via Power Platform Admin Center
+
 1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
 
     ![](./assets/admin-center.png)
@@ -46,6 +51,38 @@ In this task, you will learn how to install the pipelines for Power Platform sol
 This process will take a couple of minutes, you can refresh the page by selecting the `Refresh` button in the command bar at the top.
 
 When finished, you can go to the [maker portal](https://make.powerapps.com) and select the right environment (`Prod`). If all went well, you should be able to see the `Deployment Pipeline Configuration` app in the Apps section in the maker portal.
+
+### Via Power Platform CLI
+
+1. Open up your Codespace.
+
+1. Open a new terminal by selecting the **Hamburger Menu > Terminal > New Terminal**
+
+    ![](./assets/Pipelines-Install-New-Terminal.png)
+
+1. Open the Power Platform Tools VS Code Extension by selecting the Power Platform DevTools icon on the left, make sure you see the `Prod` environment in the Environments & Solutions panel and select the empty star behind it to select the right environment.
+
+    ![](./assets/Pipelines-Install-Ensure-Prod.png)
+
+1. Enter the following command:
+
+    ```bash
+    pac application list
+    ```
+
+    This command will return all the applications that you can install with the `pac application install` command.
+
+    Zoomed in and highlighted is the unique name of the `Power Platform Pipelines` application: `msdyn_AppDeploymentAnchor`.
+
+    ![Screenshot of pac application list](./assets/Pipelines-Install-Application-List.png)
+
+1. Now we can install the `Power Platform Pipelines` application by using the following command:
+
+    ```bash
+    pac application install --application-name msdyn_AppDeploymentAnchor
+    ```
+
+    This command will return all the applications that you can install with the `pac application install` command.
 
 ## Task 02: Setup your first pipeline
 
