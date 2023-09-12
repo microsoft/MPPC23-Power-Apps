@@ -224,45 +224,63 @@ In this task, you will deploy the solution we created in lab 2 to the QA and Pro
 
     ![](./assets/run-first-pipeline-summary-deploy.png)
 
+It will take a couple of minutes to deploy the solution to the QA environment. After it's done, the overview page for the pipelines should look like this:
+
+![](./assets/run-first-pipeline-deploy-to-QA-success.png)
+
+As you can see, the last deployed solution version and last deployed date time are visible here.
+
 ### Test if the solution was correctly deployed
 
-1. Of course, you want to see for yourself if the deployment was successful, so select the `Go to this environment` button in the `Deploy to QA` stage
+1. Of course, you want to see for yourself if the deployment was successful, so select the **Go to this environment** button in the `Deploy to QA` stage
 
-    ![](./assets/run-deploy-to-test-check-test.png)
+    ![](./assets/run-deploy-to-qa-check-qa.png)
 
-1. Select `Solutions` in the left navigation
+1. Select **Solutions** in the left navigation
 
-1. Check if the `Mixed Reality Workshop` solution with version 1.0.0.1 is installed in the `QA` environment
+1. Check if the `MPPC 23` solution with version 1.0.0.1 is installed in the `QA` environment
 
-    ![](./assets/run-deploy-to-test-check-test-solution.png)
+    ![](./assets/run-deploy-to-qa-check-qa-solution.png)
 
-1. Open the `Mixed Reality Workshop` by selecting the display name
+1. Open the `MPPC 23`solution by selecting the **display name**
 
-    ![](./assets/run-deploy-to-test-open-solution.png)
+    ![](./assets/run-deploy-to-qa-open-solution.png)
 
-1. Select the `Mixed Reality App` canvas app and select the `Play` button in the command bar at the top
+1. Select the **Real Estate Property** canvas app and select the **Play** button in the command bar at the top
 
-    ![](./assets/run-deploy-to-test-open-app.png)
+    ![](./assets/run-deploy-to-qa-open-real-estate-property.png)
 
-1. When the app is opened, you will have to allow the connections to connect to both OneDrive for Business as well as the Smithsonian 3D connector. Make sure to select the purple `Allow` button
+1. This will open the app in a new tab
 
-    ![](./assets/run-deploy-to-test-allow-connections.png)
+    ![](./assets/run-deploy-to-qa-open-real-estate-property-opened.png)
 
-1. In the app, you will find three buttons:
+    It will look like your app is broken, since it will have the message `Getting your data`, but it's working fine! The problem is that there is no data in this environment, because we just deployed the solution here. Let's fix that!
 
-    `Corals and Coral Reefs`, `Smithsonian 3D Search`, and `Tutorial Screen`.
+1. Select the **+ New** button on the left side of the screen
 
-    Select the `Corals and Coral Reefs` button
+1. Fill in the following fields with the information below:
 
-    ![](./assets/run-deploy-to-test-select-corals.png)
+1. ID: `101`
 
-1. Next, select the first coral to check if the coral 3D object works
+1. Image: `https://raw.githubusercontent.com/microsoft/PowerPlatformAdvocates/main/MSLearn/AIModule/Images/property1.jpg`
 
-    ![](./assets/run-deploy-to-test-select-coral.png)
+1. Owner: `Emily Johnson`
 
-1. The next screen should show a 3D object of the coral you just selected
+1. OwnerEmail: `emily.johnson@example.com`
 
-    ![](./assets/run-deploy-to-test-coral-detail.png)
+1. Size: `1800`
+
+1. Address: `432 Elm Street, Riverside, CA 92501`
+
+1. Price: `350000`
+
+1. Select the **check** to save the new record
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-save-record.png)
+
+1. Select the **Real Estate Showings** canvas app and select the **Play** button in the command bar at the top
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings.png)
 
 Now you know the app works in QA, let's deploy it to production.
 
