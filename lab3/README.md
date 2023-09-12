@@ -8,7 +8,7 @@
 In this lab, you will go though the following tasks:
 
 - Create your first pipeline
-- Run the deployment to the Test environment
+- Run the deployment to the QA environment
 - Deploy to the Prod environment
 
 ## Task 1: Create your first pipeline
