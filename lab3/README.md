@@ -257,19 +257,19 @@ As you can see, the last deployed solution version and last deployed date time a
 
 1. Fill in the following fields with the information below:
 
-1. ID: `101`
+    - ID: `101`
 
-1. Image: `https://raw.githubusercontent.com/microsoft/PowerPlatformAdvocates/main/MSLearn/AIModule/Images/property1.jpg`
+    - Image: `https://raw.githubusercontent.com/microsoft/PowerPlatformAdvocates/main/MSLearn/AIModule/Images/property1.jpg`
 
-1. Owner: `Emily Johnson`
+    - Owner: `Emily Johnson`
 
-1. OwnerEmail: `emily.johnson@example.com`
+    - OwnerEmail: `emily.johnson@example.com`
 
-1. Size: `1800`
+    - Size: `1800`
 
-1. Address: `432 Elm Street, Riverside, CA 92501`
+    - Address: `432 Elm Street, Riverside, CA 92501`
 
-1. Price: `350000`
+    - Price: `350000`
 
 1. Select the **check** to save the new row
 
@@ -293,19 +293,19 @@ As you can see, the last deployed solution version and last deployed date time a
 
 1. Fill in the following fields with the information below:
 
-1. Agent: `James Bond`
+    - Agent: `James Bond`
 
-1. Client Email: `austin@example.com`
+    - Client Email: `austin@example.com`
 
-1. Client Name: `Austin Powers`
+    - Client Name: `Austin Powers`
 
-1. Showing Date: `<Pick the date of today - don't change the time>`
+    - Showing Date: `<Pick the date of today - don't change the time>`
 
-1. Showing Time: `<Pick the date of today - change the time to 10:00>`
+    - Showing Time: `<Pick the date of today - change the time to 10:00>`
 
-1. Status: `Pending`
+    - Status: `Pending`
 
-1. Property: `432 Elm Street, Riverside, CA 92501`
+    - Property: `432 Elm Street, Riverside, CA 92501`
 
 1. Select the **check** to save the new row
 
