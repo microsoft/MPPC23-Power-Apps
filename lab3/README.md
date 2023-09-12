@@ -7,84 +7,15 @@
 
 In this lab, you will go though the following tasks:
 
-- Setup Pipelines in the Prod environment
-- Create the first pipeline (Dev - QA - Prod)
-- Create your first deployment (of the `MPPC 23` solution)
+- Create your first pipeline (Dev - QA - Prod)
+- Run the first deployment to the Test environment
+- Install the Creator Kit solution in QA environment
+- Install the Creator Kit solution in Prod environment
+- Retry the deployment to the QA environment
+- Deploy to the Prod environment
 - Use AI generated descriptions
 
-## Task 1: Deploy the pipelines solution to your Prod environment
-
-In this task, you will learn how to install the pipelines for Power Platform solution in your `Prod` environment. This solution is needed to configure pipelines.
-
-> **NOTE:**  
-> Normally, it's a best practice to install the pipelines solution on a separate "Pipelines Host" environment. In this lab, you will install it in the `Prod` environment because a you can have three **free** developer environments, so you don't have space for another `Pipelines Host` environment next to `Dev`, `QA`, and `Prod` environments.
->
-> This is a best practice because you will avoid people accidentally using dependencies on the pipelines tables, or having issues with sharing pipelines and giving people the right security roles. Take a look at the [FAQ on Microsoft Learn](https://learn.microsoft.com/power-platform/alm/pipelines#frequently-asked-questions) to learn more best practices.
-
-
-There are two ways to install the pipelines solution:
-
-### Via Power Platform Admin Center
-
-1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
-
-    ![](./assets/admin-center.png)
-
-1. Select the `Prod` environment you created before
-
-1. In the command bar at the top, select `Resources` and `Dynamics 365 apps`
-
-    ![](./assets/prod-env-dynamics-365-apps.png)
-
-1. Here you can find the apps that are installed on your `Prod` environment by default. Select the `Install App` button in the command bar at the top
-
-    ![](./assets/prod-env-install-app.png)
-
-1. In the sidebar that opens, scroll all the way down select the `Power Platform Pipelines` app and select the `Next` button at the bottom of the sidebar
-
-    ![](./assets/prod-env-select-app.png)
-
-1. Next, make sure to agree to the terms and select the `Install` button at the bottom of the sidebar
-
-    ![](./assets/prod-env-agree-terms.png)
-
-This process will take a couple of minutes, you can refresh the page by selecting the `Refresh` button in the command bar at the top.
-
-When finished, you can go to the [maker portal](https://make.powerapps.com) and select the right environment (`Prod`). If all went well, you should be able to see the `Deployment Pipeline Configuration` app in the Apps section in the maker portal.
-
-### Via Power Platform CLI
-
-1. Open up your Codespace.
-
-1. Open a new terminal by selecting the **Hamburger Menu > Terminal > New Terminal**
-
-    ![](./assets/Pipelines-Install-New-Terminal.png)
-
-1. Open the Power Platform Tools VS Code Extension by selecting the Power Platform DevTools icon on the left, make sure you see the `Prod` environment in the Environments & Solutions panel and select the empty star behind it to select the right environment.
-
-    ![](./assets/Pipelines-Install-Ensure-Prod.png)
-
-1. Enter the following command:
-
-    ```bash
-    pac application list
-    ```
-
-    This command will return all the applications that you can install with the `pac application install` command.
-
-    Zoomed in and highlighted is the unique name of the `Power Platform Pipelines` application: `msdyn_AppDeploymentAnchor`.
-
-    ![Screenshot of pac application list](./assets/Pipelines-Install-Application-List.png)
-
-1. Now we can install the `Power Platform Pipelines` application by using the following command:
-
-    ```bash
-    pac application install --application-name msdyn_AppDeploymentAnchor
-    ```
-
-    This command will return all the applications that you can install with the `pac application install` command.
-
-## Task 02: Setup your first pipeline
+## Task 1: Create your first pipeline
 
 In this task, you will create your first pipeline. The `Deployment Pipeline Configuration` app will be used for that.
 
@@ -255,7 +186,7 @@ Make sure to select the `New Deployment Stage` button again to add a second depl
 
 1. Select `Save and Close` again to save the deployment stage as well
 
-## Task 03: Run the first deployment to the Test environment
+## Task 2: Run the first deployment to the Test environment
 
 In this task, you will deploy the solution we imported in lab 02 to the test and production environments. Let's start by our first deployment to test:
 
@@ -324,7 +255,7 @@ In this lab, you have installed the pipelines for Power Platform solution and yo
 
 You will have to install the Creator Kit in both the test and prod environments.
 
-## Task 04: Install the Creator Kit solution in QA environment
+## Task 3: Install the Creator Kit solution in QA environment
 
 The `Creator Kit` app is now only available in the `Dev` environment, so let's add the app also to the `QA` environment.
 
@@ -354,7 +285,7 @@ The `Creator Kit` app is now only available in the `Dev` environment, so let's a
 
 Next, you have to install the `Creator Kit` app in the `Prod` environment.
 
-## Task 05: Install the Creator Kit solution in Prod environment
+## Task 4: Install the Creator Kit solution in Prod environment
 
 The `Creator Kit` app is now only available in the `Dev` and `QA` environments, so let's add the app also to the `Prod` environment to avoid missing dependencies there.
 
@@ -384,7 +315,7 @@ The `Creator Kit` app is now only available in the `Dev` and `QA` environments, 
 
 Now that you have triggered the install of the `Creator Kit` in both the `QA` and `Prod` environments, you can move on to task 06, retrying the deployment to the `QA` environment.
 
-## Task 06: Retry the deployment to the QA environment
+## Task 5: Retry the deployment to the QA environment
 
 To make sure your deployment goes well, lets check if the Creator Kit solution has been properly installed in the `QA` environment.
 
@@ -394,11 +325,11 @@ To make sure your deployment goes well, lets check if the Creator Kit solution h
 
 1. Check if you are in the `QA` environment and if not, switch to that environment
 
-        ![](./assets/check-environment-test.png)
+    ![](./assets/check-environment-test.png)
 
 1. Select `Solutions` in the left navigation and check if the `Creator Kit (Name: CreatorKitCore)` solution is installed
 
-        ![](./assets/check-install-creator-kit-test.png)
+    ![](./assets/check-install-creator-kit-test.png)
 
 1. If that's the case, you are ready for deployment. If not, you probably have to wait a little bit until the Creator Kit is installed
 
@@ -412,15 +343,15 @@ For the deployment to QA, you have to switch to your `Dev` environment. Make sur
 
 1. Select the `Mixed Reality Workshop` solution by selecting the display name
 
-        ![](./assets/run-first-pipeline-dev.png)
+    ![](./assets/run-first-pipeline-dev.png)
 
 1. Select the rocket icon on the left
 
-        ![](./assets/run-first-pipeline-solution.png)
+    ![](./assets/run-first-pipeline-solution.png)
 
 1. Select the purple `Deploy here` button.
 
-        ![](./assets/run-deploy-to-test-deploy-here.png)
+    ![](./assets/run-deploy-to-test-deploy-here.png)
 
 1. This will open a new sidebar which will give you the option to start your deployment now or plan your deployment for later. Select the purple `Next` button to go to the next screen
 
@@ -432,11 +363,11 @@ For the deployment to QA, you have to switch to your `Dev` environment. Make sur
 
 1. This will trigger the `Deploy to QA` stage
 
-        ![](./assets/run-deploy-to-test-in-progress.png)
+    ![](./assets/run-deploy-to-test-in-progress.png)
 
 1. When it's done, you will see that the deployment has been finished
 
-        ![](./assets/run-deploy-to-test-finished.png)
+    ![](./assets/run-deploy-to-test-finished.png)
 
 ### Test if the solution was correctly deployed
 
@@ -480,7 +411,7 @@ For the deployment to QA, you have to switch to your `Dev` environment. Make sur
 
 Now you know the app works in QA, let's deploy it to production.
 
-## Task 07: Deploy to the Prod environment
+## Task 6: Deploy to the Prod environment
 
 To make sure your deployment goes well, lets check if the Creator Kit solution has been properly installed in the `Prod` environment.
 
@@ -490,11 +421,11 @@ To make sure your deployment goes well, lets check if the Creator Kit solution h
 
 1. Check if you are in the `Prod` environment and if not, switch to that environment
 
-        ![](./assets/check-environment-prod.png)
+    ![](./assets/check-environment-prod.png)
 
 1. Select `Solutions` in the left navigation and check if the `Creator Kit (Name: CreatorKitCore)` solution is installed
 
-        ![](./assets/check-install-creator-kit-prod.png)
+    ![](./assets/check-install-creator-kit-prod.png)
 
 1. If that's the case, you are ready for deployment. If not, you probably have to wait a little bit until the Creator Kit is installed
 
@@ -508,71 +439,71 @@ For the deployment to prod, you have to switch to your `Dev` environment. Make s
 
 1. Select the `Mixed Reality Workshop` solution by selecting the display name
 
-        ![](./assets/run-first-pipeline-dev.png)
+    ![](./assets/run-first-pipeline-dev.png)
 
 1. Select the rocket icon on the left
 
-        ![](./assets/run-first-pipeline-solution.png)
+    ![](./assets/run-first-pipeline-solution.png)
 
-1. Select the purple `Deploy here` button. 
+1. Select the purple `Deploy here` button.
 
-        ![](./assets/run-deploy-to-prod-deploy-here.png)
+    ![](./assets/run-deploy-to-prod-deploy-here.png)
 
 1. This will open a new sidebar which will give you the option to start your deployment now or plan your deployment for later. Select the purple `Next` button to go to the next screen
 
-        ![](./assets/run-deploy-to-prod-select-target.png)
+    ![](./assets/run-deploy-to-prod-select-target.png)
 
 1. Fill in some deployment notes, like for instance: `First deployment of the Mixed Reality solution` and select the purple `Deploy` button
 
-        ![](./assets/run-deploy-to-prod-deployment-notes.png)
+    ![](./assets/run-deploy-to-prod-deployment-notes.png)
 
 1. This will trigger the `Deploy to prod` stage
 
-        ![](./assets/run-deploy-to-prod-in-progress.png)
+    ![](./assets/run-deploy-to-prod-in-progress.png)
 
 1. When it's done, you will see that the deployment has been finished
 
-        ![](./assets/run-deploy-to-prod-finished.png)
+    ![](./assets/run-deploy-to-prod-finished.png)
 
 ### Test if the solution was correctly deployed
 
 1. Of course, you want to see for yourself if the deployment was successful, so select the `Go to this environment` button in the `Deploy to prod` stage
 
-        ![](./assets/run-deploy-to-prod-check-prod.png)
+    ![](./assets/run-deploy-to-prod-check-prod.png)
 
 1. Select `Solutions` in the left navigation
 
 1. Check if the `Mixed Reality Workshop` solution with version 1.0.0.1 is installed in the `Prod` environment
 
-        ![](./assets/run-deploy-to-prod-check-prod-solution.png)
+    ![](./assets/run-deploy-to-prod-check-prod-solution.png)
 
 1. Open the `Mixed Reality Workshop` by selecting the display name
 
-        ![](./assets/run-deploy-to-prod-open-solution.png)
+    ![](./assets/run-deploy-to-prod-open-solution.png)
 
 1. Select the `Mixed Reality App` canvas app and select the `Play` button in the command bar at the top
 
-        ![](./assets/run-deploy-to-prod-open-app.png)
+    ![](./assets/run-deploy-to-prod-open-app.png)
 
 1. When the app is opened, you will have to allow the connections to connect to both OneDrive for Business as well as the Smithsonian 3D connector. Make sure to select the purple `Allow` button
 
-        ![](./assets/run-deploy-to-test-allow-connections.png)
+    ![](./assets/run-deploy-to-test-allow-connections.png)
 
 1. In the app, you will find two buttons:
 
-        `Corals and Coral Reefs` and `Smithsonian 3D Search`
+    `Corals and Coral Reefs` and `Smithsonian 3D Search`
 
-        Select the `Corals and Coral Reefs` button
+    Select the `Corals and Coral Reefs` button
 
-        ![](./assets/run-deploy-to-test-select-corals.png)
+    ![](./assets/run-deploy-to-test-select-corals.png)
 
 1. Next, select the first coral to check if the coral 3D object works
 
-        ![](./assets/run-deploy-to-test-select-coral.png)
+    ![](./assets/run-deploy-to-test-select-coral.png)
 
 1. The next screen should show a 3D object of the coral you just selected
 
-        ![](./assets/run-deploy-to-test-coral-detail.png)
+    ![](./assets/run-deploy-to-test-coral-detail.png)
 
 Now you know the app works in prod as well and you have successfully deployed the solution to the `QA` and `Prod` environments.
 

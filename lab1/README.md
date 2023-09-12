@@ -15,6 +15,7 @@ In this lab, you will go though the following tasks:
 - Connecting to the Power Platform using the Power Platform Command-Line Interface (CLI)
 - Creating developer environments
 - Switch between environments with the Power Platform CLI
+- Deploy the pipelines solution to your Prod environment
 - Enabling Dataverse settings
 
 ## Task 1: Create a new browser profile (Microsoft Edge)
@@ -311,7 +312,78 @@ Once you have created all three environments, you should see them in the list of
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
 
-## Task 9: Enable Dataverse settings
+## Task 9: Deploy the pipelines solution to your Prod environment
+
+In this task, you will learn how to install the pipelines for Power Platform solution in your `Prod` environment. This solution is needed to configure pipelines.
+
+> **NOTE:**  
+> Normally, it's a best practice to install the pipelines solution on a separate "Pipelines Host" environment. In this lab, you will install it in the `Prod` environment because a you can have three **free** developer environments, so you don't have space for another `Pipelines Host` environment next to `Dev`, `QA`, and `Prod` environments.
+>
+> This is a best practice because you will avoid people accidentally using dependencies on the pipelines tables, or having issues with sharing pipelines and giving people the right security roles. Take a look at the [FAQ on Microsoft Learn](https://learn.microsoft.com/power-platform/alm/pipelines#frequently-asked-questions) to learn more best practices.
+
+There are two ways to install the pipelines solution:
+
+### Via Power Platform Admin Center
+
+1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
+
+    ![](./assets/admin-center.png)
+
+1. Select the `Prod` environment you created before
+
+1. In the command bar at the top, select `Resources` and `Dynamics 365 apps`
+
+    ![](./assets/prod-env-dynamics-365-apps.png)
+
+1. Here you can find the apps that are installed on your `Prod` environment by default. Select the `Install App` button in the command bar at the top
+
+    ![](./assets/prod-env-install-app.png)
+
+1. In the sidebar that opens, scroll all the way down select the `Power Platform Pipelines` app and select the `Next` button at the bottom of the sidebar
+
+    ![](./assets/prod-env-select-app.png)
+
+1. Next, make sure to agree to the terms and select the `Install` button at the bottom of the sidebar
+
+    ![](./assets/prod-env-agree-terms.png)
+
+This process will take a couple of minutes, you can refresh the page by selecting the `Refresh` button in the command bar at the top.
+
+When finished, you can go to the [maker portal](https://make.powerapps.com) and select the right environment (`Prod`). If all went well, you should be able to see the `Deployment Pipeline Configuration` app in the Apps section in the maker portal.
+
+### Via Power Platform CLI
+
+1. Open up your Codespace.
+
+1. Open a new terminal by selecting the **Hamburger Menu > Terminal > New Terminal**
+
+    ![](./assets/Pipelines-Install-New-Terminal.png)
+
+1. Open the Power Platform Tools VS Code Extension by selecting the Power Platform DevTools icon on the left, make sure you see the `Prod` environment in the Environments & Solutions panel and select the empty star behind it to select the right environment.
+
+    ![](./assets/Pipelines-Install-Ensure-Prod.png)
+
+1. Enter the following command:
+
+    ```bash
+    pac application list
+    ```
+
+    This command will return all the applications that you can install with the `pac application install` command.
+
+    Zoomed in and highlighted is the unique name of the `Power Platform Pipelines` application: `msdyn_AppDeploymentAnchor`.
+
+    ![Screenshot of pac application list](./assets/Pipelines-Install-Application-List.png)
+
+1. Now we can install the `Power Platform Pipelines` application by using the following command:
+
+    ```bash
+    pac application install --application-name msdyn_AppDeploymentAnchor
+    ```
+
+    This command will return all the applications that you can install with the `pac application install` command.
+
+## Task 10: Enable Dataverse settings
 
 A recent addition to the Power Platform CLI is the ability to list and update Dataverse settings. This means that you can change the settings that are normally only available through the UI. In this task, you will learn how to change the settings.
 
