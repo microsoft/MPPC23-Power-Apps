@@ -23,7 +23,7 @@ Go to the [maker portal](https://make.powerapps.com), and make sure you are in t
 
 ![](./assets/prod-env-pipelines-installed.png)
 
-Select the `Deployment Pipeline Configuration` app and make sure to play it.
+Select the **Deployment Pipeline Configuration** app and make sure to **play** it.
 
 This will open the app in a new tab:
 
@@ -111,11 +111,11 @@ This will open a new sidebar, where you can enter details about your first deplo
 
 1. Set focus to the input box next to target deployment environment. This will open up a small popup which enables you to add a new deployment environment
 
-1. Select `New Deployment Environment`
+1. Select **+ New Deployment Environment**
 
 ![](./assets/create-pipeline-new-deployment-stage-details.png)
 
-This will open another sidebar where you can add details about your test environment.
+This will open another sidebar where you can add details about your QA environment.
 
 #### Add the QA environment
 
@@ -129,19 +129,17 @@ In the sidebar, make sure to add the following details:
 
     - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
     - Select **Environments** in the menu on the left
-    - Select the environment named **Test**
+    - Select the environment named **QA**
 
-      ![](./assets/create-pipeline-new-development-env-ppac-test.png)
+      ![](./assets/create-pipeline-new-development-env-ppac-qa.png)
 
     - Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
 
-1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
+1. Select the **Save and Close** button on the bottom of your sidebar
 
-1. Select the `Save and Close` button on the bottom of your sidebar
+1. Select **Save and Close** again to save the deployment stage as well
 
-1. Select `Save and Close` again to save the deployment stage as well
-
-Make sure to select the `New Deployment Stage` button again to add a second deployment stage: `Deploy to prod`.
+Make sure to select the **+ New Deployment Stage** button again to add a second deployment stage: `Deploy to prod`.
 
 ### Add the `Deploy to prod` deployment stage
 
@@ -149,11 +147,11 @@ Make sure to select the `New Deployment Stage` button again to add a second depl
 
 1. Leave the `Description` empty
 
-1. Focus on the `Previous Deployment Stage` and search for the `Deploy to test` stage. After you have found that stage, select it
+1. Focus on the `Previous Deployment Stage` and search for the `Deploy to QA` stage. After you have found that stage, select it
 
 1. Set focus to the input box next to target deployment environment. This will open up a small popup which enables you to add a new deployment environment
 
-1. Select `New deployment Environment`
+1. Select **+ New deployment Environment**
 
 > **Note:**  
 > There is a setting field called `Pre Deployment Step Required`. We're not using that in this case, but think about what could that be used for. During the workshop, the trainers will show an example of it.
@@ -169,20 +167,18 @@ Make sure to select the `New Deployment Stage` button again to add a second depl
 1. For the next step, make sure to grab the `Environment Id` from the Power Platform Admin Center
 
     - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
-    - Select Environments in the menu on the left
-    - Select the environment named `Prod`
+    - Select **Environments** in the menu on the left
+    - Select the environment named **Prod**
 
       ![](./assets/create-pipeline-new-development-env-ppac-prod.png)
 
     - Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
 
-1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
-
-1. Select the `Save and Close` button on the bottom of your sidebar
+1. Select the **Save and Close** button on the bottom of your sidebar
 
     ![](./assets/create-pipeline-deploy-to-prod-env.png)
 
-1. Select `Save and Close` again to save the deployment stage as well
+1. Select **Save and Close** again to save the deployment stage as well
 
 ## Task 2: Run the first deployment to the Test environment
 
