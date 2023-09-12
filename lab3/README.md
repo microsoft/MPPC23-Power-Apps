@@ -7,13 +7,9 @@
 
 In this lab, you will go though the following tasks:
 
-- Create your first pipeline (Dev - QA - Prod)
-- Run the first deployment to the Test environment
-- Install the Creator Kit solution in QA environment
-- Install the Creator Kit solution in Prod environment
-- Retry the deployment to the QA environment
+- Create your first pipeline
+- Run the deployment to the Test environment
 - Deploy to the Prod environment
-- Use AI generated descriptions
 
 ## Task 1: Create your first pipeline
 
@@ -180,13 +176,9 @@ Make sure to select the **+ New Deployment Stage** button again to add a second 
 
 1. Select **Save and Close** again to save the deployment stage as well
 
-## Task 2: Run the first deployment to the QA environment
+## Task 2: Run the deployment to the QA environment
 
-In this task, you will deploy the solution we created in lab 2 to the QA and Prod environments. Let's start by our first deployment to QA:
-
-### First deployment to QA
-
-In this lab, you have configured a pipeline and the stages that belong to it. But how does a maker deploy a solution from the `Dev` environment to the `QA` and `Prod` environments?
+In this task, you will deploy the solution we created in lab 2 to the QA and Prod environments. Let's start by deploying to QA. In this lab, you have configured a pipeline and the stages that belong to it. But how does a maker deploy a solution from the `Dev` environment to the `QA` and `Prod` environments?
 
 1. Go to the [maker portal](https://make.powerapps.com)
 
@@ -210,158 +202,27 @@ In this lab, you have configured a pipeline and the stages that belong to it. Bu
 
     ![](./assets/run-first-pipeline-select-target.png)
 
-1. Leave it on the default (Now) and select the purple `Next` button on the bottom of the sidebar
+1. Notice the message at below the deployment schedule. This indicates that this pipeline uses AI to generate a solution overview
 
-1. This will lead you to the next screen where pipelines for Power Platform will validate if the solution needs some configuration steps and/or there are dependencies that are missing. Wait for the validation to finish
+    ![](./assets/run-first-pipeline-ai-generated-description.png)
 
-    ![](./assets/run-first-pipeline-validation-failed-01.png)
+1. Leave everything on default and select the purple **Next** button on the bottom of the sidebar
 
-1. As you can see in the screenshot above, the validation failed due to missing dependencies. Select the `Show missing dependencies` button at the top-right corner
+    This will lead you to the next section called `Summary`. Here you can find a bunch of info about the solution you are about to deploy to the QA environment. It also shows an AI suggested solution overview
 
-1. In the next sidebar that will show up, you will see which dependencies are missing. In this case, it's the `CreatorKitCore` solution:
+    ![](./assets/run-first-pipeline-summary-ai.png)
 
-    ![](./assets/run-first-pipeline-validation-failed-02.png)
+    When you're happy with that AI generated solution overview, select the **Apply** button below the AI suggested solution overview
 
-    You might remember installing the Creator Kit in lab 01. This is what we need to in the test and prod environments as well.
+    Now the AI suggested solution overview is added in the `Deployment notes` box
 
-1. Select the purple `Close` button at the bottom of the sidebar
+    ![](./assets/run-first-pipeline-ai-generated-description-approved.png)
 
-    ![](./assets/run-first-pipeline-validation-failed-03.png)
+1. Check the AI suggested solution overview to make sure it doesn't include any errors and correct where needed
 
-1. Select the `Close` button on the bottom-right side of the sidebar
+1. Select the purple **Deploy** button
 
-    ![](./assets/run-first-pipeline-validation-failed-04.png)
-
-1. In the following dialog, select the purple `Discard` button to discard changes
-
-    ![](./assets/run-first-pipeline-validation-failed-05.png)
-
-1. This will lead us back to the pipeline overview, where we can start our deployment. Now, lets go to the environment by selecting the `Go to the environment` button in the `Deploy to QA` stage
-
-    ![](./assets/run-first-pipeline-validation-failed-06.png)
-
-1. It will open a new tab which will open the environment homepage where you can go to the `Solutions` menu item to see which solutions are installed in that environment
-
-    ![](./assets/run-first-pipeline-validation-failed-07.png)
-
-1. The `Creator Kit` solution is not part of the list of solutions, so we need to install the `Creator Kit` solution
-    ![](./assets/run-first-pipeline-validation-failed-08.png)
-
-You will have to install the Creator Kit in both the test and prod environments.
-
-## Task 3: Install the Creator Kit solution in QA environment
-
-The `Creator Kit` app is now only available in the `Dev` environment, so let's add the app also to the `QA` environment.
-
-1. Go to the [Power Platform Admin Center](https://aka.ms/ppac), select `Environments` in the left menu, and select the `Test` environment by selecting the environment display name
-
-    ![](./assets/run-first-pipeline-validation-failed-09.png)
-
-1. Next, select `Resources` in the command bar at the top and select `Dynamics 365 Apps`. This will lead you to the installed apps in the `QA` environment. There might be some updates available, but you can ignore that for now
-
-    ![](./assets/run-first-pipeline-validation-failed-10.png)
-
-1. Select the `Install app` button in the command bar at the top
-
-    ![](./assets/run-first-pipeline-validation-failed-11.png)
-
-1. Select the `Creator Kit` app and select the purple `Next` button at the bottom of the sidebar
-
-    ![](./assets/run-first-pipeline-validation-failed-12.png)
-
-1. Select the `I agree to the terms of service` checkbox and select the purple `Install` button
-
-    ![](./assets/run-first-pipeline-validation-failed-13.png)
-
-1. In the next screen, you will see a message at the top that the installation of the `Creator Kit` has been started. Select `Environments` in the breadcrumb at the top
-
-    ![](./assets/run-first-pipeline-validation-failed-14.png)
-
-Next, you have to install the `Creator Kit` app in the `Prod` environment.
-
-## Task 4: Install the Creator Kit solution in Prod environment
-
-The `Creator Kit` app is now only available in the `Dev` and `QA` environments, so let's add the app also to the `Prod` environment to avoid missing dependencies there.
-
-1. Go to the [Power Platform Admin Center](https://aka.ms/ppac), select `Environments` in the left menu, and select the `Prod` environment by selecting the environment display name
-
-    ![](./assets/run-first-pipeline-validation-failed-15.png)
-
-1. Next, select `Resources` in the command bar at the top and select `Dynamics 365 Apps`. This will lead you to the installed apps in the `QA` environment. There might be some updates available, but you can ignore that for now
-
-    ![](./assets/run-first-pipeline-validation-failed-16.png)
-
-1. Select the `Install app` button in the command bar at the top
-
-    ![](./assets/run-first-pipeline-validation-failed-17.png)
-
-1. Select the `Creator Kit` app and select the purple `Next` button at the bottom of the sidebar
-
-    ![](./assets/run-first-pipeline-validation-failed-18.png)
-
-1. Select the `I agree to the terms of service` checkbox and select the purple `Install` button
-
-    ![](./assets/run-first-pipeline-validation-failed-19.png)
-
-1. In the next screen, you will see a message at the top that the installation of the `Creator Kit` has been started. Select `Environments` in the breadcrumb at the top
-
-    ![](./assets/run-first-pipeline-validation-failed-20.png)
-
-Now that you have triggered the install of the `Creator Kit` in both the `QA` and `Prod` environments, you can move on to task 06, retrying the deployment to the `QA` environment.
-
-## Task 5: Retry the deployment to the QA environment
-
-To make sure your deployment goes well, lets check if the Creator Kit solution has been properly installed in the `QA` environment.
-
-### Check if the Creator Kit app is correctly installed
-
-1. Go to the [maker portal](https://make.powerapps.com)
-
-1. Check if you are in the `QA` environment and if not, switch to that environment
-
-    ![](./assets/check-environment-test.png)
-
-1. Select `Solutions` in the left navigation and check if the `Creator Kit (Name: CreatorKitCore)` solution is installed
-
-    ![](./assets/check-install-creator-kit-test.png)
-
-1. If that's the case, you are ready for deployment. If not, you probably have to wait a little bit until the Creator Kit is installed
-
-### Deploy the solution to the QA environment
-
-For the deployment to QA, you have to switch to your `Dev` environment. Make sure to do that and verify that you are in the right environment:
-
-![](./assets/check-environment-dev.png)
-
-1. Go to Solutions via the left menu
-
-1. Select the `Mixed Reality Workshop` solution by selecting the display name
-
-    ![](./assets/run-first-pipeline-dev.png)
-
-1. Select the rocket icon on the left
-
-    ![](./assets/run-first-pipeline-solution.png)
-
-1. Select the purple `Deploy here` button.
-
-    ![](./assets/run-deploy-to-test-deploy-here.png)
-
-1. This will open a new sidebar which will give you the option to start your deployment now or plan your deployment for later. Select the purple `Next` button to go to the next screen
-
-    ![](./assets/run-first-pipeline-select-target.png)
-
-1. The next screen will be a bit different from our last try, it will now show a summary of the deployment. Fill in some deployment notes, like for instance: `First deployment of the Mixed Reality solution` and select the purple `Deploy` button
-
-    ![](./assets/run-deploy-to-test-deployment-notes.png)
-
-1. This will trigger the `Deploy to QA` stage
-
-    ![](./assets/run-deploy-to-test-in-progress.png)
-
-1. When it's done, you will see that the deployment has been finished
-
-    ![](./assets/run-deploy-to-test-finished.png)
+    ![](./assets/run-first-pipeline-summary-deploy.png)
 
 ### Test if the solution was correctly deployed
 
@@ -405,7 +266,7 @@ For the deployment to QA, you have to switch to your `Dev` environment. Make sur
 
 Now you know the app works in QA, let's deploy it to production.
 
-## Task 6: Deploy to the Prod environment
+## Task 3: Deploy to the Prod environment
 
 To make sure your deployment goes well, lets check if the Creator Kit solution has been properly installed in the `Prod` environment.
 
