@@ -373,41 +373,41 @@ For the deployment to QA, you have to switch to your `Dev` environment. Make sur
 
 1. Of course, you want to see for yourself if the deployment was successful, so select the `Go to this environment` button in the `Deploy to QA` stage
 
-        ![](./assets/run-deploy-to-test-check-test.png)
+    ![](./assets/run-deploy-to-test-check-test.png)
 
 1. Select `Solutions` in the left navigation
 
 1. Check if the `Mixed Reality Workshop` solution with version 1.0.0.1 is installed in the `QA` environment
 
-        ![](./assets/run-deploy-to-test-check-test-solution.png)
+    ![](./assets/run-deploy-to-test-check-test-solution.png)
 
 1. Open the `Mixed Reality Workshop` by selecting the display name
 
-        ![](./assets/run-deploy-to-test-open-solution.png)
+    ![](./assets/run-deploy-to-test-open-solution.png)
 
 1. Select the `Mixed Reality App` canvas app and select the `Play` button in the command bar at the top
 
-        ![](./assets/run-deploy-to-test-open-app.png)
+    ![](./assets/run-deploy-to-test-open-app.png)
 
 1. When the app is opened, you will have to allow the connections to connect to both OneDrive for Business as well as the Smithsonian 3D connector. Make sure to select the purple `Allow` button
 
-        ![](./assets/run-deploy-to-test-allow-connections.png)
+    ![](./assets/run-deploy-to-test-allow-connections.png)
 
 1. In the app, you will find three buttons:
 
-        `Corals and Coral Reefs`, `Smithsonian 3D Search`, and `Tutorial Screen`.
+    `Corals and Coral Reefs`, `Smithsonian 3D Search`, and `Tutorial Screen`.
 
-        Select the `Corals and Coral Reefs` button
+    Select the `Corals and Coral Reefs` button
 
-        ![](./assets/run-deploy-to-test-select-corals.png)
+    ![](./assets/run-deploy-to-test-select-corals.png)
 
 1. Next, select the first coral to check if the coral 3D object works
 
-        ![](./assets/run-deploy-to-test-select-coral.png)
+    ![](./assets/run-deploy-to-test-select-coral.png)
 
 1. The next screen should show a 3D object of the coral you just selected
 
-        ![](./assets/run-deploy-to-test-coral-detail.png)
+    ![](./assets/run-deploy-to-test-coral-detail.png)
 
 Now you know the app works in QA, let's deploy it to production.
 
