@@ -230,7 +230,7 @@ It will take a couple of minutes to deploy the solution to the QA environment. A
 
 As you can see, the last deployed solution version and last deployed date time are visible here.
 
-### Test if the solution was correctly deployed
+### Test if the solution was correctly deployed to QA
 
 1. Of course, you want to see for yourself if the deployment was successful, so select the **Go to this environment** button in the `Deploy to QA` stage
 
@@ -332,21 +332,27 @@ For the deployment to prod, you have to switch to your `Dev` environment. Make s
 
     ![](./assets/run-first-pipeline-dev.png)
 
-1. Select the rocket icon on the left
+1. Select the **rocket icon** on the left
 
     ![](./assets/run-first-pipeline-solution.png)
 
-1. Select the purple `Deploy here` button.
+1. Select the purple **Deploy here** button
 
     ![](./assets/run-deploy-to-prod-deploy-here.png)
 
-1. This will open a new sidebar which will give you the option to start your deployment now or plan your deployment for later. Select the purple `Next` button to go to the next screen
+1. This will open a new sidebar which will give you the option to start your deployment now or plan your deployment for later. Select the purple **Next** button to go to the next screen
 
     ![](./assets/run-deploy-to-prod-select-target.png)
 
-1. Fill in some deployment notes, like for instance: `First deployment of the Mixed Reality solution` and select the purple `Deploy` button
+1. Again, you will see the AI suggested solution overview. **Apply** it so that it gets copied to the deployment notes
 
-    ![](./assets/run-deploy-to-prod-deployment-notes.png)
+    ![](./assets/run-deploy-to-prod-apply-notes.png)
+
+1. Check the AI suggested solution overview to make sure it doesn't include any errors and correct where needed
+
+    ![](./assets/run-deploy-to-prod-deploy.png)
+
+1. Select the purple **Deploy** button
 
 1. This will trigger the `Deploy to prod` stage
 
@@ -356,45 +362,93 @@ For the deployment to prod, you have to switch to your `Dev` environment. Make s
 
     ![](./assets/run-deploy-to-prod-finished.png)
 
-### Test if the solution was correctly deployed
+### Test if the solution was correctly deployed to Prod
 
 1. Of course, you want to see for yourself if the deployment was successful, so select the `Go to this environment` button in the `Deploy to prod` stage
 
     ![](./assets/run-deploy-to-prod-check-prod.png)
 
-1. Select `Solutions` in the left navigation
+1. Select **Solutions** in the left navigation
 
-1. Check if the `Mixed Reality Workshop` solution with version 1.0.0.1 is installed in the `Prod` environment
+1. Check if the `MPPC 23` solution with version 1.0.0.1 is installed in the `QA` environment
 
     ![](./assets/run-deploy-to-prod-check-prod-solution.png)
 
-1. Open the `Mixed Reality Workshop` by selecting the display name
+1. Open the `MPPC 23`solution by selecting the **display name**
 
     ![](./assets/run-deploy-to-prod-open-solution.png)
 
-1. Select the `Mixed Reality App` canvas app and select the `Play` button in the command bar at the top
+1. Select the **Real Estate Property** canvas app and select the **Play** button in the command bar at the top
 
-    ![](./assets/run-deploy-to-prod-open-app.png)
+    ![](./assets/run-deploy-to-prod-open-real-estate-property.png)
 
-1. When the app is opened, you will have to allow the connections to connect to both OneDrive for Business as well as the Smithsonian 3D connector. Make sure to select the purple `Allow` button
+1. This will open the app in a new tab
 
-    ![](./assets/run-deploy-to-test-allow-connections.png)
+    ![](./assets/run-deploy-to-qa-open-real-estate-property-opened.png)
 
-1. In the app, you will find two buttons:
+    It will look like your app is broken, since it will have the message `Getting your data`, but it's working fine! The problem is that there is no data in this environment, because we just deployed the solution here. Let's fix that!
 
-    `Corals and Coral Reefs` and `Smithsonian 3D Search`
+1. Select the **+ New** button on the left side of the screen
 
-    Select the `Corals and Coral Reefs` button
+1. Fill in the following fields with the information below:
 
-    ![](./assets/run-deploy-to-test-select-corals.png)
+1. ID: `101`
 
-1. Next, select the first coral to check if the coral 3D object works
+1. Image: `https://raw.githubusercontent.com/microsoft/PowerPlatformAdvocates/main/MSLearn/AIModule/Images/property1.jpg`
 
-    ![](./assets/run-deploy-to-test-select-coral.png)
+1. Owner: `Emily Johnson`
 
-1. The next screen should show a 3D object of the coral you just selected
+1. OwnerEmail: `emily.johnson@example.com`
 
-    ![](./assets/run-deploy-to-test-coral-detail.png)
+1. Size: `1800`
+
+1. Address: `432 Elm Street, Riverside, CA 92501`
+
+1. Price: `350000`
+
+1. Select the **check** to save the new row
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-property-save-record.png)
+
+1. Now you will see at least one row in the app and the app should look more familiar with the photo and the Power Apps Ideas formatting we did in lab 2
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-property-saved-record.png)
+
+1. Select the **Real Estate Showings** canvas app and select the **Play** button in the command bar at the top
+
+    ![](./assets/run-deploy-to-prod-open-real-estate-showings.png)
+
+1. This will open the app in a new tab
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-opened.png)
+
+    Again, it will look like your app is broken, since it will have the message `Getting your data`, but it's working fine!
+
+1. Select the **+ New** button on the left side of the screen
+
+1. Fill in the following fields with the information below:
+
+1. Agent: `James Bond`
+
+1. Client Email: `austin@example.com`
+
+1. Client Name: `Austin Powers`
+
+1. Showing Date: `<Pick the date of today - don't change the time>`
+
+1. Showing Time: `<Pick the date of today - change the time to 10:00>`
+
+1. Status: `Pending`
+
+1. Property: `432 Elm Street, Riverside, CA 92501`
+
+1. Select the **check** to save the new row
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-save-record.png)
+
+1. Now you will see at least one row in the app and the app should look more familiar like the `Real Estate Showings` app we created in lab 2
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-saved-record.png)
 
 Now you know the app works in prod as well and you have successfully deployed the solution to the `QA` and `Prod` environments.
 
