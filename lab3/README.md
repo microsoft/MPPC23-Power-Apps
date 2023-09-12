@@ -1,8 +1,5 @@
 # 🚀 Lab 3: Deploy
 
-> [!IMPORTANT]
-> This workshop is still work in progress for the time being.
-
 ## Lab 3 - Tasks
 
 In this lab, you will go though the following tasks:
