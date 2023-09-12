@@ -274,9 +274,13 @@ As you can see, the last deployed solution version and last deployed date time a
 
 1. Price: `350000`
 
-1. Select the **check** to save the new record
+1. Select the **check** to save the new row
 
     ![](./assets/run-deploy-to-qa-open-real-estate-showings-save-record.png)
+
+1. Now you will see at least one row in the app and the app should look more familiar with the photo and the Power Apps Ideas formatting we did in lab 2.
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-saved-record.png)
 
 1. Select the **Real Estate Showings** canvas app and select the **Play** button in the command bar at the top
 
