@@ -329,9 +329,9 @@ There are two ways to install the pipelines solution:
 
     ![](./assets/admin-center.png)
 
-1. Select the `Prod` environment you created before
+1. Select the **Prod** environment you created before
 
-1. In the command bar at the top, select `Resources` and `Dynamics 365 apps`
+1. In the command bar at the top, select **Resources** and **Dynamics 365 apps**
 
     ![](./assets/prod-env-dynamics-365-apps.png)
 

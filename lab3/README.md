@@ -49,9 +49,7 @@ This will lead you to a form where you can enter details about your pipeline:
 
 1. Use `My first pipeline` as the name
 
-1. In the owner field, make sure to look for the email address of your account and select your user
-
-1. Save the pipeline
+1. Leave the rest as default and save the pipeline by selecting the **Save** button
 
 Some components of the form only appear after the first save, so that's why we save the pipeline. After saving, scroll down and you will see the following content below the owner field:
 
@@ -86,22 +84,20 @@ A sidebar will be opened, where you can enter the details of the `Dev` environme
 1. For the next step, make sure to grab the `Environment Id` from the Power Platform Admin Center
 
     - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
-    - Select Environments in the menu on the left
-    - Select the environment named `Dev`
+    - Select **Environments** in the menu on the left
+    - Select the environment named **Dev**
 
       ![](./assets/create-pipeline-new-development-env-ppac-dev.png)
 
     - Copy the environment ID from there and paste it in the `Deployment Pipeline Configuration` app.
 
-1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
-
-1. Select the `Save and Close` button on the bottom of your sidebar
+1. Select the **Save and Close** button on the bottom of your sidebar
 
 If all went well, you'll see the following screen (*Refresh* the page if you don't see it):
 
 ![](./assets/create-pipeline-new-development-env-saved.png)
 
-Make sure to select the `New Deployment Stage` button now to add the first deployment stage.
+Make sure to select the **+ New Deployment Stage** button now to add the first deployment stage.
 
 ![](./assets/create-pipeline-new-deployment-stage.png)
 
@@ -132,8 +128,8 @@ In the sidebar, make sure to add the following details:
 1. Add the environment ID of the test environment
 
     - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
-    - Select Environments in the menu on the left
-    - Select the environment named `Test`
+    - Select **Environments** in the menu on the left
+    - Select the environment named **Test**
 
       ![](./assets/create-pipeline-new-development-env-ppac-test.png)
 
