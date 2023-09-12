@@ -180,25 +180,25 @@ Make sure to select the **+ New Deployment Stage** button again to add a second 
 
 1. Select **Save and Close** again to save the deployment stage as well
 
-## Task 2: Run the first deployment to the Test environment
+## Task 2: Run the first deployment to the QA environment
 
-In this task, you will deploy the solution we imported in lab 02 to the test and production environments. Let's start by our first deployment to test:
+In this task, you will deploy the solution we created in lab 2 to the QA and Prod environments. Let's start by our first deployment to QA:
 
 ### First deployment to QA
 
-In this lab, you have installed the pipelines for Power Platform solution and you have configured a pipeline and the stages that belong to it. But how does a maker deploy a solution from the `Dev` environment to the `QA` and `Prod` environments?
+In this lab, you have configured a pipeline and the stages that belong to it. But how does a maker deploy a solution from the `Dev` environment to the `QA` and `Prod` environments?
 
 1. Go to the [maker portal](https://make.powerapps.com)
 
-1. Make sure to select the `Dev` environment
+1. Make sure to select the **Dev** environment
 
-1. Go to Solutions via the left menu
+1. Go to **Solutions** via the left menu
 
-1. Select the `Mixed Reality Workshop` solution by selecting the display name
+1. Select the **MPPC 23** solution by selecting the display name
 
     ![](./assets/run-first-pipeline-dev.png)
 
-1. Select the rocket icon on the left
+1. Select the **rocket icon** on the left
 
     ![](./assets/run-first-pipeline-solution.png)
 
@@ -206,7 +206,7 @@ In this lab, you have installed the pipelines for Power Platform solution and yo
 
     ![](./assets/run-first-pipeline-overview.png)
 
-1. Select the purple `Deploy here` button. This will open a new sidebar which will give you the option to start your deployment now or plan your deployment for later
+1. Select the purple **Deploy here** button. This will open a new sidebar which will give you the option to start your deployment now or plan your deployment for later
 
     ![](./assets/run-first-pipeline-select-target.png)
 
