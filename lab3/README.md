@@ -276,45 +276,59 @@ As you can see, the last deployed solution version and last deployed date time a
 
 1. Select the **check** to save the new row
 
-    ![](./assets/run-deploy-to-qa-open-real-estate-showings-save-record.png)
+    ![](./assets/run-deploy-to-qa-open-real-estate-property-save-record.png)
 
-1. Now you will see at least one row in the app and the app should look more familiar with the photo and the Power Apps Ideas formatting we did in lab 2.
+1. Now you will see at least one row in the app and the app should look more familiar with the photo and the Power Apps Ideas formatting we did in lab 2
 
-    ![](./assets/run-deploy-to-qa-open-real-estate-showings-saved-record.png)
+    ![](./assets/run-deploy-to-qa-open-real-estate-property-saved-record.png)
 
 1. Select the **Real Estate Showings** canvas app and select the **Play** button in the command bar at the top
 
     ![](./assets/run-deploy-to-qa-open-real-estate-showings.png)
 
+1. This will open the app in a new tab
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-opened.png)
+
+    Again, it will look like your app is broken, since it will have the message `Getting your data`, but it's working fine!
+
+1. Select the **+ New** button on the left side of the screen
+
+1. Fill in the following fields with the information below:
+
+1. Agent: `James Bond`
+
+1. Client Email: `austin@example.com`
+
+1. Client Name: `Austin Powers`
+
+1. Showing Date: `<Pick the date of today - don't change the time>`
+
+1. Showing Time: `<Pick the date of today - change the time to 10:00>`
+
+1. Status: `Pending`
+
+1. Property: `432 Elm Street, Riverside, CA 92501`
+
+1. Select the **check** to save the new row
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-save-record.png)
+
+1. Now you will see at least one row in the app and the app should look more familiar like the `Real Estate Showings` app we created in lab 2
+
+    ![](./assets/run-deploy-to-qa-open-real-estate-showings-saved-record.png)
+
 Now you know the app works in QA, let's deploy it to production.
 
 ## Task 3: Deploy to the Prod environment
-
-To make sure your deployment goes well, lets check if the Creator Kit solution has been properly installed in the `Prod` environment.
-
-### Check if the Creator Kit app is correctly installed
-
-1. Go to the [maker portal](https://make.powerapps.com)
-
-1. Check if you are in the `Prod` environment and if not, switch to that environment
-
-    ![](./assets/check-environment-prod.png)
-
-1. Select `Solutions` in the left navigation and check if the `Creator Kit (Name: CreatorKitCore)` solution is installed
-
-    ![](./assets/check-install-creator-kit-prod.png)
-
-1. If that's the case, you are ready for deployment. If not, you probably have to wait a little bit until the Creator Kit is installed
-
-### Deploy the solution to the Prod environment
 
 For the deployment to prod, you have to switch to your `Dev` environment. Make sure to do that and verify that you are in the right environment:
 
 ![](./assets/check-environment-dev.png)
 
-1. Go to Solutions via the left menu
+1. Go to **Solutions** via the left menu
 
-1. Select the `Mixed Reality Workshop` solution by selecting the display name
+1. Select the **MPPC 23** solution by selecting the **display name**
 
     ![](./assets/run-first-pipeline-dev.png)
 
