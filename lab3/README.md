@@ -17,11 +17,13 @@ In this lab, you will go though the following tasks:
 
 ## Task 1: Create your first pipeline
 
-In this task, you will create your first pipeline. The `Deployment Pipeline Configuration` app will be used for that.
+In this task, you will create your first pipeline. The `Deployment Pipeline Configuration` app that you installed in lab 1 will be used for that.
+
+Go to the [maker portal](https://make.powerapps.com), and make sure you are in the `Prod` environment.
 
 ![](./assets/prod-env-pipelines-installed.png)
 
-Make sure to select that app in the [maker portal](https://make.powerapps.com) and make sure to play the app.
+Select the `Deployment Pipeline Configuration` app and make sure to play it.
 
 This will open the app in a new tab:
 
@@ -37,7 +39,7 @@ Last but not least, there is a `Deployments` section which enables you to view t
 
 ### Create a new pipeline
 
-Let's create a new pipeline, by selecting the new button on the `Pipelines Dashboard`.
+Let's create a new pipeline, by selecting the **+ new button** on the `Pipelines Dashboard`.
 
 ![](./assets/create-pipeline-new-pipeline.png)
 
