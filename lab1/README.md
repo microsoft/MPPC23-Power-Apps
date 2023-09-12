@@ -335,19 +335,19 @@ There are two ways to install the pipelines solution:
 
     ![](./assets/prod-env-dynamics-365-apps.png)
 
-1. Here you can find the apps that are installed on your `Prod` environment by default. Select the `Install App` button in the command bar at the top
+1. Here you can find the apps that are installed on your `Prod` environment by default. Select the **Install App** button in the command bar at the top
 
     ![](./assets/prod-env-install-app.png)
 
-1. In the sidebar that opens, scroll all the way down select the `Power Platform Pipelines` app and select the `Next` button at the bottom of the sidebar
+1. In the sidebar that opens, scroll all the way down select the **Power Platform Pipelines** app and select the **Next** button at the bottom of the sidebar
 
     ![](./assets/prod-env-select-app.png)
 
-1. Next, make sure to agree to the terms and select the `Install` button at the bottom of the sidebar
+1. Next, make sure to agree to the terms and select the **Install** button at the bottom of the sidebar
 
     ![](./assets/prod-env-agree-terms.png)
 
-This process will take a couple of minutes, you can refresh the page by selecting the `Refresh` button in the command bar at the top.
+This process will take a couple of minutes, you can refresh the page by selecting the **Refresh** button in the command bar at the top.
 
 When finished, you can go to the [maker portal](https://make.powerapps.com) and select the right environment (`Prod`). If all went well, you should be able to see the `Deployment Pipeline Configuration` app in the Apps section in the maker portal.
 
