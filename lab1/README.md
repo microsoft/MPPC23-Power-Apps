@@ -326,6 +326,10 @@ In this task, you will learn how to enable Managed Environments on all environme
 
     ![](./assets/Managed-Environments-Select-Environment.png)
 
+    Make sure you look at the highlighted text about licensing. After enabling an environment as a Managed Environment, everyone in that environment has to have a premium license. To use pipelines for Power Platform, all environments that are added to the pipelines need to been enabled as a Managed Environment
+
+    ![](./assets/Managed-Environments-Licensing.png)
+
 1. Select the purple **Enable** button
 
     ![](./assets/Managed-Environments-Enable-Environment.png)
