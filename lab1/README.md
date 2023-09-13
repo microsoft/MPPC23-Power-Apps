@@ -1,22 +1,20 @@
 # 🚀 Lab 1: Setup and configure
 
-> [!IMPORTANT]
-> This workshop is still work in progress for the time being.
-
 ## Lab 1 - Tasks
 
 In this lab, you will go though the following tasks:
 
-- Creating a new browser profile
-- Logging into the account you are going to use during the workshop
-- Creating a GitHub account (optional)
-- Fork a GitHub repository
+- Create a new browser profile in Microsoft Edge
+- Log on to your account
+- Create a GitHub account (optional)
+- Create a fork of the repository for this workshop
 - Creating a GitHub Codespace
-- Connecting to the Power Platform using the Power Platform Command-Line Interface (CLI)
-- Creating developer environments
+- Connect to the Power Platform using the Power Platform Command-Line Interface (CLI)
+- Create developer environments
 - Switch between environments with the Power Platform CLI
+- Enable Managed Environments on all environments
 - Deploy the pipelines solution to your Prod environment
-- Enabling Dataverse settings
+- Enable Dataverse settings
 
 ## Task 1: Create a new browser profile (Microsoft Edge)
 
@@ -93,7 +91,7 @@ Now that you have a GitHub account, we are going to create a fork of the reposit
 
     Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **your-username/MPPC23-Power-Apps forked from microsoft/MPPC23-Power-Apps**.
 
-## Task 5: Create a codespace
+## Task 5: Create a GitHub Codespace
 
 A codespace is a cloud-hosted development environment you can access from anywhere. It has everything you need, including a text editor, terminal, and debugger. Codespaces are powered by Visual Studio Code and run in a containerized environment. For this workshop, we are going to use codespaces to do our development.
 
@@ -312,7 +310,7 @@ Once you have created all three environments, you should see them in the list of
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
 
-## Task 9: Enable managed environment on all environments
+## Task 9: Enable Managed Environments on all environments
 
 In this task, you will learn how to enable Managed Environments on all environments you just created.
 
@@ -338,7 +336,7 @@ In this task, you will learn how to enable Managed Environments on all environme
 
     ![](./assets/Managed-Environments-Enabled.png)
 
-## Task 9: Deploy the pipelines solution to your Prod environment
+## Task 10: Deploy the pipelines solution to your Prod environment
 
 In this task, you will learn how to install the pipelines for Power Platform solution in your `Prod` environment. This solution is needed to configure pipelines.
 
@@ -409,7 +407,7 @@ When finished, you can go to the [maker portal](https://make.powerapps.com) and 
 
     This command will return all the applications that you can install with the `pac application install` command.
 
-## Task 10: Enable Dataverse settings
+## Task 11: Enable Dataverse settings
 
 A recent addition to the Power Platform CLI is the ability to list and update Dataverse settings. This means that you can change the settings that are normally only available through the UI. In this task, you will learn how to change the settings.
 
