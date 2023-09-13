@@ -312,6 +312,32 @@ Once you have created all three environments, you should see them in the list of
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
 
+## Task 9: Enable managed environment on all environments
+
+In this task, you will learn how to enable Managed Environments on all environments you just created.
+
+1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
+
+1. Select **Environments** in the left navigation
+
+1. Use the **search box** in the top-right corner to **search** for all environments created by your user
+
+    ![](./assets/Managed-Environments-PPAC-Search.png)
+
+1. Select **Dev** and select the **Enable Managed Environments** button at the top
+
+    ![](./assets/Managed-Environments-Select-Environment.png)
+
+1. Select the purple **Enable** button
+
+    ![](./assets/Managed-Environments-Enable-Environment.png)
+
+1. **Repeat steps 3-5** for both the QA and Prod environments
+
+1. If all went well, you should see **Yes** in the **Managed** column at all three environments
+
+    ![](./assets/Managed-Environments-Enabled.png)
+
 ## Task 9: Deploy the pipelines solution to your Prod environment
 
 In this task, you will learn how to install the pipelines for Power Platform solution in your `Prod` environment. This solution is needed to configure pipelines.
