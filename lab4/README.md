@@ -259,6 +259,20 @@ In this task, you are going to find out if the approval you configured in the la
 
 And that's how the deployment with approvals works!
 
+### Solution Checker Warning
+
+In the meantime, you should've gotten another email.
+
+1. Go to [Outlook web](https://outlook.office.com)
+
+1. Look for an email with the subject `Solution checked for issues during import`
+
+    It should look something like this:
+
+    ![](./assets/warn-solution-checker-prod.png)
+
+    This email shows there are no solution checker in our solution we just deployed to production: well done!
+
 ## ☑️ Task 2: Setup SPN support for pipelines
 
 TODO: SPN support for pipelines
