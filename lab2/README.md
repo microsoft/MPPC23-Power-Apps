@@ -14,6 +14,13 @@ In this lab, you will go though the following tasks:
 
 ## ☑️ Task 1: Create A Canvas App With Data From An Excel-File
 
+In this task, you will:
+
+- Create a Canvas App using Excel to App
+- Customize galleries by using Power Apps Ideas to generate Power Fx formulas
+
+### Introduction To Excel To App
+
 With Excel to App, you'll select an Excel file, create an app, and then run the app that you create. Every app created includes screens to browse records, show record details, and create or update records. By generating an app, you can quickly get a working app using Excel data, and then you can customize the app to better suit your needs.
 
 When you upload an Excel file it generates a Dataverse table. With Dataverse's standard and custom tables, you can securely store your data in the cloud. These tables enable you to define your organization's data in a way that is tailored to your business needs, making it easier to use within your apps.
@@ -30,103 +37,103 @@ In this task, you’ll create an application with data from an Excel table.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/) and Sign In with your Power Apps credentials.
 
-2. From the Power Apps home screen, select Start with data.
+1. From the Power Apps home screen, select Start with data.
 
     ![Start with data](./assets/start-with-data.png)
 
-3. Then select Upload an Excel file.
+1. Then select Upload an Excel file.
 
     ![Upload an Excel file](./assets/upload-an-excel-file.png)
 
-4. Click Select from device and navigate to the location where the RealEstateProperties.xlsx Excel file is saved and upload it. The maximum file size limit is 5 GB.
+1. Click Select from device and navigate to the location where the RealEstateProperties.xlsx Excel file is saved and upload it. The maximum file size limit is 5 GB.
 
     ![Select from device](./assets/select-from-device.png)
 
-5. A table which is based on the data from the RealEstateProperties.xlsx Excel file will be generated. Click the pencil edit icon next to the table name to change it.
+1. A table which is based on the data from the RealEstateProperties.xlsx Excel file will be generated. Click the pencil edit icon next to the table name to change it.
 
     ![Edit table name](./assets/change-generated-table-name.png)
 
-6. On the Edit Table pop up, enter Real Estate Property as the Display name, Real Estate Properties as the Plural Name, and make sure that Address is selected as the Primary column. Select Save.
+1. On the Edit Table pop up, enter Real Estate Property as the Display name, Real Estate Properties as the Plural Name, and make sure that Address is selected as the Primary column. Select Save.
 
     ![Edit table](./assets/edit-table-pop-up.png)
 
-7. Select the Create app button on the bottom right-hand corner of the screen.
+1. Select the Create app button on the bottom right-hand corner of the screen.
 
     ![Create app](./assets/create-app.png)
 
-8. When the app first loads, a dialog may appear saying: Welcome to Power Apps Studio. If so, select the Skip button.
+1. When the app first loads, a dialog may appear saying: Welcome to Power Apps Studio. If so, select the Skip button.
 
-9. You should now be viewing the app that has been generated for you in Edit mode.
+1. You should now be viewing the app that has been generated for you in Edit mode.
 
     ![Generated app](./assets/generated-app.png)
 
-10. To the left of the screen, select the Data icon from the navigation bar. Notice that a Dataverse table, based on the RealEstateProperties.xlsx Excel file, has been created.
+1. To the left of the screen, select the Data icon from the navigation bar. Notice that a Dataverse table, based on the RealEstateProperties.xlsx Excel file, has been created.
 
     ![Dataverse table](./assets/dataverse-table-from-excel.png)
 
-11. Select the Tree view icon to return to the Tree view.
+1. Select the Tree view icon to return to the Tree view.
 
     ![Tree view](./assets/tree-view.png)
 
-12. On the app main screen, click on the gallery displaying the Real Estate Properties and then click on RecordsGallery1 in the Tree view to expand it.
+1. On the app main screen, click on the gallery displaying the Real Estate Properties and then click on RecordsGallery1 in the Tree view to expand it.
 
     ![Records gallery](./assets/properties-gallery-expand.png)
 
-13. Select the ellipsis (…) next to the NextArrow and delete it.
+1. Select the ellipsis (…) next to the NextArrow and delete it.
 
     ![Delete NextArrow](./assets/delete-next-arrow.png)
 
-14. Select the RecordsGallery1 and then select the edit button to put the gallery in edit mode.
+1. Select the RecordsGallery1 and then select the edit button to put the gallery in edit mode.
 
     ![Edit gallery](./assets/gallery-edit.png)
 
-15. Reduce the width and move the position of the Title component so that it is towards the right-hand side of the template cell.
+1. Reduce the width and move the position of the Title component so that it is towards the right-hand side of the template cell.
 
     ![Move Title](./assets/address-title-reduced.png)
 
     The other components should reposition alongside the Title component. If not, then move them until it looks like the screenshot above.
 
-16. Make sure that the gallery is still in edit mode. Select the Title.
+1. Make sure that the gallery is still in edit mode. Select the Title.
 
-17. Make sure that the Text value of the Title component is set to the following formula:
+1. Make sure that the Text value of the Title component is set to the following formula:
 
     `ThisItem.Address`
 
     ![Title formula](./assets/set-title-to-address.png)
 
-18. Now select the Subtitle component in the gallery.
+1. Now select the Subtitle component in the gallery.
 
-19. Set the Text value of the Subtitle to the following formula:
+1. Set the Text value of the Subtitle to the following formula:
 
     `ThisItem.Size`
 
-20. Using the tool bar at the top of the page, change the Size to 13.
+1. Using the tool bar at the top of the page, change the Size to 13.
 
     ![Size 13](./assets/change-font-size.png)
 
-21. Finally, select the Body component in the gallery.
+1. Finally, select the Body component in the gallery.
 
-22. Set the Text value of the Body to the following formula:
+1. Set the Text value of the Body to the following formula:
 
     `ThisItem.Price`
 
-23. Your gallery should now look like this:
+1. Your gallery should now look like this:
 
     ![Gallery](./assets/gallery-check-after-edits.png)
 
-24. Select the RecordsGallery1 and then select the edit button to put the gallery in edit mode. Then click on Insert > search for Image > and then select the Image component.
+1. Select the RecordsGallery1 and then select the edit button to put the gallery in edit mode. Then click on Insert > search for Image > and then select the Image component.
 
     ![Insert Image](./assets/insert-image.png)
 
-25. The image will then be added to your gallery. Reposition and resize the image so that it is in the center of each gallery cell.
+1. The image will then be added to your gallery. Reposition and resize the image so that it is in the center of each gallery cell.
 
     ![Image](./assets/center-image.png)
 
-26. Now to use Power Apps Ideas. Make sure the gallery is still in edit mode. And select the gallery body containing the Price. Then select the **arrow** next to the lightbulb icon which appears above it. Next, select **Text formatting**.
+1. Now to use Power Apps Ideas. Make sure the gallery is still in edit mode. And select the gallery body containing the Price. Then click the lightbulb icon which appears above it.
 
     ![Lightbulb](./assets/click-lightbulb.png)
 
-27. Enter this output in the Desired format text box:
+1. Enter this output in the Desired format text box:
 
     `$350,000`
 
@@ -134,7 +141,7 @@ In this task, you’ll create an application with data from an Excel table.
 
     ![Desired format](./assets/ideas-format.png)
 
-28. Select the generated formula. Then select Apply.
+1. Select the generated formula. Then select Apply.
 
     ![Apply](./assets/select-formula-then-click-apply.png)
 
@@ -142,9 +149,9 @@ In this task, you’ll create an application with data from an Excel table.
 
      `(Text(ThisItem.Price, "$#,##0", "en-US"))` which is now updated in the formula bar for the Price gallery control.
 
-29. Now let’s do the same for the Size control in the subtitle of the gallery. Make sure the gallery is in edit mode. And select the subtitle containing the Size. Then select the **arrow** next to the lightbulb icon which appears above it. Next, select **Text formatting**.
+1. Now let’s do the same for the Size control in the subtitle of the gallery. Make sure the gallery is in edit mode. And select the subtitle containing the Size. Then click the lightbulb icon which appears above it.
 
-30. Enter this output in the Desired format text box:
+1. Enter this output in the Desired format text box:
 
     `Size: 1,800 sq ft`
 
@@ -154,33 +161,33 @@ In this task, you’ll create an application with data from an Excel table.
 
     ![Size ideas](./assets/no-ideas.png)
 
-31. So, let’s add more examples. Click + Add examples at least 2 more times.
+1. So, let’s add more examples. Click + Add examples at least 2 more times.
 
     ![Add examples](./assets/add-examples.png)
 
-32. Select 2 Current formats and then provide 2 corresponding Desired formats.
+1. Select 2 Current formats and then provide 2 corresponding Desired formats.
 
     ![Current formats](./assets/more-examples.png)
 
-33. With the added context, Power Apps Ideas now generates a suitable formula for you:
+1. With the added context, Power Apps Ideas now generates a suitable formula for you:
 
     ![Size formula](./assets/correct-generated-formula.png)
 
-34. Select the generated formula. Then select Apply.
+1. Select the generated formula. Then select Apply.
 
     Your gallery should now be looking like this:
 
     ![Gallery](./assets/updated-gallery.png)
 
-35. Save the app.
+1. Save the app.
 
-36. Exit the app to return to the Power Apps home page.
+1. Exit the app to return to the Power Apps home page.
 
     ![Exit app](./assets/exit-app.png)
 
 ## ☑️ Task 2: Create a Canvas App with Power Apps Copilot
 
-In this task, you’ll create a mobile application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
+In this task, you’ll create an application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
 
 Before you begin, watch this video for a brief overview of what to expect when creating your first Power App with Copilot.
 
@@ -190,207 +197,235 @@ Before you begin, watch this video for a brief overview of what to expect when c
 ### Explore AI Copilot within Power Apps
 
 > **Note:**
+>
 > Within this lab, notice that your results for data may vary from those within the screenshots and images throughout the lab. This is because Power Apps is using OpenAI to generate data for the lab that changes daily.
 
-1. In the center of the **Home** page within Power Apps, there's a text field in which you can enter a prompt to search for an AI generated table.  
-  
-1. Within the **text field** type the following prompt:
-  
-    ```text
-    build an app to manage real estate showings
-    ```
+1. In the center of the Home page within Power Apps, there's a text field in which you can enter a prompt to search for an AI generated table.
 
-1. Then, select the **Send** button.
+    Within the text field type the following prompt:
 
-    ![Image of the Power Apps homepage](./assets/power-apps-copilot.png)  
+    `build an app to manage real estate showings`
+
+    Then, select the Send button.
+
+    ![The text field is selected and the prompt is entered.](./assets/copilot-chat-prompt.png)
 
 1. After the AI Copilot generates a table based on your prompt, look through the table to see what columns have been created for the start of your table.
 
-    ![Image of the Power Apps Copilot wizard in which you can see the proposed table for the prompt you used.](./assets/create-table-from-excel.png)
+    ![The table is displayed.](./assets/copilot-table.png)
 
-    > **Note:**
-    > If you'd like, you can add or modify the existing columns generated within the table by Copilot. But note that there is a pre-built Suggestions section to the left of the screen.
+    Let's explore further within modifying and adding to the already generated table.
 
-1. Let's explore further within modifying and adding to the already generated table.
 1. In the text box, at the bottom of the **Copilot** pane to the right of the screen, type:
 
-    ```text
-    Add a column to track client email
-    ```
+    `add a column to track client full name`
 
-1. Then, select the **Send** button.
+    Then, select the **Send** button.
 
-    ![View of the Power Apps Copilot pane where a chat conversation shows, and the latest message is 'add a column to track client email'.](./assets/copilot-add-column-send.png)
+    You'll see that Copilot has provided feedback that the table has been updated and you should also see the new column added to the table:
 
-1. Notice how a new column has been added to the table displaying the client’s email
+    ![The table is displayed with the new column.](./assets/copilot-table-new-column.png)
 
-    ![View of the proposed table in the Copilot wizard with Client Email highlighted.](./assets/copilot-add-column-result.png)
+1. Now type the following into the chat:
 
-    > **Note:**
+    `add a column to track client email`
+
+    Then, select the **Send** button.
+
+    Notice how a new column has been added to the table displaying the client’s email:
+
+    ![The table is displayed with the new column.](./assets/copilot-table-new-column-email.png)
+
+    > **Note**
+    >
     > Remember that the data that is generated in your table may vary from the data shown within the table in the screenshots and images for the lab.
 
-    > **Note:**
+    > **Note**
+    >
     > In the bottom left corner of the screen, notice that there is a section titled Suggestions. This section provides you with different suggestions on how you can add to and modify your table.
 
-    ![Screenshots of the suggestions that are displayed in the Power Apps Copilot wizard. Examples of suggestions are 'Change ... to ...', 'Add a column for ...', 'Add a row for ...' &  'Remove the ... row.'.](./assets/copilot-suggestions.png)
+    ![The suggestions section is displayed.](./assets/copilot-suggestions.png)
 
-1. Notice that to the right of the screen, it appears to look as if you're having a conversation with a Copilot AI bot while adding to and modifying your table. Here's where you can scroll through and view the changes or additions you have made to your table.
+    Notice that to the right of the screen, it appears to look as if you're having a conversation with a Copilot AI bot while adding to and modifying your table. Here's where you can scroll through and view the changes or additions you have made to your table.
 
-    ![Screenshot of the conversation with Copilot](./assets/copilot-conversation.png)
+    ![The chat is displayed.](./assets/copilot-chat.png)
 
 1. Now, let’s edit the **Status** column within the table. In the text box within the **Copilot** pane, type and send:
 
-    ```text
-    Add an option for “Completed” to the Status column
-    ```
+    `add an option for “Completed” to the Status column`
 
-1. It may take a minute to load. Once it does, you should see something like this:
-
-    ![Screenshot of the wizard with Copilot where you can see some data that has been created with Copilot, as well as the Copilot chat on the side.](./assets/copilot-status-add-option.png)
+    It may take a minute to load. Once it does, you'll see that the **Status** column has been updated to include the option for **Completed**.
 
 1. Select the **Status** column name **drop down**, and select **View column**. Here, you can view the columns’ properties and the current status details and data.
 
-    ![Screenshot of the view of column properties & choices of the status column.](./assets/copilot-status-options.png)
+    ![The status column is displayed.](./assets/copilot-status-column.png)
 
-1. Select the **X** in the top right corner of the pane to close out.
+    > **Note**
+    >
+    > If your column choices are not the same as the ones shown in the screenshot - you can type the following command into the **Copilot** pane text box and send:
+    >
+    > `the status choices should be Pending, Confirmed, Cancelled, and Completed`
+
+    Select the **X** in the top right corner of the pane to close out.
 
     Let's try adding more data to our table and the existing columns.
 
 1. Within the **Copilot** pane text box, type and send:
 
-    ```text
-    Add 5 more rows of data
-    ```
+    `add 5 more rows of data`
 
-1. Notice that five more rows of data are added for each of the existing columns within the table.
+    Notice that five more rows of data are added for each of the existing columns within the table.
 
-    ![Screenshot with all the data + the Copilot at the side. 5 extra rows have been added because of the previous command.](./assets/copilot-add-5-rows.png)
+    ![The table is displayed with the new rows.](./assets/copilot-table-new-rows.png)
 
-1. If you have a property/address column, which has data relating to the physical address of the property, then delete it using the Copilot chat window with this command:
+    Now looking through your table, you should have a number of columns. However, for the sake of following the rest of the modules in this learning path - let's try and remove some of the columns that we won't be using.
 
-    ```text
-    remove the property column
-    ```
+    The list of columns that we will need going forward are:
 
-    ![Screenshot of part of the Copilot chat, where a command "Remove the property column" has been given.](./assets/copilot-remove-property-column.png)
+    - ID
+    - Address
+    - Date
+    - Time
+    - Status
+    - Agent name
+    - Client Full Name
+    - Client Email
 
-1. Then click **Send**.
+    Use what you've just learnt with the **Copilot Chat** window to adjust your table to match the above. Don't forget to reference the Suggestions section for help in case you need to remove a column, change a column name, or add a column.
 
-    > **Note:**
-    > We’ve removed the **Property** column because we want to link this **Real Estate Showings** table to the **Real Estate Property** table via a lookup column. (Many-to-One relationship)
+1. Let's create the app now. In the bottom right corner of the screen, select the **Create app** button.
 
-    Let's create the app now.
+    ![The create app button is highlighted.](./assets/copilot-create-app.png)
 
-1. In the bottom right corner of the screen, select the **Create app** button.
+1. When the app first loads, a dialog may appear saying: **Welcome to Power Apps Studio**. If so, select the **Skip** button.
 
-    ![Screenshot where part of the data is visible and part of the Copilot chat. Also, a purple button Create App is visible.](./assets/copilot-create-app.png)
+    You should now be viewing the app, that has been built for you, in **Edit** mode:
 
-1. When the app first loads, a dialog may appear saying: Welcome to Power Apps Studio. If so, select the Skip button.
+    ![The app is displayed.](./assets/copilot-app.png)
 
-1. You should now be viewing the app that has been built for you in Edit mode.
+1. To the left of the screen, select the **Data** icon from the navigation bar. Notice that a **Dataverse** table has been created by the Copilot and is now in the **Environments** section.
 
-    ![Screenshot of Power Apps studio with the app that has been created in edit mode.](./assets/copilot-app-created.png)
+    ![The data icon is highlighted.](./assets/copilot-data.png)
 
-1. To the left of the screen, select the Data icon from the navigation bar. Notice that a Dataverse table has been created by the Copilot and is now in the Environments section.
-
-    ![Screenshot of Power Apps studio where the data tab is open and the Dataverse Real Estate Showings (which we created in previous steps) is listed in there.](./assets/data-real-estate-showings.png)
-
-    > **Note:**
+    > **Note**
+    >
     > Copilot is currently only supported for Dataverse. You cannot use any other data access point at this time.
 
-1. Let's try editing the table now that the app has been made.
+    Let's try editing the table now that the app has been created.
 
 1. Within the **Data** pane, hover over the table. To the right of the table, select the **ellipsis** (...).
 
 1. From the menu, select **Edit data**.
 
-    ![Screenshot of Power Apps studio where the data tab is open, and a pop up is visible where the maker can select edit data, refresh or remove.](./assets/data-edit-data.png)
+    ![The edit data option is highlighted.](./assets/copilot-edit-data.png)
 
 1. The Edit Table dialog appears. Here's where you can come and add your own columns to the table, or modify existing columns.
 
-    ![Screenshot of the edit table view where you can work with the data.](./assets/data-edit-table.png)
+    ![The edit table dialog is displayed.](./assets/edit-table.png)
 
 1. Select the **ID** column header from the table.
 
 1. From the drop-down, select the **Edit column** option.
 
-    ![Screenshot of the data in the table, the ID column is selected and the edit column action is highlighted in the pop up that shows up when you open the header of the ID column.](./assets/data-edit-id-column.png)
+    ![The edit column option is highlighted.](./assets/copilot-edit-column.png)
 
-    In this example, we don't want the *Data Type* of the column to be a *Single line of text*. Let's change that.
+    In this example, we don't want the Data Type of the column to be a Single line of text. Let's change that.
 
-1. Within the Edit column pane, from the **Data type** drop-down select **# Autonumber**
+1. Within the Edit column pane, from the **Date type** drop-down select **# Autonumber**.
 
 1. Select **Save**.
 
-    ![Screenshot of the edit column pane where data type is highlighted with the value # Autonumber.](./assets/data-edit-id-autonumber.png)
-
-1. Let’s go ahead and add a new column. Click **New column**
-
-    ![Screenshot of the edit table experience where + New Column is highlighted.](./assets/data-edit-new-column.png)
-
-1. On the **New column** pop up, enter **Property** as the *Display name*, **Lookup > Lookup** for *Data type*, and **Business required** for *Required*. For *Related* table; select the **Real Estate Property** table that we created in the previous module. Then click **Save**.
-
-    ![Screenshot of a new column panel, where display name, data type, required and related table are highlighted.](./assets/data-edit-new-column-property.png)
-
-    You’ll now see a **Property** column in the **Real Estate Showings** table, albeit empty:
-
-    ![Screenshot where all properties are empty.](./assets/data-property-lookup.png)
-
-1. Let’s add the appropriate data. In the first record’s empty **Property** cell, double-click the empty space. A list of property addresses from the **Real Estate Property** table will appear.
-
-    ![Screenshot where a dropdown of all properties is visible.](./assets/data-property-dropdown.png)
-
-1. Select one of the addresses to associate it with the selected **Real Estate Showing**.
-
-    ![Screenshot where only the first property is filled in.](./assets/data-property-first-filled.png)
-
-1. Do the same for all the other records. It doesn’t matter if one property address shows up in multiple records. This is the nature of a many-to-one relationship. In this case, one property can have many showings attached to it.
-
-    ![Screenshot where all the properties are filled in.](./assets/data-property-all-filled.png)
+    ![The save button is highlighted.](./assets/save-column.png)
 
 1. Select the **Close** button in the bottom right corner of the **Edit table** dialog.
 
 1. Notice that the table now says **Refreshed** within the Data pane.
 
-    ![Screenshot of Power Apps studio where the data tab is open, and it says refreshed behind the Real Estate Showings Dataverse table.](./assets/data-refresh-data.png)
+    ![The refreshed table is displayed.](./assets/copilot-refreshed-table.png)
 
-1. Now, let's make and add a new request to the table within the app.
+1. We have to modify the gallery in the application so that it displays the relevant data. Select the **Tree view** icon to return to the Tree view.
 
-1. From the top of the screen, select the **Play** button.
+1. On the app main screen, click on **RecordsGallery1** displaying the **Real Estate Showings** and then select the edit button to put the gallery in edit mode.
 
-    ![Screenshot of Power Apps Studio where the play icon is highlighted.](./assets/play-app.png)
+1. Select the **Title** and set the **Text** value to the following formula:
+
+    `ThisItem.Address`
+
+1. Select the **Subtitle** and set the **Text** value to the following formula:
+
+    `ThisItem.'Client Email'`
+
+1. Select the **Body** and set the **Text** value to the following formula:
+
+    `ThisItem.Status`
+
+    A single record in the gallery should now look like this:
+
+    ![The gallery is displayed.](./assets/showings-gallery.png)
+
+1. On the app main screen, select the **Form** control.
+
+    ![The form control is highlighted.](./assets/copilot-form-control.png)
+
+1. On the **Properties** pane on the right, under the **Fields** property, select **Edit fields**.
+
+    ![The edit fields option is highlighted.](./assets/copilot-edit-fields.png)
+
+1. Now within the **Fields** pane, expand the **ID** field.
+
+1. From the **Control type** drop-down, change the type to **View text**.
+
+    ![The view text option is highlighted.](./assets/copilot-view-text.png)
+
+    Because we previously changed the ID field to Autonumber, we don’t want the users putting in their own number; Dataverse is going to autonumber it for us.
+
+1. Within the **Fields** pane, use the **X** in the top right corner to close out the pane.
+
+1. Now, let's make a new request for a property showing within the app.
+
+1. From the top of the screen, select the Play button.
+
+    ![The play button is highlighted.](./assets/copilot-play.png)
 
 1. Within the pane to the left of the app, select the **+New** button.
 
-    ![Screenshot of the created app in play mode.](./assets/real-estate-showings.png)
+    ![The new button is highlighted.](./assets/copilot-new.png)
 
 1. Although you could modify the form to autofill the fields for you, we're going to do so ourselves to show that the app works.
 
 1. Fill in the following fields with the information below:
 
-1. Agent: `<Your name>`
+    - Agent Name: < Your name >
+    - Client Full Name: < Your name >
+    - Client Email: < Your email >
+    - Date: < Any future date >
+    - Time: < Any future time >
+    - Status: `Pending`
+    - Address: `210 Pine Road, Portland, OR 97204`
 
-1. Client: `<Your name>`
+    > **Note**
+    >
+    > This address is one of the addresses from the Excel file in Module 1. The same file which we uploaded and turned into the **Real Estate Properties** table.
+    >
+    > Usually, you would have a lookup field to the **Real Estate Properties** table, but we're going to keep it simple for this lab.
 
-1. Client Email: `<Your name>`
+1. Then select the checkmark in the top right corner of the screen.
 
-1. Property: `<Any address>`
+    ![The checkmark is highlighted.](./assets/copilot-checkmark.png)
 
-1. Showing Time: `<Any date>`
+1. Now, select the **X** in the top right corner to close out of the app.
 
-1. Status: `<Pending>`
+    If a dialog appears saying: **Did you know?**, select OK.
 
-1. Then, select the **checkmark**.
+    Notice that the new request has been added to the list of requests to the left of the app.
 
-1. Now, select the **X** in the top right corner to **close** out of the app.
+1. From the top of your screen, select the **Save** button to save the new app you have created.
 
-1. If a dialog appears saying: **Did you know?**, select **OK**.
+    ![The save button is highlighted.](./assets/copilot-save.png)
 
-1. Notice that the new request has been added to the list of requests to the left of the app.
+    If asked, save app name as **Real Estate Showings**.
 
-1. From the top of your screen, select the Save button to save the new app you have created.
-
-    ![Screenshot of Power Apps Studio where the save icon is highlighted.](./assets/save-app.png)
+1. Exit the app to return to the Power Apps home page.
 
 Congratulations! You have now created a Power Apps Canvas App with Copilot!
 
