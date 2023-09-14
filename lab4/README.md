@@ -271,7 +271,7 @@ In the meantime, you should've gotten another email.
 
     ![](./assets/warn-solution-checker-prod.png)
 
-    This email shows there are no solution checker in our solution we just deployed to production: well done!
+    This email shows there are no solution checker issues found in our solution we just deployed to production: well done!
 
 ## ☑️ Task 2: Setup SPN support for pipelines
 
