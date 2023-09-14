@@ -10,7 +10,7 @@
 
 In this lab, you will go though the following tasks:
 
-- Open a local Web API in Visual Studio
+- Create a local Web API in Visual Studio
 - Add Connected Service for Power Platform
 - Use the Connected Service for Power Platform to debug the connector
 - Deploy the connector to Power Platform through Visual Studio
@@ -24,9 +24,35 @@ In this lab, you will go though the following tasks:
 - Edit the Copilot-created Power App again and add the connector exported from API Management to it
 - Add the connector exported from API Management to the "MPPC23 - Custom Connector" solution
 
-## ☑️ Task 1: Open a local Web API in Visual Studio
+## ☑️ Task 1: Create a Web API in Visual Studio
+
+In this task, we will create an ASP.NET project in Visual Studio.
+
+1. Open Visual Studio 2022
+
+1. Select **Create a new project**
+
+    ![](./assets/asp-net-core-webapi.png)
+
+1. Search for `ASP.NET Core Web API`, select the one that has C# in the tags and select **Next**
+
+1. Enter the following details and select **Next**:
+
+    Enter `WeatherSample` for the Project name
+
+    Enter `C:\Dev` for the Location
+
+1. In the next screen, select **Create**
+
+This should create your ASP.NET Code Web API project and open it in Visual Studio 2022.
+
+![](./assets/asp-net-core-webapi-created.png)
 
 ## ☑️ Task 2: Add Connected Service for Power Platform
+
+In this task, you will add the Connected Service for Power Platform to your ASP.NET Code Web API project.
+
+1. In the screen in Visual Studio where we left off at the end of task one, select **Connected Services**
 
 ## ☑️ Task 3: Use the Connected Service for Power Platform to debug the connector
 
