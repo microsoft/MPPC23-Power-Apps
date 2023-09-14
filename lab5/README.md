@@ -52,7 +52,11 @@ This should create your ASP.NET Code Web API project and open it in Visual Studi
 
 In this task, you will add the Connected Service for Power Platform to your ASP.NET Code Web API project.
 
-1. In the screen in Visual Studio where we left off at the end of task one, select **Connected Services**
+In the screen in Visual Studio where we left off at the end of task one, on the right, you can find the `Solution Explorer`
+
+1. Right click Connected Services (1), select Add (2) & select Microsoft Power Platform (3)
+
+    ![](./assets/connected-services-power-platform.png)
 
 ## ☑️ Task 3: Use the Connected Service for Power Platform to debug the connector
 
