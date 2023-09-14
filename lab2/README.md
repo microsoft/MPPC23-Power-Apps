@@ -45,6 +45,8 @@ In this task, you’ll create an application with data from an Excel table.
 
     ![Upload an Excel file](./assets/upload-an-excel-file.png)
 
+1. Download the source Excel file by selecting [this link](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx)
+
 1. Click Select from device and navigate to the location where the RealEstateProperties.xlsx Excel file is saved and upload it. The maximum file size limit is 5 GB.
 
     ![Select from device](./assets/select-from-device.png)
