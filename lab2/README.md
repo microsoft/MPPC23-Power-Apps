@@ -129,7 +129,7 @@ In this task, you’ll create an application with data from an Excel table.
 
     ![Image](./assets/center-image.png)
 
-1. Now to use Power Apps Ideas. Make sure the gallery is still in edit mode. And select the gallery body containing the Price. Then click the lightbulb icon which appears above it.
+1. Now to use Power Apps Ideas. Make sure the gallery is still in edit mode. And select the gallery body containing the Price. Then select the **arrow** next to the lightbulb icon which appears above it. Next, select **Text formatting**.
 
     ![Lightbulb](./assets/click-lightbulb.png)
 
@@ -149,7 +149,7 @@ In this task, you’ll create an application with data from an Excel table.
 
      `(Text(ThisItem.Price, "$#,##0", "en-US"))` which is now updated in the formula bar for the Price gallery control.
 
-1. Now let’s do the same for the Size control in the subtitle of the gallery. Make sure the gallery is in edit mode. And select the subtitle containing the Size. Then click the lightbulb icon which appears above it.
+1. Now let’s do the same for the Size control in the subtitle of the gallery. Make sure the gallery is in edit mode. And select the subtitle containing the Size. Then select the **arrow** next to the lightbulb icon which appears above it. Next, select **Text formatting**.
 
 1. Enter this output in the Desired format text box:
 
