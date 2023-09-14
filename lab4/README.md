@@ -209,9 +209,21 @@ In this task, you are going to find out if the approval you configured in the la
 
     ![](./assets/run-deploy-to-prod-approval-select-target.png)  
 
-1. The next screen will be a bit different from our last try, it will now show a summary of the deployment. Fill in some deployment notes, like for instance: `Second deployment of the Mixed Reality solution` and select the purple **Deploy** button
+1. Leave everything on default and select the purple Next button on the bottom of the sidebar
 
-    ![](./assets/run-deploy-to-prod-deployment-notes.png)
+    This will lead you to the next section called `Summary`. Here you can find a bunch of info about the solution you are about to deploy to the QA environment. It also shows an AI suggested solution overview
+
+    ![](./assets/run-first-pipeline-summary-ai-prod.png)
+
+    When you're happy with that AI generated solution overview, select the **Apply** button below the AI suggested solution overview
+
+    Now the AI suggested solution overview is added in the `Deployment notes` box
+
+    ![](./assets/run-first-pipeline-ai-generated-description-approved-prod.png)
+
+1. Check the AI suggested solution overview to make sure it doesn't include any errors and correct where needed
+
+1. Select the purple **Deploy** button
 
 1. Next, you will see the following screen, that shows a yellow box which states that `Your request to deploy here is pending.`
 
