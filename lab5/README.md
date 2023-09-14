@@ -58,6 +58,14 @@ In the screen in Visual Studio where we left off at the end of task one, on the 
 
     ![](./assets/connected-services-power-platform.png)
 
+1. Select the **dropdown** and select the **Microsoft option** below `Add an account`
+
+    ![](./assets/add-account.png)
+
+1. Sign into your account
+
+    ![](./assets/sign-in.png)
+
 ## ☑️ Task 3: Use the Connected Service for Power Platform to debug the connector
 
 ## ☑️ Task 4: Deploy the connector to Power Platform through Visual Studio
