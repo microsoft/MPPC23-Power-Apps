@@ -181,6 +181,22 @@ In this task, you are going to find out if the approval you configured in the la
 
 #### Deploy to prod (with approval)
 
+1. Go to the [maker portal](https://make.powerapps.com)
+
+1. Check if you are in the **Dev** environment and if not, switch to that environment
+
+    ![](./assets/check-environment-dev.png)
+
+1. Go to **Solutions** via the left menu
+
+1. Select the **MPPC 23** solution by selecting the display name
+
+    ![](./assets/run-first-pipeline-dev.png)
+
+1. Select the **rocket icon** on the left
+
+    ![](./assets/run-first-pipeline-solution.png)
+
 1. Earlier in this lab, you have made a Pre-Deployment Step required. That means that now, there is an info box on the deploy to prod stage
 
     ![](./assets/run-deploy-to-prod-approval-info.png)
