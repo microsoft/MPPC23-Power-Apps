@@ -4,7 +4,6 @@
 
 In this lab, you will go though the following tasks:
 
-- Create a new browser profile in Microsoft Edge
 - Log on to your account
 - Create a GitHub account (optional)
 - Create a fork of the repository for this workshop
@@ -16,34 +15,7 @@ In this lab, you will go though the following tasks:
 - Deploy the pipelines solution to your Prod environment
 - Enable Dataverse settings
 
-## Task 1: Create a new browser profile (Microsoft Edge)
-
-It's always good to have a separate browser profile for your work and for workshops like this. This way you can keep all of your credentials separate and not have to worry about logging out of your personal / work accounts.
-
-1. Open Microsoft Edge
-1. Click on the profile icon on the top left corner
-1. Hover over "Other Microsoft Edge Browsers" / "Other profiles" and then select **Add Browser** / **Add profile**
-
-    ![Add new browser profile](assets/add-new-browser-profile.png)
-
-1. Click **Add**
-
-    ![Add a profile dialog](assets/add-profile.png)
-
-    This will then open up a new browser window on your taskbar.
-
-1. Pin that browser window to your taskbar
-1. In the new browser window, select **Start without your data**
-
-    ![Start without your data](assets/start-without-your-data.png)
-
-1. Then select **Confirm and start browsing**.
-
-    ![Confirm and start browsing](assets/confirm-and-start-browsing.png)
-
-    It may prompt you to configure your new browser theme. If this happens, just select **Next** and then **Finish**.
-
-## Task 2: Log on to your account
+## Task 1: Log on to your account
 
 With the credentials that were provided to you, let's log into the account you are going to use during the workshop.
 
@@ -61,37 +33,37 @@ With the credentials that were provided to you, let's log into the account you a
 
     ![Power apps home page](assets/power-apps-home-page.png)
 
-## Task 3: Create a GitHub account
+## Task 2: Create a GitHub account (Optional)
 
 For this workshop, we are going to be using GitHub. If you already have a GitHub account, you can skip this task.
 
 1. Go to the [GitHub](https://github.com) website
-2. Click on **Sign up** on the top right corner
-3. Enter your email address (Use your personal email address) and then click **Continue**
-4. Create a password and then click **Continue**
-5. Enter a username and then click **Continue**
-6. Select whether you want to receive product updates or not and then click **Continue**
-7. Solve the puzzle to verify your account and then click **Create account**
-8. Enter the code that was sent to your email address and then when you've navigated to the welcome screen, click **Skip personalization**
+1. Click on **Sign up** on the top right corner
+1. Enter your email address (Use your personal email address) and then click **Continue**
+1. Create a password and then click **Continue**
+1. Enter a username and then click **Continue**
+1. Select whether you want to receive product updates or not and then click **Continue**
+1. Solve the puzzle to verify your account and then click **Create account**
+1. Enter the code that was sent to your email address and then when you've navigated to the welcome screen, click **Skip personalization**
 
 You now have a GitHub account. Welcome to the community!
 
-## Task 4: Create a fork of the repository for this workshop
+## Task 3: Create a fork of the repository for this workshop
 
 Now that you have a GitHub account, we are going to create a fork of the repository for this workshop. A fork is a copy of an existing repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
 1. Go to the [MPPC23-Power-Apps](https://aka.ms/MPPC23-Power-Apps) GitHub repository
-2. Click on the **Fork** button on the top right corner
+1. Click on the **Fork** button on the top right corner
 
     ![Screenshot of fork button in GitHub Repository](assets/fork-button.png)
 
-3. Once the "Create a new fork" page opens, review the information and then click **Create Fork**
+1. Once the "Create a new fork" page opens, review the information and then click **Create Fork**
 
     ![Screenshot of "Create fork" button in GitHub](assets/create-fork-button.png)
 
     Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **your-username/MPPC23-Power-Apps forked from microsoft/MPPC23-Power-Apps**.
 
-## Task 5: Create a GitHub Codespace
+## Task 4: Create a GitHub Codespace
 
 A codespace is a cloud-hosted development environment you can access from anywhere. It has everything you need, including a text editor, terminal, and debugger. Codespaces are powered by Visual Studio Code and run in a containerized environment. For this workshop, we are going to use codespaces to do our development.
 
@@ -99,12 +71,12 @@ A codespace is a cloud-hosted development environment you can access from anywhe
 
     ![TODO: Add image of code button](assets/repo-code-button.png)
 
-2. On the **Code** pop up, select the **Codespaces** tab
-3. Click **Create codespace on main**
+1. On the **Code** pop up, select the **Codespaces** tab
+1. Click **Create codespace on main**
 
     A codespace will now be created for you in a new tab. This will take a few seconds. But once it's done, you will have a fully functional Visual Studio Code environment in your browser. You can now start developing!
 
-## Task 6: Connect to the Power Platform using the Power Platform Command-Line Interface (CLI)
+## Task 5: Connect to the Power Platform using the Power Platform Command-Line Interface (CLI)
 
 1. In your codespace, click on the **Power Platform** icon in the left navigation
 
@@ -158,7 +130,7 @@ A codespace is a cloud-hosted development environment you can access from anywhe
 
     ![Select Auth Profile](assets/select-auth-profile.png)
 
-## Task 7: Create developer environments
+## Task 6: Create developer environments
 
 Developer environments are very helpful when you want to try out features, they are meant to be short living environments.
 
@@ -274,7 +246,7 @@ Once you have created all three environments, you should see them in the list of
 
 ![List of developer environments](assets/list-of-environments.png)
 
-## Task 8: Switch between environments with the Power Platform CLI
+## Task 7: Switch between environments with the Power Platform CLI
 
 1. With the correct Auth Profile, in the terminal type the following command and then press **Enter**:
 
@@ -310,7 +282,7 @@ Once you have created all three environments, you should see them in the list of
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
 
-## Task 9: Enable Managed Environments on all environments
+## Task 8: Enable Managed Environments on all environments
 
 In this task, you will learn how to enable Managed Environments on all environments you just created.
 
@@ -340,7 +312,7 @@ In this task, you will learn how to enable Managed Environments on all environme
 
     ![](./assets/Managed-Environments-Enabled.png)
 
-## Task 10: Deploy the pipelines solution to your Prod environment
+## Task 9: Deploy the pipelines solution to your Prod environment
 
 In this task, you will learn how to install the pipelines for Power Platform solution in your `Prod` environment. This solution is needed to configure pipelines.
 
@@ -411,7 +383,7 @@ When finished, you can go to the [maker portal](https://make.powerapps.com) and 
 
     This command will return all the applications that you can install with the `pac application install` command.
 
-## Task 11: Enable Dataverse settings
+## Task 10: Enable Dataverse settings
 
 A recent addition to the Power Platform CLI is the ability to list and update Dataverse settings. This means that you can change the settings that are normally only available through the UI. In this task, you will learn how to change the settings.
 
