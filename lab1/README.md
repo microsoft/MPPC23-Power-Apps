@@ -17,10 +17,10 @@ In this lab, you will go though the following tasks:
 
 ## Task 1: Log on to your account
 
-With the credentials that were provided to you, let's log into the account you are going to use during the workshop.
+With the credentials that were provided to you in the `environment details` tab, let's log into the account you are going to use during the workshop.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com)
-1. On the sign-in screen, enter the email address that was provided to you and then click **Next**
+1. On the sign-in screen, enter the email address that was provided to you in the `environment details` and then click **Next**
 
     ![Sign in screen](assets/pa-sign-in-email.png)
 
@@ -155,7 +155,7 @@ In this workshop, we will create one environment through the UI, one via PPAC, a
 
 Currently, if you want to get all that the Power Platform offers, it's required to subscribe to the Power Apps Developer Plan. In this part, we will walk you through all the steps:
 
-1. Go to the [Power Apps Developer Plan](https://aka.ms/pp/devplan) website (use the Edge profile you created for this workshop)
+1. Go to the [Power Apps Developer Plan](https://aka.ms/pp/devplan) website
 1. Select the **Existing user? Add a dev environment** button
 
     ![Power Apps Developer Plan website with 'Get Started Free' and 'Existing user? Add a dev environment' buttons](./assets/dev-plan-1.png)
@@ -169,7 +169,6 @@ Currently, if you want to get all that the Power Platform offers, it's required 
     ![Page where you can select a country and accept or cancel. There are also links to the terms of use and the Microsoft privacy statement](./assets/dev-plan-3.png)
 
 1. After selecting **Accept**, a Power Platform developer environment will be created for you with the name `{User}'s Environment` and you will be redirected to the maker portal. In here, you will see two things:
-    1. An alert in the top-center that says 'This is a developer environment and not meant for production use'
     1. The environment picker at the top-right with your recently created environment `{User}'s Environment` selected
 
     ![The maker portal, with at the top-center the alert that this is a developer environment and not meant for production use. At to top-right, you will see the name of your developer environment that just got created](./assets/dev-plan-4.png)
