@@ -5,7 +5,7 @@
 In this lab, you will go though the following tasks:
 
 - Log on to your account
-- Create a GitHub account (optional)
+- Create a GitHub account
 - Create a fork of the repository for this workshop
 - Creating a GitHub Codespace
 - Connect to the Power Platform using the Power Platform Command-Line Interface (CLI)
@@ -33,9 +33,9 @@ With the credentials that were provided to you in the `environment details` tab,
 
     ![Power apps home page](assets/power-apps-home-page.png)
 
-## Task 2: Create a GitHub account (Optional)
+## Task 2: Create a GitHub account
 
-For this workshop, we are going to be using GitHub. If you already have a GitHub account, you can skip this task.
+For this workshop, we are going to be using GitHub.
 
 1. Go to the [GitHub](https://github.com) website
 1. Click on **Sign up** on the top right corner
