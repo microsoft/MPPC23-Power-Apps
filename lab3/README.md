@@ -101,7 +101,7 @@ Make sure to select the **+ New Deployment Stage** button now to add the first d
 
 ### Add the first deployment stage
 
-This will open a new sidebar, where you can enter details about your first deployment stage.
+This will open a new form, where you can enter details about your first deployment stage.
 
 1. Add `Deploy to QA` as the Name
 
@@ -135,7 +135,7 @@ In the sidebar, make sure to add the following details:
 
 1. Select the **Save and Close** button on the bottom of your sidebar
 
-1. Select **Save and Close** again to save the deployment stage as well
+1. Select **Save and Close** to save at the top of your deployment stage form as well
 
 Make sure to select the **+ New Deployment Stage** button again to add a second deployment stage: `Deploy to prod`.
 
@@ -176,7 +176,7 @@ Make sure to select the **+ New Deployment Stage** button again to add a second 
 
     ![](./assets/create-pipeline-deploy-to-prod-env.png)
 
-1. Select **Save and Close** again to save the deployment stage as well
+1. Select **Save and Close** to save at the top of your deployment stage form as well
 
 ## Task 2: Run the deployment to the QA environment
 
