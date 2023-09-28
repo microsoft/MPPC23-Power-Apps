@@ -25,10 +25,10 @@ In this lab, you will go though the following tasks:
 
 ## Task 1: Log on to your account
 
-With the credentials that were provided to you in the `environment details` tab, let's log into the account you are going to use during the workshop.
+With the credentials that were provided to you in the **Environment Details** tab, let's log into the account you are going to use during the workshop.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com)
-1. On the sign-in screen, enter the email address that was provided to you in the `environment details` and then click **Next**
+1. On the sign-in screen, enter the email address that was provided to you in the **Environment Details** and then click **Next**
 
     ![Sign in screen](assets/pa-sign-in-email.png)
 
@@ -49,12 +49,12 @@ For this workshop, we are going to be using GitHub.
 1. Click on **Sign up** on the top right corner
 1. Enter your email address (use the email address for this workshop) and then click **Continue**
 1. Create a password and then click **Continue**
-1. Enter a username and then click **Continue**
+1. Enter a username and then click **Continue** (this is a username you're going to use only for this workshop, so don't pick something you want to use later)
 1. Select whether you want to receive product updates or not and then click **Continue**
 1. Solve the puzzle to verify your account and then click **Create account**
 1. Go to [Outlook for the web](https://outlook.office.com) in a new tab
 1. Open the email that was sent to you from GitHub and copy the code
-1. Enter the code that was sent to your email address on the GitHub website and then when you've navigated to the welcome screen, click **Skip personalization**
+1. Enter the code that was sent to your email address on the GitHub website. This should lead you to your dashboard where you can create a repository, but that's not what we're going to do now
 
 You now have a GitHub account. Welcome to the community!
 
@@ -71,7 +71,7 @@ Now that you have a GitHub account, we are going to create a fork of the reposit
 
     ![Screenshot of "Create fork" button in GitHub](assets/create-fork-button.png)
 
-    Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **your-username/MPPC23-Power-Apps forked from microsoft/MPPC23-Power-Apps**.
+    Once your have created the fork, you will be redirected to your forked repository. You can see that you are in your forked repository by looking at the top left corner of the page. It should say **MPPC23-Power-Apps forked from microsoft/MPPC23-Power-Apps**.
 
 ## Task 4: Create a GitHub Codespace
 
@@ -114,7 +114,8 @@ A codespace is a cloud-hosted development environment you can access from anywhe
 
     Once you click on that link, it will open a new browser tab where you will have to paste that code into the browser and then click **Next**
 
-    > **Note:** If you are using a Mac, you can **Ctrl + click** on the ```link``` that is provided in the terminal and then enter the ``code`` provided.
+    > **Note:** 
+    > If you are using a Mac, you can **Ctrl + click** on the ```link``` that is provided in the terminal and then enter the ``code`` provided.
 
     ![Enter code and click next](assets/enter-code.png)
 
@@ -156,7 +157,7 @@ To create developer environments, you can create them in multiple ways:
 1. Via the Power Platform Admin Center (PPAC)
 1. Via the Power Platform CLI
 
-> [!IMPORTANT]
+> **Note:**
 > When subscribing to the developer plan, you will automatically assign a developer license to yourself. When creating a developer environment through PPAC or the CLI, you will not do that. That's why we do this step first, so that you won't have to start a trial.
 
 In this workshop, we will create one environment through the UI, one via PPAC, and the last one via the CLI, so that you know all about how to create developer environments.
@@ -248,7 +249,7 @@ Run the following command in the terminal in your codespace:
 pac admin create --name "Prod" --type "Developer"
 ```
 
-> [!NOTE]
+> **Note:**
 > We don't use `purpose` here, because the Power Platform CLI doesn't have a parameter for this. Also, we are using the defaults for `region` and `currency`, so we don't have to add those to the command.
 
 Once you have created all three environments, you should see them in the list of environments. Click the **Refresh** button on the top navigation if you don't see them yet.
@@ -264,6 +265,9 @@ Once you have created all three environments, you should see them in the list of
     ```
 
     This gets a list of all the environments that you have access to. You should see the **Dev** environment listed as one of them. This is the one we want to eventually connect to.
+
+    > **Note:** 
+    > It can take a couple of minutes before you get the full list of environments. Run the command again every minute until you see all the environments.    
 
     ![Screenshot of pac org list](assets/org-list.png)
 
@@ -295,7 +299,7 @@ Once you have created all three environments, you should see them in the list of
 
 In this task, you will learn how to enable Managed Environments on all environments you just created.
 
-1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
+1. Go back to the [Power Platform Admin Center](https://aka.ms/ppac)
 
 1. Select **Environments** in the left navigation
 
@@ -303,11 +307,11 @@ In this task, you will learn how to enable Managed Environments on all environme
 
     ![](./assets/Managed-Environments-PPAC-Search.png)
 
-1. Select **Dev** and select the **Enable Managed Environments** button at the top
+1. Select **Dev** and select the **Enable Managed Environments** button at the top (it could be hidden under the ... overflow menu)
 
     ![](./assets/Managed-Environments-Select-Environment.png)
 
-    Make sure you look at the highlighted text about licensing. After enabling an environment as a Managed Environment, everyone in that environment has to have a premium license. To use pipelines for Power Platform, all environments that are added to the pipelines need to been enabled as a Managed Environment
+    Make sure you look at the highlighted text about licensing. After enabling an environment as a Managed Environment, everyone in that environment has to have a premium license
 
     ![](./assets/Managed-Environments-Licensing.png)
 
@@ -340,7 +344,7 @@ There are two ways to install the pipelines solution:
 
 1. Select the **Prod** environment you created before
 
-1. In the command bar at the top, select **Resources** and **Dynamics 365 apps**
+1. In the command bar at the top (make sure you use the button at the top and don't use the left navigation - which also has a resources button), select **Resources** and **Dynamics 365 apps**
 
     ![](./assets/prod-env-dynamics-365-apps.png)
 
@@ -398,6 +402,8 @@ A recent addition to the Power Platform CLI is the ability to list and update Da
 
 ### List Dataverse settings
 
+1. Make sure to run the `pac org who` command to make sure you are in the `Dev` environment
+    If not, make sure to switch there, using the pac org select command like we did in task 7
 1. Run the following command and then press **Enter**:
 
     ```bash
@@ -430,7 +436,7 @@ Let's try out how updating a setting works. In the list of audit settings we jus
 
     This command will set the `isauditenabled` setting to true.
 
-    > [!NOTE]
+    > **Note:** 
     > Note that the list command showed `No` as the output, but for updating you need to use true or false.
 
 1. Run the following command again to verify if the setting is applied and select **Enter**:
@@ -445,6 +451,4 @@ Let's try out how updating a setting works. In the list of audit settings we jus
 
 ## Next lab
 
-This is the end of lab 1, select the link below to move to the next lab.
-
-[⏭️ Move to lab 2](../lab2/README.md)
+Select the second page below to move to the next lab.
