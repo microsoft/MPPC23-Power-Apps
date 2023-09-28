@@ -1,8 +1,5 @@
 # 🚀 Lab 2: Develop
 
-> [!IMPORTANT]
-> This workshop is still work in progress for the time being.
-
 ## 📝 Lab 2 - Tasks
 
 In this lab, you will go though the following tasks:
@@ -45,9 +42,7 @@ In this task, you’ll create an application with data from an Excel table.
 
     ![Upload an Excel file](./assets/upload-an-excel-file.png)
 
-1. Download the source Excel file by selecting [this link](https://github.com/microsoft/MPPC23-Power-Apps/raw/main/lab2/resources/RealEstateProperties.xlsx)
-
-1. Click Select from device and navigate to the location where the RealEstateProperties.xlsx Excel file is saved and upload it. The maximum file size limit is 5 GB.
+1. Click Select from device and navigate to the location `C:\LabFiles` where the RealEstateProperties.xlsx Excel file is saved and upload it. The maximum file size limit is 5 GB.
 
     ![Select from device](./assets/select-from-device.png)
 
@@ -190,8 +185,6 @@ In this task, you’ll create an application with data from an Excel table.
 ## ☑️ Task 2: Create a Canvas App with Power Apps Copilot
 
 In this task, you’ll create an application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
-
-Before you begin, watch this video for a brief overview of what to expect when creating your first Power App with Copilot.
 
 > **Note:**
 > Power Apps requires either a Microsoft 365 license or a free trial. Learn more about your licensing options. [Microsoft products include Microsoft Power Apps and Power Automate](https://learn.microsoft.com/power-apps/administrator/pricing-billing-skus/).
@@ -493,6 +486,4 @@ In this task, you will add the components we just created via Copilot to the `MP
 
 ## Next lab
 
-This is the end of lab 2, select the link below to move to the next lab.
-
-[⏭️ Move to lab 3](../lab3/README.md)
+This is the end of lab 2. Select the third page below to move to the next lab.

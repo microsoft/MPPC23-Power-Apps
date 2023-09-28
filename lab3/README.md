@@ -318,6 +318,4 @@ Now you know the app works in QA, let's deploy it to production.
 
 ## Next lab
 
-This is the end of lab 3, select the link below to move to the next lab.
-
-[⏭️ Move to lab 4](../lab4/README.md)
+This is the end of lab 3. Select page 4 below to move to the next lab.
