@@ -35,15 +35,21 @@ Let's create a new pipeline, by selecting the **+ new button** on the `Pipelines
 
 ![](./assets/create-pipeline-new-pipeline.png)
 
+This will open a quick create form at the side.
+
+1. Use `My first pipeline` as the name
+
+1. Leave the rest as default and save the pipeline by selecting the **Save and Close** button
+
+You will end up on the `Pipelines Dashboard` again, but now `My first pipeline` will be visible.
+
+1. Click on the name `My first pipeline`
+
 This will lead you to a form where you can enter details about your pipeline:
 
 ![](./assets/create-pipeline-new-pipeline-details.png)
 
-1. Use `My first pipeline` as the name
-
-1. Leave the rest as default and save the pipeline by selecting the **Save** button
-
-Some components of the form only appear after the first save, so that's why we save the pipeline. After saving, scroll down and you will see the following content below the owner field:
+Scroll down and you will see the following content below the owner field:
 
 ![](./assets/create-pipeline-new-pipeline-saved.png)
 
@@ -95,7 +101,7 @@ Make sure to select the **+ New Deployment Stage** button now to add the first d
 
 ### Add the first deployment stage
 
-This will open a new sidebar, where you can enter details about your first deployment stage.
+This will open a new form, where you can enter details about your first deployment stage.
 
 1. Add `Deploy to QA` as the Name
 
@@ -129,7 +135,7 @@ In the sidebar, make sure to add the following details:
 
 1. Select the **Save and Close** button on the bottom of your sidebar
 
-1. Select **Save and Close** again to save the deployment stage as well
+1. Select **Save and Close** to save at the top of your deployment stage form as well
 
 Make sure to select the **+ New Deployment Stage** button again to add a second deployment stage: `Deploy to prod`.
 
@@ -170,7 +176,7 @@ Make sure to select the **+ New Deployment Stage** button again to add a second 
 
     ![](./assets/create-pipeline-deploy-to-prod-env.png)
 
-1. Select **Save and Close** again to save the deployment stage as well
+1. Select **Save and Close** to save at the top of your deployment stage form as well
 
 ## Task 2: Run the deployment to the QA environment
 

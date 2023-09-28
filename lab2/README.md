@@ -178,6 +178,18 @@ In this task, you’ll create an application with data from an Excel table.
 
 1. Save the app.
 
+1. Publish the app by clicking the publish icon in the top right corner
+
+    ![Publish app](./assets/publish-app.png)
+
+1. Here you will see a dialog appear where you can add a description to your app. It also enables you to generate one using AI. Select the **Create description using AI** button
+
+    ![Create app description using AI](./assets/create-ai-description.png)
+
+1. Check if the description is correct. If not, correct it and select the **Publish this version** button. If yes, select the **Publish this version** button.
+
+    ![Check and publish this version of the app](./assets/check-publish.png)
+
 1. Exit the app to return to the Power Apps home page.
 
     ![Exit app](./assets/exit-app.png)
@@ -282,7 +294,7 @@ In this task, you’ll create an application leveraging Power Apps Copilot.  Thi
     - Date
     - Time
     - Status
-    - Agent name
+    - Agent Name
     - Client Full Name
     - Client Email
 
@@ -419,6 +431,18 @@ In this task, you’ll create an application leveraging Power Apps Copilot.  Thi
     ![The save button is highlighted.](./assets/copilot-save.png)
 
     If asked, save app name as **Real Estate Showings**.
+
+1. Select the publish icon to publish the app
+
+    ![Publish app](./assets/publish-app.png)
+
+1. Generate a description using AI by selecting the **Create description using AI** button
+
+    ![Generate AI Description](./assets/create-ai-description-2.png)
+
+1. Check if the description is correct. If not, correct it and select the **Publish this version** button. If yes, select the **Publish this version** button.
+
+    ![Check and publish this version of the app](./assets/check-publish-2.png)
 
 1. Exit the app to return to the Power Apps home page.
 
