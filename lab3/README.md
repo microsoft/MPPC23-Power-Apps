@@ -35,15 +35,21 @@ Let's create a new pipeline, by selecting the **+ new button** on the `Pipelines
 
 ![](./assets/create-pipeline-new-pipeline.png)
 
+This will open a quick create form at the side.
+
+1. Use `My first pipeline` as the name
+
+1. Leave the rest as default and save the pipeline by selecting the **Save and Close** button
+
+You will end up on the `Pipelines Dashboard` again, but now `My first pipeline` will be visible.
+
+1. Click on the name `My first pipeline`
+
 This will lead you to a form where you can enter details about your pipeline:
 
 ![](./assets/create-pipeline-new-pipeline-details.png)
 
-1. Use `My first pipeline` as the name
-
-1. Leave the rest as default and save the pipeline by selecting the **Save** button
-
-Some components of the form only appear after the first save, so that's why we save the pipeline. After saving, scroll down and you will see the following content below the owner field:
+Scroll down and you will see the following content below the owner field:
 
 ![](./assets/create-pipeline-new-pipeline-saved.png)
 

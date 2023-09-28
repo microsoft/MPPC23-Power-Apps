@@ -432,6 +432,18 @@ In this task, you’ll create an application leveraging Power Apps Copilot.  Thi
 
     If asked, save app name as **Real Estate Showings**.
 
+1. Select the publish icon to publish the app
+
+    ![Publish app](./assets/publish-app.png)
+
+1. Generate a description using AI by selecting the **Create description using AI** button
+
+    ![Generate AI Description](./assets/create-ai-description-2.png)
+
+1. Check if the description is correct. If not, correct it and select the **Publish this version** button. If yes, select the **Publish this version** button.
+
+    ![Check and publish this version of the app](./assets/check-publish-2.png)
+
 1. Exit the app to return to the Power Apps home page.
 
 Congratulations! You have now created a Power Apps Canvas App with Copilot!
