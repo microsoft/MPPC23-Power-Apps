@@ -1,5 +1,13 @@
 # 🚀 Lab 1: Setup and configure
 
+Before we start with the lab, there are a couple of things we want you to be aware of:
+
+1. You can find the credentials you are going to use for this workshop in the **Environment Details** tab above the instructions
+1. Every time you see a link to a website, make sure to copy the link and paste it into the address bar in your browser in the lab environment. If you don't do this, the links will open in your laptop browser instead
+1. When you log into your account, you might see the following image. Make sure to always select **Ask later**
+
+![Action required screen for adding verification. Ask later must be selected at all times.](./assets/ask-later.png)
+
 ## Lab 1 - Tasks
 
 In this lab, you will go though the following tasks:
