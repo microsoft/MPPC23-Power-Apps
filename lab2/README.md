@@ -1,8 +1,5 @@
 # 🚀 Lab 2: Develop
 
-> [!IMPORTANT]
-> This workshop is still work in progress for the time being.
-
 ## 📝 Lab 2 - Tasks
 
 In this lab, you will go though the following tasks:
@@ -491,6 +488,4 @@ In this task, you will add the components we just created via Copilot to the `MP
 
 ## Next lab
 
-This is the end of lab 2, select the link below to move to the next lab.
-
-[⏭️ Move to lab 3](../lab3/README.md)
+This is the end of lab 2. Select the third page below to move to the next lab.

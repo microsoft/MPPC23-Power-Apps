@@ -451,4 +451,4 @@ Let's try out how updating a setting works. In the list of audit settings we jus
 
 ## Next lab
 
-Select the second page below to move to the next lab.
+This is the end of lab 1. Select the second page below to move to the next lab.

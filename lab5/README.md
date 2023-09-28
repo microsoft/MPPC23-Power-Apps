@@ -1,9 +1,6 @@
 # 🚀 Lab 5: Connect your own WebAPI to your Power App
 
-> [!IMPORTANT]
-> This workshop is still work in progress for the time being.
-
-> [!IMPORTANT]
+> **Note:**
 > This lab is optional. Only do this one when you are finished with lab 1 - lab 4.
 
 ## 📝 Lab 5 - Tasks
@@ -111,5 +108,3 @@ When Visual Studio runs a web app and a tunnel is active, the web browser opens 
 ## End of labs
 
 This is the end of the optional lab 5 and the workshop, select the link below to move back to the workshop readme.
-
-[⏭️ Move to the workshop readme](../README.md)

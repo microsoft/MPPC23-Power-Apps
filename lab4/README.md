@@ -1,16 +1,12 @@
 # 🚀 Lab 4: Enterprise Scale
 
-> [!IMPORTANT]
-> This workshop is still work in progress for the time being.
-
 ## Lab 4 - Tasks
 
-In this lab, you will go though the following tasks:
+In this lab, you will go through only one task:
 
 - Extend the previous pipeline with Approvals
-- Setup SPN support for pipelines
 
-## ☑️ Task 1: Extend the previous pipeline with Approvals
+## ☑️ Task: Extend the previous pipeline with Approvals
 
 ### Extending the pipeline in the Deployment Pipeline Configuration App
 
@@ -273,12 +269,6 @@ In the meantime, you should've gotten another email.
 
     This email shows there are no solution checker issues found in our solution we just deployed to production: well done!
 
-## ☑️ Task 2: Setup SPN support for pipelines
-
-TODO: SPN support for pipelines
-
 ## End of labs
 
-This is the end of lab 4 and the workshop, select the link below to move back to the workshop readme.
-
-[⏭️ Move to the workshop readme](../README.md)
+This is the end of lab 4. Select page 5 below to move to the next lab.
