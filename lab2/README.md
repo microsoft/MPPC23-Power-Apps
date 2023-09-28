@@ -294,7 +294,7 @@ In this task, you’ll create an application leveraging Power Apps Copilot.  Thi
     - Date
     - Time
     - Status
-    - Agent name
+    - Agent Name
     - Client Full Name
     - Client Email
 
