@@ -186,8 +186,6 @@ In this task, you’ll create an application with data from an Excel table.
 
 In this task, you’ll create an application leveraging Power Apps Copilot.  This app will be used by field agents to browse real estate inventory and manage appointments for showings and the data will be stored in Dataverse.
 
-Before you begin, watch this video for a brief overview of what to expect when creating your first Power App with Copilot.
-
 > **Note:**
 > Power Apps requires either a Microsoft 365 license or a free trial. Learn more about your licensing options. [Microsoft products include Microsoft Power Apps and Power Automate](https://learn.microsoft.com/power-apps/administrator/pricing-billing-skus/).
 
