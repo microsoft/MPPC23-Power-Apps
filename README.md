@@ -1,8 +1,5 @@
 # 🔌 Build, Deploy, and Scale Power Apps
 
-> [!IMPORTANT]
-> This workshop is still work in progress for the time being.
-
 > [!NOTE]
 > This repository is for the "Build, Deploy, and Scale Power Apps!" workshop at the Microsoft Power Platform Conference on Monday the 2nd of October 2023 in Las Vegas.
 
