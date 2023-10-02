@@ -108,7 +108,7 @@ A codespace is a cloud-hosted development environment you can access from anywhe
     pac auth create --deviceCode
     ```
 
-1. You will be prompted to use a web browser to authenticate. Copy (**ctrl + c**) the ```code``` that is provided in the terminal and then **Ctrl + click** on the ```link``` that is provided in the terminal.
+1. You will be prompted to use a web browser to authenticate. Copy (**ctrl + c**) the ```code``` that is provided in the terminal and then **Ctrl + click** on the link that is provided in the terminal.
 
     ![Screenshot of the terminal with the code and link](assets/terminal-with-code-and-link.png)
 
